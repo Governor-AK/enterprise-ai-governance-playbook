@@ -4,61 +4,47 @@
 
 The Enterprise AI Governance Playbook is an open, practitioner-designed reference for implementing AI Governance within enterprise environments.
 
-It brings together governance capabilities, operating models, implementation guidance, reusable artifacts, and assurance practices that help organizations build, operate, and continuously improve AI Governance across the AI lifecycle.
+It brings together governance capabilities, operating models, implementation guidance, reusable artifacts, and assurance practices that help organizations design, implement, operate, monitor, and continuously improve AI Governance across the AI lifecycle.
 
+Rather than introducing another governance framework, this playbook focuses on the practical work of implementation—translating governance principles into repeatable enterprise practice.
 
 ---
 
 ## Why This Playbook
 
-Organizations must determine how AI governance fits into their operating model, how responsibilities are distributed, how AI systems are identified, how risks are assessed, how controls are designed and tested, how evidence is maintained, and how governance continues to improve as technology evolves.
+The AI Governance ecosystem already provides strong foundations through standards, frameworks, regulations, and industry guidance. These resources explain **what** organizations should govern and **why** governance matters.
 
-This playbook exists to explore those implementation questions through practical governance capabilities rather than theoretical discussion alone.
+The implementation challenge begins after that.
+
+Organizations must determine how governance fits into their operating model, how responsibilities are distributed, how AI systems are identified, how risks are assessed, how controls are designed and tested, how evidence is maintained, and how governance evolves as technology, business, and regulatory expectations change.
+
+This playbook explores those implementation questions through practical governance capabilities, reusable implementation artifacts, and enterprise governance patterns rather than theoretical discussion alone.
 
 ---
 
 ## Learning in Public
 
-AI Governance is a rapidly evolving discipline.
+AI Governance is an evolving discipline.
 
-This repository follows a **Learning in Public** approach, documenting practical implementation patterns, governance artifacts, and operational thinking as they evolve.
+This repository follows a **Learning in Public** approach, documenting practical implementation patterns, governance capabilities, and operational thinking as they continue to mature.
 
-The goal is not to produce a static reference, but to build a body of work that continuously improves alongside the discipline itself while remaining grounded in practical enterprise implementation.
+The objective is to continuously refine the playbook while keeping it grounded in practical enterprise implementation.
 
 ---
 
 ## Design Philosophy
 
-The Enterprise AI Governance Playbook is organized around capabilities rather than documents.
+The Enterprise AI Governance Playbook is organized around enterprise governance capabilities rather than individual documents.
 
-Each capability is treated as an enterprise function with its own purpose, operating model, responsibilities, controls, assurance activities, and supporting artifacts.
+Each capability is treated as a business function with its own purpose, operating model, responsibilities, controls, assurance activities, supporting artifacts, and framework alignment.
 
-Instead of presenting governance as a collection of independent policies or templates, the playbook demonstrates how those capabilities connect to form an integrated governance system.
+Instead of presenting governance as a collection of isolated policies or templates, the playbook demonstrates how these capabilities connect to form an integrated enterprise AI Governance operating model.
 
-Every section explores the same implementation questions:
+Every capability is designed to answer three practical questions:
 
 - Why does this capability exist?
 - How should it operate?
-- How should its effectiveness be demonstrated?
-
-This structure reflects how governance operates inside organizations: as a connected enterprise discipline rather than a series of isolated activities.
-
----
-
-## Framework Alignment
-
-The playbook is informed by established industry guidance, including:
-
-- NIST AI Risk Management Framework (AI RMF)
-- ISO/IEC 42001
-- EU AI Act
-- ISO 31000
-- ISO/IEC 27001
-- COBIT
-
-These references provide the foundation for governance thinking.
-
-The focus of this repository is translating those principles into practical enterprise implementation.
+- How do we know it is working?
 
 ---
 
@@ -66,39 +52,77 @@ The focus of this repository is translating those principles into practical ente
 
 ```text
 Enterprise AI Governance Playbook
-│
-├── Foundations
-├── Governance Operating Model
-├── AI Inventory & Registration
-├── AI Risk Management
-├── AI Assurance & Control Testing
-├── Privacy & Security
-├── Enterprise AI Usage Governance
-├── Third-Party AI Risk
-├── Monitoring & Continuous Improvement
-├── Framework Alignment
-├── Case Studies
-├── Templates
-└── References
+
+01 Foundations
+
+02 Governance Operating Model
+
+03 AI Inventory & Assessment
+
+04 AI Risk Management
+
+05 AI Controls
+
+06 AI Documentation
+
+07 AI Assurance
+
+08 Third-Party AI Governance
+
+09 Audit & Control Assurance
+
+10 Framework Alignment
+
+11 Knowledge Base
+
+12 Governance Assessment & Reporting
 ```
 
-The repository is intended to be explored progressively, beginning with governance foundations and expanding into implementation, assurance, and operational maturity.
+---
+
+## What You'll Find
+
+Each capability is developed as a practical implementation guide supported by governance artifacts, operating models, process flows, reusable templates, examples, implementation guidance, and framework mappings.
+
+Rather than presenting governance as independent activities, the repository connects these capabilities into a single enterprise AI Governance operating model that organizations can adapt to their own business context.
+
+---
+
+## Framework Alignment
+
+The playbook draws upon established industry guidance, including:
+
+- NIST AI Risk Management Framework (AI RMF)
+- ISO/IEC 42001 – Artificial Intelligence Management System (AIMS)
+- EU AI Act
+- ISO 31000 – Risk Management
+- ISO/IEC 27001 – Information Security Management
+- COBIT
+
+These frameworks provide direction.
+
+The focus of this repository is translating those principles into practical enterprise implementation.
+
+---
+
+## Start Here
+
+The repository is designed to be explored sequentially.
+
+Readers new to AI Governance should begin with **Foundations** before progressing through governance design, implementation, assurance, and governance maturity.
+
+While each capability can be explored independently, the complete playbook is intended to provide an end-to-end view of how AI Governance operates within an enterprise.
 
 ---
 
 
-## Disclaimer
 
-This repository is an independent professional project developed from practical experience and publicly available industry guidance.
-
-Examples have been generalized or anonymized and do not represent confidential organizational information, proprietary implementation details, or official employer documentation.
-
-The content is provided for educational and professional reference purposes.
-
----
-
-## Author
+## About
 
 **Kartheek Abburi**
 
 AI Governance | Risk & Compliance (GRC)
+
+Author of **Connecting the Dots: AI Governance**
+
+Building practical AI Governance, one capability at a time.
