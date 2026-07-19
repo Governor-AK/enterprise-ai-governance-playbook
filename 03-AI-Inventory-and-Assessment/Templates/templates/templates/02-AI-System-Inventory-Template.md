@@ -103,4 +103,4 @@
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the AI System Inventory Template. |
+| 1.0 | July 2026 | Initial release of the AI System Inventory Template.. |
