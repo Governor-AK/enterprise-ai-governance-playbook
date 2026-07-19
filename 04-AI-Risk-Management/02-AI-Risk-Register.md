@@ -77,7 +77,7 @@ Each risk record contains standardized information describing the identified AI 
 | Information Category | Purpose |
 |----------------------|---------|
 | Risk Identification | Establishes the unique identity of the AI risk. |
-| Risk Analysis | Records analysis information as AI Risk Analysis activities are completed. |
+| Risk Analysis | Records the analysis performed to understand the identified AI risk, including contributing factors, likelihood, potential consequences, and supporting observations. |
 | Risk Prioritization | Records governance priority and escalation decisions. |
 | Risk Response Strategy | Records the selected strategic response for the identified AI risk. |
 | Governance Controls | Records implemented governance controls. |

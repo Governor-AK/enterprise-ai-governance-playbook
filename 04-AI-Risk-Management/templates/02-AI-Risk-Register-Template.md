@@ -34,7 +34,7 @@
 |---|---|---|
 | Contributing Factors | | AI Risk Analysis |
 | Likelihood | | AI Risk Analysis |
-| Potential Business Consequences | | AI Risk Analysis |
+| Potential Consequences | | AI Risk Analysis |
 | Analysis Notes | | AI Risk Analysis |
 
 ---
