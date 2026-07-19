@@ -4,9 +4,9 @@
 
 Every proposed AI initiative begins with an idea, but not every idea should immediately progress into development or deployment.
 
-The AI Use Case Intake serves as the formal entry point into the Enterprise AI Governance Program at Megastar Mortgage. Its purpose is not to govern the AI system itself, but to determine whether the proposed AI initiative should formally enter the organization's governance lifecycle.
+The AI Use Case Intake serves as the formal entry point into the Enterprise AI Governance Program at Megastar Mortgage. Its purpose is not to govern the AI system itself, but to determine whether a proposed AI initiative should formally enter the organization's governance lifecycle.
 
-Before inventory registration, classification, impact assessment, or risk evaluation can begin, the organization must first understand the proposed business problem, the intended use of AI, and the operational context in which the solution will operate.
+Before inventory registration, classification, impact assessment, or risk evaluation can begin, the organization must first understand the business problem, the intended use of AI, and the operational context in which the proposed solution will operate.
 
 This document establishes a standardized AI Use Case Intake process for the Megastar Intelligent Processor (MIP), ensuring that every proposed AI initiative enters governance through a structured, transparent, and repeatable process.
 
@@ -16,7 +16,7 @@ This document establishes a standardized AI Use Case Intake process for the Mega
 
 The purpose of this document is to establish a standardized intake process for all proposed AI use cases within Megastar Mortgage.
 
-The intake process captures the business, operational, and technical information required to determine whether an AI initiative should formally enter the Enterprise AI Governance Program.
+The intake process captures the business, operational, and high-level solution information required to determine whether an AI initiative should formally enter the Enterprise AI Governance Program.
 
 By collecting consistent information at the earliest stage of the AI lifecycle, the organization improves governance visibility, supports informed governance decisions, and establishes the foundation for all subsequent governance activities.
 
@@ -44,30 +44,25 @@ Only AI use cases accepted through this process proceed into the Enterprise AI G
 
 ## AI Use Case Intake Information
 
-The following information is collected for every proposed AI use case.
+The following categories of information are collected for every proposed AI use case.
 
 | Information Category | Information Captured |
 |----------------------|----------------------|
-| General Information | Use case title, business unit, business owner, submission date, requestor |
-| Business Context | Business problem, business objectives, expected business value |
-| AI Solution Overview | Description of the proposed AI capability and intended operational use |
-| Intended Users | Primary users and business teams expected to use the AI system |
-| Business Process | Business process or workflow supported by the proposed AI solution |
-| Data Overview | High-level description of the information expected to be used by the AI system |
-| Technology Overview | Proposed AI technology, platform, or vendor (if known) |
-| Human Involvement | Description of how people are expected to interact with or oversee the AI system |
-| Expected Outputs | Expected recommendations, predictions, classifications, generated content, or other AI outputs |
-| Dependencies | Known integrations with business systems or external services |
-| Implementation Status | Proposed, pilot, development, production migration, or enhancement |
-| Additional Notes | Supporting business information relevant to the governance review |
+| Request Information | Requestor, business unit, business owner, executive sponsor |
+| Business Context | Business problem, business objective, expected business value |
+| Proposed AI Solution | High-level description of the proposed AI capability and intended business use |
+| Intended Users | Proposed users and affected business teams |
+| Data Overview | High-level description of the information expected to be used by the AI solution |
+| Human Involvement | Expected human review, oversight, and decision-making responsibilities |
+| Governance Review | Initial governance review and intake decision |
 
-Information collected during intake supports the initial governance review and, where appropriate, is carried forward into the Enterprise AI System Inventory to avoid unnecessary duplication. Once accepted into governance, the AI System Inventory becomes the organization's authoritative record for the AI system throughout its lifecycle.
+Information collected during intake supports the initial governance review and, where appropriate, is carried forward into the Enterprise AI System Inventory to avoid unnecessary duplication. Once accepted into governance, the AI System Inventory becomes the organization's authoritative governance record for the AI system throughout its lifecycle.
 
 ---
 
 ## Intake Review
 
-Following submission, the AI Governance Lead performs an initial governance review to determine whether:
+Following submission, the AI Governance Team performs an initial governance review to determine whether:
 
 - The submission contains sufficient information.
 - The proposed AI initiative falls within the organization's governance scope.
@@ -96,7 +91,7 @@ The AI Use Case Intake process operates according to the following principles:
 
 - Every AI initiative enters governance through a standardized intake process.
 - Governance begins before implementation.
-- Information is collected once and reused throughout the governance lifecycle wherever appropriate.
+- Information collected during intake is reused throughout the governance lifecycle where appropriate, reducing duplicate data collection while preserving a single authoritative governance record.
 - Business ownership is established before detailed governance activities begin.
 - Governance decisions are based on documented information rather than assumptions.
 
@@ -116,8 +111,9 @@ By establishing this governance entry point, Megastar Mortgage ensures that ever
 
 ## Related Artifacts
 
-This document provides input to:
+This document supports:
 
+- AI Use Case Intake Template
 - AI System Inventory
 - AI System Classification
 - AI Impact Assessment
