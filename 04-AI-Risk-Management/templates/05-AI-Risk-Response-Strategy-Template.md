@@ -137,7 +137,7 @@
 | Approved By | |
 | Approval Date | |
 | Conditions or Dependencies | |
-| Next Governance Activity | AI Controls |
+| Next Governance Activity | AI Control Objectives |
 
 ### Approval Comments
 

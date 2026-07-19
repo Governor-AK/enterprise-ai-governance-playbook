@@ -145,7 +145,7 @@ An AI system is ready to proceed into AI Controls when:
 - Required escalations have been completed or formally tracked.
 - A response strategy has been documented for each prioritized risk.
 - Outstanding information does not prevent control design from beginning.
-- Risks requiring mitigation have been clearly identified for control design.
+- Risks requiring mitigation have been clearly identified for AI Control Objectives and subsequent control design.
 
 Where these conditions are not met, the AI Risk Summary records the outstanding requirements and the responsible governance function before progression.
 
@@ -160,7 +160,7 @@ AI Risk Management determines:
 - which risks require the greatest governance attention; and
 - what strategic response the organization intends to pursue.
 
-AI Controls translates those approved response strategies into specific control objectives, control designs, ownership assignments, implementation activities, and governance evidence.
+AI Controls translates approved AI Risk Response Strategies into clearly defined AI Control Objectives, detailed control designs, governed control records, and implementation plans that reduce prioritized AI risks. These governance controls subsequently become subject to assurance activities that evaluate their effectiveness throughout the AI governance lifecycle.
 
 The AI Risk Summary provides the formal transition between these two capabilities.
 

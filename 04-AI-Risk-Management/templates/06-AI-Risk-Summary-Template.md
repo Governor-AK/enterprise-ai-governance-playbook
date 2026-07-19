@@ -205,7 +205,7 @@
 
 ## 9. Handoff to AI Controls
 
-### Risks Requiring Control Design
+### Risks Requiring AI Control Objectives
 
 Provide risk IDs or references only. Do not duplicate the detailed risk records.
 
@@ -215,7 +215,7 @@ Provide risk IDs or references only. Do not duplicate the detailed risk records.
 
 &nbsp;
 
-### Control-Design Priorities and Dependencies
+### AI Control Objective Priorities and Design Considerations
 
 &nbsp;
 
