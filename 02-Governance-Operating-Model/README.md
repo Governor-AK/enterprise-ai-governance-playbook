@@ -1,132 +1,110 @@
 # Governance Operating Model
 
-## Document Control
+## Executive Summary
 
-| Field | Value |
-|--------|-------|
-| Document Name | Governance Operating Model |
-| Capability | Governance Operating Model |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+Establishing the context for AI governance is only the beginning. Organizations must also define how governance operates in practice.
+
+The Governance Operating Model capability translates the organizational foundation established in the previous capability into a structured operating model for the **Megastar Intelligent Processor (MIP)**. It defines how governance is organized, how responsibilities are assigned, how decisions are made, how stakeholders collaborate, and how governance activities are integrated into day-to-day business operations.
+
+Rather than treating governance as an isolated compliance function, this capability establishes an enterprise operating model where business, technology, risk, privacy, security, legal, compliance, and assurance functions work together to govern AI consistently throughout its lifecycle.
+
+The artifacts produced within this capability establish the organizational mechanisms required to implement enterprise AI governance before governing individual AI systems.
 
 ---
 
-# Executive Summary
+## Purpose
 
-Successful AI governance depends on more than policies, controls, or technology.
+The purpose of the Governance Operating Model capability is to establish the organizational structure, governance processes, decision-making model, and operational mechanisms required to govern enterprise AI systems consistently and responsibly.
 
-It requires a governance operating model that clearly defines how governance responsibilities are organized, how decisions are made, how stakeholders collaborate, and how governance activities are integrated into day-to-day business operations.
+Rather than focusing on individual AI systems, this capability defines how governance itself operates across the organization. It establishes the people, processes, decision structures, and operating practices that enable governance to function as an integrated business capability.
 
-Building on the organizational foundation established in the previous capability, this section demonstrates how Megastar Mortgage operationalizes AI governance for the Megastar Intelligent Processor (MIP).
-
-Rather than presenting governance as a standalone function, the Governance Operating Model establishes a coordinated enterprise approach where business, technology, risk, privacy, security, legal, compliance, and assurance functions work together throughout the AI lifecycle.
+Completing this capability provides the operational foundation required to govern AI systems consistently throughout their lifecycle.
 
 ---
 
-# Capability Objective
+## Governance Approach
 
-The objective of this capability is to establish the organizational structure, governance processes, decision-making model, and operational responsibilities required to manage enterprise AI systems consistently and responsibly.
+Megastar Mortgage governs AI through a structured operating model that distributes governance responsibilities across business, technology, and oversight functions rather than concentrating ownership within a single department.
 
-Completion of this capability enables Megastar Mortgage to implement AI governance as an operational business capability rather than an isolated compliance activity.
+The operating model defines governance structures, stakeholder responsibilities, decision authority, governance forums, lifecycle oversight, and performance reporting. Together, these elements establish a coordinated governance capability that supports consistent decision-making, accountability, and organizational alignment.
 
----
-
-# Governance Scope
-
-This capability establishes how governance operates across the lifecycle of MIP, including:
-
-- Governance structure
-- Organizational responsibilities
-- Decision-making authority
-- Governance forums
-- Governance lifecycle
-- Performance monitoring and reporting
-
-These governance capabilities provide the operational foundation for all subsequent implementation activities within this repository.
+By embedding governance into existing business operations, Megastar Mortgage ensures that governance becomes an ongoing operational capability rather than a standalone compliance exercise.
 
 ---
 
-# Governance Artifacts
+## Core Deliverables
+
+The Governance Operating Model capability produces the following governance artifacts.
 
 | Governance Artifact | Purpose |
 |----------------------|---------|
-| Governance Framework | Establishes the overall governance model and guiding principles. |
+| Governance Framework | Establishes the enterprise AI governance model and guiding principles. |
 | Governance Organization | Defines the organizational structure supporting AI governance. |
-| Roles & Responsibilities | Assigns governance responsibilities across stakeholder groups. |
-| Decision Rights | Defines governance approval and decision authority. |
-| Governance Forums | Establishes governance meetings, review cadence, and escalation paths. |
-| Governance Lifecycle | Demonstrates how governance activities occur throughout the AI lifecycle. |
-| Performance & Reporting | Defines governance reporting, performance measures, and management oversight. |
+| Roles & Responsibilities | Assigns governance responsibilities across organizational functions. |
+| Decision Rights | Defines governance decision authority and approval responsibilities. |
+| Governance Forums | Establishes governance review forums, meeting cadence, and escalation mechanisms. |
+| Governance Lifecycle | Defines how governance activities operate throughout the lifecycle of an AI system. |
+| Performance & Reporting | Establishes governance performance measurement, reporting, and management oversight. |
 
-Together, these artifacts demonstrate how enterprise AI governance operates as an integrated organizational capability.
+Collectively, these artifacts establish the operating model that enables enterprise AI governance to function consistently across the organization.
 
 ---
 
-# Governance Outcomes
+## Expected Outcomes
 
-Upon completion of this capability, Megastar Mortgage will have established:
+Completion of the Governance Operating Model capability enables Megastar Mortgage to establish:
 
-- A documented AI governance operating model.
+- A documented enterprise AI governance operating model.
 - Clearly defined governance ownership and accountability.
-- Formal governance decision-making processes.
-- Governance review and escalation mechanisms.
-- Governance lifecycle processes.
-- Governance reporting and performance oversight.
+- Formal governance decision-making authority.
+- Structured governance forums and escalation mechanisms.
+- A documented governance lifecycle.
+- Governance performance reporting and executive oversight.
 
-These deliverables prepare the organization for AI inventory, impact assessment, risk management, and governance controls.
-
----
-
-# Governance Rationale
-
-Enterprise AI governance is not performed by a single department.
-
-It depends on coordinated participation across business operations, technology, governance, risk, privacy, security, legal, compliance, and assurance functions.
-
-Without a clearly defined operating model, governance responsibilities become fragmented, decision-making becomes inconsistent, and accountability becomes unclear.
-
-The Governance Operating Model establishes the organizational foundation required to ensure that governance activities are performed consistently throughout the lifecycle of enterprise AI systems.
+These deliverables provide the operational capability required to govern AI systems consistently before they enter inventory, assessment, risk management, and control implementation activities.
 
 ---
 
-# Relationship to Other Capabilities
+## Why This Capability Matters
 
-This capability builds directly upon the Foundations capability.
+Effective AI governance depends upon more than documented policies or governance controls.
 
-The governance operating model established here provides the organizational basis for:
+Organizations require a clearly defined operating model that establishes how governance responsibilities are coordinated, how decisions are made, and how governance activities are integrated into everyday business operations.
 
-- AI Inventory & Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-- Continuous Monitoring
+Without a structured operating model, governance becomes fragmented, accountability becomes unclear, and governance activities become difficult to execute consistently across multiple AI systems.
 
-Each subsequent capability assumes that the governance structure defined here is already operating.
+The Governance Operating Model capability provides the organizational structure that enables governance to operate as a repeatable and sustainable enterprise capability.
 
 ---
 
-# Capability Completion Criteria
+## Framework Alignment
 
-This capability is considered complete when:
+The activities performed within the Governance Operating Model capability support governance practices described by internationally recognized AI governance frameworks, including:
 
-- Governance framework has been established.
-- Governance organization has been documented.
+- NIST AI Risk Management Framework (Govern)
+- ISO/IEC 42001 – Artificial Intelligence Management System (AIMS)
+- EU AI Act
+- ISO 31000 – Risk Management
+
+Rather than reproducing framework requirements, this capability demonstrates how enterprise AI governance can be operationalized through a structured governance operating model.
+
+---
+
+## Completion Criteria
+
+The Governance Operating Model capability is complete when:
+
+- The governance framework has been established.
+- The governance organization has been documented.
 - Roles and responsibilities have been assigned.
 - Decision rights have been defined.
 - Governance forums have been established.
-- Governance lifecycle has been documented.
-- Governance reporting approach has been approved.
+- The governance lifecycle has been documented.
+- Governance performance and reporting mechanisms have been established.
 
 ---
 
-# Capability Completion Checklist
+## Validation Checklist
 
 | Status | Deliverable |
 |--------|-------------|
@@ -140,23 +118,38 @@ This capability is considered complete when:
 
 ---
 
-# Next Capability
+## Next Capability
 
-Following implementation of the Governance Operating Model, Megastar Mortgage proceeds to **AI Inventory & Assessment**, where enterprise AI systems are formally identified, documented, classified, and assessed before entering the governance lifecycle.
+With the Governance Operating Model established, the playbook progresses to **AI Inventory & Assessment**, where AI systems are formally identified, documented, classified, and assessed before entering enterprise AI risk management.
 
 ---
 
-# Related Capabilities
+## Related Capabilities
 
 - Foundations
 - AI Inventory & Assessment
 - AI Risk Management
 - AI Controls
+- AI Assurance
 
 ---
 
-# Revision History
+## Document Control
+
+| Field | Value |
+|------|------|
+| Capability | Governance Operating Model |
+| Repository | Enterprise AI Governance Playbook |
+| Reference Organization | Megastar Mortgage |
+| Reference AI System | Megastar Intelligent Processor (MIP) |
+| Version | 1.0 |
+| Review Cycle | Annual |
+| Status | Published Reference |
+
+---
+
+## Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
+|---------|------|-------------|
 | 1.0 | July 2026 | Initial release of the Governance Operating Model capability. |
