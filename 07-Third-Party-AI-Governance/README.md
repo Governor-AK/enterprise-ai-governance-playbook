@@ -10,7 +10,7 @@
 | Reference Organization | Megastar Mortgage |
 | Reference AI System | Megastar Intelligent Processor (MIP) |
 | Document Owner | AI Governance Lead |
-| Version | 2.0 |
+| Version | 3.0 |
 | Classification | Public Reference Implementation |
 | Status | Published |
 | Review Cycle | Annual |
@@ -20,37 +20,130 @@
 
 # Executive Summary
 
-Many AI systems rely on external providers for models, platforms, infrastructure, data, managed services, or other critical capabilities. Third-Party AI Governance establishes how Megastar Mortgage governs those external relationships throughout their lifecycle.
+Many enterprise AI systems depend on external providers for foundation models, AI platforms, APIs, cloud infrastructure, intelligent document processing, managed AI services, data providers, or other critical capabilities.
 
-Building upon the AI Inventory, AI Risk Management, and AI Controls capabilities, this capability identifies material third-party AI relationships, establishes authoritative relationship records, evaluates provider suitability, determines provider-originated enterprise risks, governs contractual and onboarding requirements, performs ongoing oversight, and manages provider exit where required.
+Third-Party AI Governance establishes how Megastar Mortgage governs these external relationships throughout their lifecycle. The capability ensures every material provider relationship is identified, recorded, evaluated, onboarded, monitored, and, where necessary, exited in a controlled and auditable manner.
 
-Rather than creating parallel governance records, each activity contributes approved information to the organization's authoritative governance records through controlled governance processes, preserving clear ownership, traceability, and accountability throughout the relationship lifecycle.
+The Enterprise Third-Party AI Register serves as the authoritative record for every governed provider relationship. Due diligence and provider-originated risk assessment determine whether the provider is suitable for the intended use and whether identified concerns require entry into the Enterprise AI Risk Register. Contract and onboarding requirements establish the governance conditions required before operational use. Ongoing oversight determines whether the relationship remains appropriate throughout its lifecycle and whether restriction, reassessment, renewal, or exit is required.
 
-The outputs produced within this capability enable Megastar Mortgage to govern external AI dependencies consistently while supporting informed governance decisions throughout the operational lifecycle.
+Rather than creating parallel governance records, this capability contributes approved information to the organization's authoritative governance records through controlled governance processes, preserving clear ownership, traceability, and accountability.
 
 ---
 
 # Purpose
 
-The purpose of the Third-Party AI Governance capability is to establish a standardized approach for governing external AI providers throughout the Enterprise AI Governance Program.
+The purpose of the Third-Party AI Governance capability is to establish a standardized lifecycle for governing material external AI providers and dependencies.
 
-This capability identifies material third-party AI relationships, evaluates provider suitability, determines provider-originated enterprise risks, governs contractual and onboarding requirements, performs ongoing relationship oversight, and prepares for provider transition or exit when required.
+This capability enables Megastar Mortgage to:
 
-Completion of this capability establishes the governance foundation required to manage third-party AI relationships throughout their operational lifecycle.
+- identify material third-party AI relationships;
+- establish authoritative provider relationship records;
+- evaluate provider suitability through evidence-based due diligence;
+- determine whether provider-originated concerns require enterprise AI risk registration;
+- establish contractual and onboarding governance requirements;
+- oversee active provider relationships throughout their operational lifecycle;
+- govern provider transition, replacement, and exit; and
+- provide management with decision-ready visibility into the organization's third-party AI landscape.
 
 ---
 
-# Governance Approach
+# Governance Scope
 
-Every material third-party AI relationship follows a consistent governance process.
+This capability applies whenever Megastar Mortgage proposes to use or already relies upon an external party for:
 
-Relationship identification, provider registration, due diligence, provider-risk assessment, contractual governance, onboarding approval, and ongoing oversight are performed as one integrated governance lifecycle.
+- foundation models;
+- AI-enabled APIs;
+- software-as-a-service AI platforms;
+- cloud-based AI capabilities;
+- intelligent document processing services;
+- managed AI services;
+- AI development, hosting, or operational support;
+- external data services used by AI systems;
+- model training, validation, or evaluation services;
+- AI infrastructure or inference services;
+- AI monitoring or observability services;
+- external human-review or annotation services supporting AI operations; or
+- any other material external dependency required for an AI system to operate.
 
-The Enterprise Third-Party AI Register serves as the authoritative record for every governed provider relationship.
+Traditional suppliers with no material connection to an AI system remain governed through the organization's broader third-party risk management process.
 
-Specialist governance activities provide approved outputs that support controlled updates to enterprise governance records while preserving clear ownership of each authoritative register.
+---
 
-Management visibility is provided through a Third-Party AI Governance Report that summarizes the current governance position without duplicating detailed operational records.
+# Governance Entry
+
+A third-party AI relationship enters this capability when a material external AI dependency is identified.
+
+Identification establishes governance visibility only. It confirms that the relationship exists and should enter the formal governance lifecycle. Identification does **not** determine provider suitability, assign enterprise risk, approve onboarding, negotiate contractual terms, or authorize operational use.
+
+The minimum information required to establish governance includes:
+
+- provider identity;
+- product or service;
+- related AI System Inventory record;
+- intended business use;
+- Business Relationship Owner;
+- business function;
+- relationship type;
+- deployment context;
+- direct or indirect dependency;
+- initial dependency criticality;
+- relationship status; and
+- known material subprocessors or fourth-party dependencies.
+
+Each relationship is assigned a Business Relationship Owner responsible for ensuring the provider enters the organization's formal governance process.
+
+---
+
+# Relationship Types
+
+Material third-party AI relationships may include:
+
+- Foundation Model Provider
+- AI API Provider
+- SaaS AI Platform
+- Managed AI Service
+- Cloud AI Service
+- Intelligent Document Processing Provider
+- AI Data Provider
+- AI Infrastructure Provider
+- AI Development or Support Provider
+- Human Review or Annotation Provider
+- Other Material AI Dependency
+
+A provider may perform multiple roles within a single relationship.
+
+---
+
+# Governance Principles
+
+Megastar Mortgage governs third-party AI relationships according to the following principles:
+
+- Every material external AI dependency shall enter governance before approved operational use.
+- Every governed provider relationship shall have one authoritative register record.
+- Governance activities shall remain proportionate to the provider's operational significance and dependency criticality.
+- Provider suitability, enterprise risk, contractual readiness, oversight, and exit shall remain distinct governance decisions.
+- Specialist governance activities shall contribute approved information to authoritative enterprise records rather than creating parallel repositories.
+- Material provider changes, incidents, deterioration, and emerging risks shall trigger reassessment through the appropriate governance capability.
+- Relationship decisions shall remain evidence-based, traceable, and accountable throughout the provider lifecycle.
+
+---
+
+# Governance Lifecycle
+
+Every material third-party AI relationship follows an integrated governance lifecycle.
+
+```mermaid
+flowchart LR
+
+A[Material External AI Dependency Identified]
+--> B[Enterprise Third-Party AI Register]
+--> C[Due Diligence and Risk Assessment]
+--> D[Contract and Onboarding Requirements]
+--> E[Oversight and Exit]
+--> F[Third-Party Governance Report]
+```
+
+Each governance activity contributes approved outcomes to the organization's authoritative governance records while preserving clear ownership boundaries.
 
 ---
 
@@ -58,14 +151,28 @@ Management visibility is provided through a Third-Party AI Governance Report tha
 
 | Governance Artifact | Purpose |
 |----------------------|---------|
-| Third-Party AI Identification | Identifies material external AI relationships and determines whether governance is required. |
-| Enterprise Third-Party AI Register | Maintains the authoritative enterprise record for every governed third-party AI relationship. |
-| Third-Party AI Due Diligence | Evaluates provider suitability, governance maturity, supporting evidence, and material conditions. |
-| Third-Party AI Risk Assessment | Determines whether provider-related concerns create enterprise AI risks requiring governance. |
-| Third-Party AI Contract & Onboarding Requirements | Establishes governance requirements that must be satisfied before operational use. |
-| Third-Party AI Oversight | Performs ongoing governance oversight throughout the active provider relationship. |
-| Third-Party AI Exit & Transition Plan | Governs provider replacement, transition, or retirement when required. |
-| Third-Party AI Governance Report | Provides management with a consolidated view of the relationship's current governance position and required decisions. |
+| Enterprise Third-Party AI Register | Maintains the authoritative lifecycle record for every governed provider relationship. |
+| Third-Party Due Diligence and Risk Assessment | Evaluates provider suitability and determines whether provider-originated concerns require entry into the Enterprise AI Risk Register. |
+| Third-Party Contract and Onboarding Requirements | Establishes the governance conditions that must be satisfied before approved operational use. |
+| Third-Party Oversight and Exit | Governs ongoing oversight, continuation decisions, transition, replacement, and controlled relationship closure. |
+| Third-Party Governance Report | Provides management with a decision-ready view of the organization's third-party AI governance position and required actions. |
+
+---
+
+# Authoritative Governance Records
+
+Third-Party AI Governance contributes approved information to the organization's existing governance records.
+
+| Governance Record | Governed Object |
+|-------------------|-----------------|
+| Enterprise AI System Inventory | AI system |
+| Enterprise Third-Party AI Register | External provider relationship |
+| Enterprise AI Risk Register | AI risk |
+| Enterprise AI Control Register | AI control |
+| Enterprise AI Incident Register | AI incident |
+| Enterprise AI Change Register | AI change |
+
+These records remain linked rather than duplicated.
 
 ---
 
@@ -73,24 +180,23 @@ Management visibility is provided through a Third-Party AI Governance Report tha
 
 Completion of this capability enables Megastar Mortgage to establish:
 
-- A consistent third-party AI governance process.
-- An authoritative register of governed AI providers.
-- Documented provider due diligence.
-- Consistent assessment of provider-originated enterprise risks.
-- Governed contractual and onboarding requirements.
-- Ongoing provider oversight.
-- Structured provider transition and exit planning where required.
-- Executive visibility into third-party AI governance.
-
-These outcomes establish the governance confidence required to support the operational use of external AI providers.
+- complete visibility of material third-party AI relationships;
+- an authoritative provider relationship register;
+- evidence-based provider suitability conclusions;
+- consistent identification of provider-originated enterprise risks;
+- governed contractual and onboarding requirements;
+- proportionate ongoing provider oversight;
+- structured provider transition and exit governance;
+- decision-ready management reporting; and
+- traceable governance throughout the provider lifecycle.
 
 ---
 
 # Why This Capability Matters
 
-Organizations increasingly depend on external AI providers to deliver critical capabilities.
+Organizations increasingly rely on external AI providers to deliver business-critical capabilities.
 
-Without structured governance, organizations may lose visibility of provider dependencies, introduce unmanaged risks, weaken contractual protections, or reduce their ability to respond to changing provider conditions.
+Without structured governance, provider dependencies may remain invisible, contractual protections may be insufficient, provider-originated risks may never enter enterprise governance, and organizations may struggle to respond effectively to provider changes, service deterioration, regulatory developments, or exit events.
 
 Third-Party AI Governance provides a consistent enterprise approach for governing external AI relationships throughout their lifecycle while preserving accountability, traceability, and informed governance decision-making.
 
@@ -106,7 +212,7 @@ The activities performed within this capability support internationally recogniz
 - ISO/IEC 23894 – AI Risk Management
 - Third-party and supplier governance practices commonly adopted within enterprise risk management programs
 
-Rather than reproducing framework requirements, this capability demonstrates how external AI providers are governed within an operational AI governance program.
+Rather than reproducing framework requirements, this capability demonstrates how external AI relationships are governed within an operational AI governance program.
 
 ---
 
@@ -115,14 +221,14 @@ Rather than reproducing framework requirements, this capability demonstrates how
 This capability is considered operational when:
 
 - material third-party AI relationships have been identified;
-- governed provider relationships have been established within the Enterprise Third-Party AI Register;
-- required due diligence has been completed;
-- provider-originated enterprise risks have been assessed;
-- contractual and onboarding governance requirements have been satisfied before operational use;
-- ongoing oversight arrangements have been established; and
-- provider exit requirements have been defined where applicable.
+- authoritative provider relationship records have been established;
+- required due diligence and provider risk assessment have been completed;
+- contractual and onboarding governance requirements have been satisfied before approved operational use;
+- active provider relationships are subject to ongoing oversight;
+- provider exit requirements are established where applicable; and
+- management reporting provides current visibility into material third-party AI governance matters.
 
-Provider exit is performed only when triggered by the relationship lifecycle and is not a prerequisite for completing the capability.
+Provider exit is performed only when triggered by the relationship lifecycle and is not a prerequisite for capability completion.
 
 ---
 
@@ -130,20 +236,18 @@ Provider exit is performed only when triggered by the relationship lifecycle and
 
 | Status | Deliverable |
 |--------|-------------|
-| ☐ | Third-Party AI Identification completed |
 | ☐ | Enterprise Third-Party AI Register established |
-| ☐ | Third-Party AI Due Diligence completed |
-| ☐ | Third-Party AI Risk Assessment completed |
-| ☐ | Contract & Onboarding Requirements completed |
-| ☐ | Third-Party AI Oversight established |
-| ☐ | Exit & Transition requirements defined where applicable |
-| ☐ | Third-Party AI Governance Report completed |
+| ☐ | Due Diligence and Risk Assessment completed |
+| ☐ | Contract and Onboarding Requirements completed |
+| ☐ | Oversight arrangements established |
+| ☐ | Exit requirements defined where applicable |
+| ☐ | Third-Party Governance Report completed |
 
 ---
 
 # Next Capability
 
-Following establishment of Third-Party AI Governance, provider relationships continue through operational oversight alongside Continuous Monitoring, AI Assurance, AI Incident Management, and AI Change Management as applicable throughout the relationship lifecycle.
+Following establishment of Third-Party AI Governance, governed provider relationships continue through Continuous Monitoring, AI Assurance, AI Incident Management, AI Change Management, and Governance Oversight & Continual Improvement as appropriate throughout their operational lifecycle.
 
 ---
 
@@ -154,6 +258,9 @@ Following establishment of Third-Party AI Governance, provider relationships con
 - AI Controls
 - AI Assurance
 - Continuous Monitoring
+- AI Incident Management
+- AI Change Management
+- Governance Oversight & Continual Improvement
 
 ---
 
@@ -161,5 +268,6 @@ Following establishment of Third-Party AI Governance, provider relationships con
 
 | Version | Date | Description |
 |----------|------|-------------|
+| 3.0 | July 2026 | Consolidated third-party AI identification into the capability README, aligned the capability with the five-artifact architecture, and simplified lifecycle ownership. |
 | 2.0 | July 2026 | Updated to align with repository governance architecture, clarify lifecycle ownership, and align with standardized capability README structure. |
 | 1.0 | July 2026 | Initial release of the Third-Party AI Governance capability. |
