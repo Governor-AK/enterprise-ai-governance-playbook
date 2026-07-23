@@ -1,152 +1,112 @@
 # Foundations
 
-## Executive Summary
-
-Enterprise AI governance is not established by implementing controls or complying with frameworks. It begins with understanding the organization, the AI system, and the business objectives that justify its use.
-
-Before AI systems can be registered, risks evaluated, governance controls designed, or assurance activities performed, organizations must first establish a common understanding of their business environment, governance scope, stakeholder responsibilities, and the technical landscape in which AI operates.
-
-The Foundations capability establishes that baseline.
-
-Using **Megastar Mortgage** and its **Megastar Intelligent Processor (MIP)** as a consistent reference implementation, this capability develops the core governance artifacts that provide the context and evidence required to build an effective enterprise AI governance program.
-
-These artifacts become the starting point for every governance capability that follows throughout this playbook.
-
----
+> **Artifact Type:** Capability Guide  
+> **Capability:** Foundations  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual  
 
 ## Purpose
 
-The purpose of the Foundations capability is to establish the organizational, business, stakeholder, and technical context required before implementing enterprise AI governance.
+The Foundations capability establishes the organizational, business, stakeholder, and technical context required before enterprise AI governance can operate effectively.
 
-Rather than beginning with policies, controls, or compliance requirements, this capability focuses on understanding the environment in which AI operates. It defines why the AI system exists, the value it delivers, the people responsible for its governance, and the boundaries within which governance activities will be performed.
+Using Megastar Mortgage and the Megastar Intelligent Processor (MIP) as an illustrative reference implementation, this capability explains:
 
-Completing this capability provides a structured and consistent foundation for all subsequent governance activities within the Enterprise AI Governance Playbook.
+- why the AI system exists;
+- what business process it supports;
+- who must participate in its governance;
+- how the system operates at a high level;
+- where the initial governance boundaries sit.
 
----
+Foundations provides context. It does not assign detailed operational responsibilities, define decision rights, establish RACI assignments, approve governance decisions, or determine escalation authority.
 
 ## Reference Implementation
 
-This repository uses **Megastar Mortgage**, a fictional mortgage lending organization, as a consistent reference implementation for demonstrating enterprise AI governance.
+Megastar Mortgage is an illustrative mortgage-lending organization used to demonstrate how the playbook’s governance capabilities connect in practice.
 
-Megastar Mortgage has implemented the **Megastar Intelligent Processor (MIP)**, an enterprise Intelligent Document Processing (IDP) platform designed to support mortgage document processing throughout the loan origination lifecycle.
+MIP is an enterprise Intelligent Document Processing platform that supports mortgage-document processing during loan origination.
 
-Instead of presenting governance concepts through isolated examples, every capability within this repository builds upon this single enterprise scenario. This approach provides continuity across the playbook while demonstrating how governance artifacts connect throughout the lifecycle of an AI system.
+The reference implementation allows each later capability to build on the same organization, system, stakeholders, workflow, and governance context rather than relying on disconnected examples.
 
-All examples are illustrative and have been developed solely for educational and professional reference purposes.
+## Capability Artifacts
 
----
+| Artifact | Purpose |
+|---|---|
+| [Business Context](01-Business-Context.md) | Establishes the organizational environment, strategic objectives, business drivers, governance scope, and implementation boundaries. |
+| [AI System Profile](02-AI-System-Profile.md) | Describes MIP’s purpose, intended use, capabilities, users, operational boundaries, and business value. |
+| [AI Governance Stakeholder Model](03-AI-Governance-Stakeholder-Model.md) | Identifies the stakeholder groups, governance perspectives, relationships, and independence required to govern MIP. |
+| [Enterprise AI Architecture](04-Enterprise-AI-Architecture.md) | Documents the high-level workflow, system components, integrations, supporting technologies, and trust boundaries of MIP. |
 
-## Core Deliverables
+## Capability Boundary
 
-The Foundations capability produces the following governance artifacts.
+### Foundations owns
 
-| Governance Artifact | Purpose |
-|----------------------|---------|
-| Business Context | Defines the organizational environment, strategic objectives, governance drivers, business challenges, and implementation scope. |
-| AI System Profile | Describes the purpose, capabilities, operational boundaries, intended users, and business value of Megastar Intelligent Processor (MIP). |
-| Stakeholder Map | Identifies governance stakeholders, ownership, accountability, and decision-making responsibilities across the enterprise. |
-| AI System Architecture | Documents the high-level architecture, business workflow, supporting technologies, integrations, and trust boundaries of MIP. |
+- organizational and business context;
+- AI system context;
+- stakeholder identification;
+- stakeholder relationships;
+- high-level enterprise AI architecture;
+- initial governance scope.
 
-Collectively, these artifacts establish the governance baseline required for every subsequent capability within the playbook.
+### Foundations does not own
 
----
+- standing operational responsibilities;
+- formal decision authority;
+- RACI assignments;
+- governance forums;
+- escalation authority;
+- system inventory records;
+- risk assessment;
+- control design;
+- assurance conclusions.
 
-## Expected Outcomes
+These matters are governed by later capabilities.
 
-Completion of the Foundations capability enables Megastar Mortgage to establish:
+## Handoff to the Governance Operating Model
 
-- A documented business context supporting enterprise AI governance.
-- A clearly defined enterprise AI system and its operational boundaries.
-- Identified governance stakeholders with assigned responsibilities.
-- A documented high-level architecture of the AI platform.
-- Defined governance scope and implementation boundaries.
-- Foundational governance evidence supporting future governance activities.
+The Foundations capability provides the contextual inputs required to design the Governance Operating Model.
 
-These deliverables provide the context required to design governance processes, register AI systems, assess risks, implement controls, and perform governance assurance activities consistently across the organization.
+The next capability uses these inputs to define:
 
----
+- governance structure;
+- roles and responsibilities;
+- decision rights;
+- RACI assignments;
+- governance forums;
+- escalation pathways;
+- lifecycle governance;
+- performance and reporting arrangements.
 
-## Why This Capability Matters
+Continue to the [Governance Operating Model](../02-Governance-Operating-Model/README.md).
 
-Every governance decision depends on context.
+## Framework Traceability
 
-Without understanding the business environment, the AI system, and the people responsible for its operation, governance activities become fragmented and inconsistent. Risk assessments lose context, controls become difficult to justify, and governance evidence becomes challenging to maintain.
+Framework mapping is maintained centrally in [Framework Alignment](../12-Framework-Alignment/README.md).
 
-The artifacts produced within this capability establish a shared understanding of the organization and the AI system before governance activities begin. They provide the context upon which governance decisions, operational oversight, risk management, and assurance activities are built.
+The Foundations artifacts provide contextual evidence that may support framework requirements, but they do not independently establish certification, legal compliance, or regulatory approval.
 
----
+## Completion Standard
 
-## Framework Alignment
+The Foundations capability is established when:
 
-The activities performed within the Foundations capability support governance practices described by internationally recognized AI governance frameworks, including:
+- the business context is documented;
+- MIP’s purpose and boundaries are defined;
+- relevant stakeholder groups and relationships are identified;
+- the high-level enterprise AI architecture is documented;
+- the initial governance scope is clear;
+- the artifacts are internally consistent and approved for use as the reference baseline.
 
-- NIST AI Risk Management Framework (Govern)
-- ISO/IEC 42001 – Artificial Intelligence Management System (AIMS)
-- EU AI Act
-- ISO 31000 – Risk Management
+## Related Repository Standards
 
-Rather than reproducing framework requirements, this capability demonstrates how foundational governance concepts can be implemented within an enterprise AI governance program.
-
----
-
-## Completion Criteria
-
-The Foundations capability is complete when:
-
-- The organizational business context has been documented.
-- The enterprise AI system has been formally described.
-- Governance stakeholders have been identified and assigned.
-- The high-level AI system architecture has been documented.
-- Governance scope has been established.
-- All foundational governance artifacts have been completed and reviewed.
-
----
-
-## Validation Checklist
-
-| Status | Deliverable |
-|--------|-------------|
-| ☐ | Business Context completed |
-| ☐ | AI System Profile completed |
-| ☐ | Stakeholder Map completed |
-| ☐ | AI System Architecture completed |
-| ☐ | Governance scope established |
-| ☐ | Foundations capability reviewed |
-
----
-
-## Next Capability
-
-With the organizational and technical foundation established, the playbook progresses to **Governance Operating Model**, where Megastar Mortgage designs the governance structure, decision-making model, stakeholder responsibilities, and operating mechanisms required to govern MIP throughout its lifecycle.
-
----
-
-## Related Capabilities
-
-- Governance Operating Model
-- AI Inventory & Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-
----
-
-## Document Control
-
-| Field | Value |
-|------|------|
-| Capability | Foundations |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
-
----
+- [Repository Constitution](../00-Repository-Constitution.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
 
 ## Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the Foundations capability. |
+| 2.0 | July 2026 | Tightened capability boundaries, standardized navigation, and aligned the capability with the repository constitution. |
