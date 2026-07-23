@@ -67,6 +67,7 @@ Megastar Mortgage manages governance metrics according to the following principl
 - Every metric shall support a defined governance objective, decision, risk, control, obligation, or monitoring requirement.
 - Metrics shall be created only where the resulting information is decision-useful.
 - Every metric shall have a standardized definition and calculation methodology.
+- - Every governance metric shall have one authoritative definition and one approved calculation owner. Dashboards, summaries, reports, KPIs, KRIs, and other monitoring artifacts shall consume approved metrics and shall not redefine metric calculations, business meaning, or governance purpose.
 - Every metric shall identify an authoritative source or documented source hierarchy.
 - Every metric shall have a Metric Owner and a Data Owner.
 - Metric calculations shall be reproducible.
@@ -740,21 +741,25 @@ All changes shall preserve version history and effective dates.
 
 ## Relationship to the KPI & KRI Framework
 
-The Governance Metrics Catalogue defines approved measures.
+## Relationship to the KPI & KRI Framework
 
-The KPI & KRI Framework later determines:
+The Governance Metrics Catalogue remains the authoritative source for every approved governance metric.
 
-- which measures are key;
-- which measures indicate performance;
-- which measures indicate risk;
-- the target;
-- the tolerance;
-- the warning threshold;
-- the breach threshold;
-- the critical threshold;
-- the required action;
-- the escalation authority; and
-- the interpretation of trends.
+The KPI & KRI Framework does not redefine metric names, formulas, sources, calculation logic, or governance purpose.
+
+Instead, the KPI & KRI Framework classifies approved catalogue metrics as KPIs or KRIs and establishes:
+
+- target;
+- tolerance;
+- warning threshold;
+- breach threshold;
+- critical threshold;
+- interpretation guidance;
+- required action;
+- escalation authority; and
+- indicator review requirements.
+
+Only approved catalogue metrics may be designated as KPIs or KRIs.
 
 A metric may exist without becoming a KPI or KRI.
 
