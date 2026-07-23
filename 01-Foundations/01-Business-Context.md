@@ -1,207 +1,179 @@
 # Business Context
 
-## Document Control
+> **Artifact Type:** Reference Implementation  
+> **Capability:** Foundations  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual  
 
-| Field | Value |
-|--------|-------|
-| Document Name | Business Context |
-| Capability | Foundations |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+## Purpose
 
----
+This document establishes the organizational and business context for governing the Megastar Intelligent Processor (MIP).
 
-# Executive Summary
+It explains:
 
-Megastar Mortgage is a fictional mortgage lending organization undertaking an enterprise AI transformation to modernize mortgage document processing while maintaining operational excellence, customer trust, and regulatory compliance.
+- the mortgage process MIP supports;
+- the operational problem that led to its adoption;
+- the intended business outcomes;
+- the governance drivers created by AI-enabled processing;
+- the initial scope of the reference implementation.
 
-To support this transformation, the organization has implemented the **Megastar Intelligent Processor (MIP)**—an enterprise Intelligent Document Processing (IDP) platform that assists in document classification, information extraction, confidence-based validation, and Human-in-the-Loop (HITL) review throughout the mortgage origination lifecycle.
+Detailed system characteristics are maintained in the [AI System Profile](02-AI-System-Profile.md). Governance responsibilities and decision authority are defined in the [Governance Operating Model](../02-Governance-Operating-Model/README.md).
 
-The adoption of AI changes more than technology. It changes how work is performed, how decisions are supported, how accountability is assigned, and how operational risks are managed.
+## Organization Context
 
-Recognizing that AI-enabled business processes require structured governance, Megastar Mortgage has established an enterprise AI governance program to provide the oversight, accountability, and governance capabilities necessary to support the responsible adoption of MIP.
+Megastar Mortgage is an illustrative residential mortgage lender used to demonstrate how the Enterprise AI Governance Playbook operates in practice.
 
-This document establishes the organizational context, business objectives, governance drivers, and implementation boundaries that form the foundation of the Enterprise AI Governance Playbook.
+Its loan-origination activities include:
 
----
+- borrower onboarding;
+- document collection;
+- mortgage processing;
+- underwriting support;
+- quality assurance;
+- closing coordination;
+- post-closing activities.
 
-# Organization Overview
+Mortgage origination depends on the accurate and timely processing of borrower and property documentation. These documents may contain personal, financial, employment, income, tax, and identity information that requires controlled handling throughout the process.
 
-Megastar Mortgage is a fictional residential mortgage lender providing end-to-end mortgage origination services.
+## Business Process Context
 
-Its operations span the complete mortgage lifecycle, including borrower onboarding, document collection, loan processing, underwriting support, quality assurance, closing coordination, and post-closing operations.
+Mortgage applications generate significant volumes of documents that must be:
 
-Every mortgage application generates a significant volume of documents requiring accurate classification, extraction, verification, and quality review before lending decisions can progress.
+1. received and classified;
+2. interpreted and extracted;
+3. reviewed for completeness and accuracy;
+4. validated against operational requirements;
+5. made available to downstream mortgage processes.
 
-Operational efficiency, information accuracy, customer trust, and regulatory compliance are therefore fundamental to the organization's success.
+Before MIP, these activities depended heavily on manual processing.
 
-To support continued business growth without compromising these objectives, Megastar Mortgage has invested in enterprise Artificial Intelligence capabilities that augment operational teams while preserving appropriate human oversight.
+As application and document volumes increased, Megastar Mortgage experienced:
 
----
+- repetitive manual extraction work;
+- variability in document formats and layouts;
+- inconsistent interpretation across operational teams;
+- processing delays during peak periods;
+- limited visibility into processing quality;
+- difficulty scaling without proportionally increasing manual effort.
 
-# Business Process Overview
+## AI Adoption Context
 
-Mortgage origination is fundamentally a document-driven business process.
+Megastar Mortgage introduced MIP to support mortgage-document processing.
 
-Borrowers submit documents such as income statements, tax records, employment verification, bank statements, identification documents, and supporting financial information.
+MIP combines:
 
-These documents must be classified, interpreted, validated, and incorporated into downstream mortgage processing systems before underwriting and lending decisions can proceed.
+- Optical Character Recognition;
+- document classification;
+- machine-learning-supported field extraction;
+- confidence scoring;
+- Human-in-the-Loop review;
+- operational quality assurance.
 
-Historically, these activities relied heavily on manual processing.
+MIP supports document-processing activities. It does not make autonomous lending or underwriting decisions.
 
-As application volumes increased, the organization experienced longer processing times, repetitive operational activities, inconsistent document interpretation, and increasing pressure to improve turnaround times without sacrificing quality or compliance.
+Human personnel remain responsible for reviewing relevant outputs, resolving exceptions, correcting inaccurate values, and preserving accountability for business-critical outcomes.
 
-To address these operational challenges, Megastar Mortgage introduced Megastar Intelligent Processor (MIP) to augment document processing while ensuring that business-critical decisions remain subject to appropriate human review.
+## Business Drivers
 
----
+MIP supports the following business objectives:
 
-# AI Adoption Context
+- improve document-processing efficiency;
+- reduce repetitive manual extraction;
+- improve consistency of captured information;
+- shorten processing turnaround times;
+- strengthen operational quality;
+- support scalable business growth;
+- improve employee productivity;
+- preserve appropriate human oversight.
 
-Megastar Intelligent Processor (MIP) was introduced to support—not replace—the mortgage operations workforce.
+## Governance Drivers
 
-The platform combines Optical Character Recognition (OCR), machine learning, document classification, intelligent field extraction, confidence scoring, and Human-in-the-Loop verification to automate repetitive processing activities while enabling employees to review exceptions, validate AI outputs, and retain accountability for business-critical decisions.
+Embedding AI within mortgage operations introduces governance responsibilities that do not arise from conventional process automation alone.
 
-Rather than making autonomous lending decisions, MIP functions as an operational decision-support platform that improves productivity, consistency, and processing quality across mortgage operations.
+Megastar Mortgage must be able to demonstrate that:
 
----
+- MIP is visible within the enterprise;
+- intended use and operational boundaries are documented;
+- accountable stakeholders are identified;
+- customer and borrower information is protected;
+- human oversight remains effective;
+- material risks are assessed and treated;
+- controls are implemented and evidenced;
+- system performance and control effectiveness are monitored;
+- incidents and material changes are governed;
+- third-party dependencies are subject to oversight;
+- governance decisions remain traceable.
 
-# Business Drivers
+These drivers establish the need for the Enterprise AI Governance Playbook.
 
-The implementation of MIP supports several strategic business priorities.
+## Initial Governance Scope
 
-- Improve mortgage document processing efficiency.
-- Reduce repetitive manual extraction activities.
-- Increase consistency of information captured from borrower documents.
-- Improve loan processing turnaround times.
-- Strengthen operational quality assurance.
-- Support business growth through scalable operations.
-- Enhance employee productivity while preserving decision accountability.
-
----
-
-# Operational Challenges
-
-Prior to implementing MIP, Megastar Mortgage identified several operational challenges affecting mortgage document processing.
-
-These included:
-
-- Increasing document volumes across mortgage operations.
-- Time-intensive manual extraction and verification activities.
-- Variability in document formats and layouts.
-- Inconsistent processing outcomes across operational teams.
-- Processing delays during peak business periods.
-- Limited operational visibility into document processing performance.
-- Difficulty scaling operations without proportionally increasing manual effort.
-
-These operational challenges established the business case for adopting enterprise AI capabilities.
-
----
-
-# Governance Drivers
-
-While MIP addresses operational challenges, it also introduces new governance responsibilities.
-
-As AI becomes embedded within mortgage operations, Megastar Mortgage must ensure that AI-assisted activities remain transparent, accountable, secure, and aligned with organizational objectives.
-
-The enterprise AI governance program has therefore been established to:
-
-- Define accountability for AI-assisted business processes.
-- Establish governance across the complete AI lifecycle.
-- Maintain effective Human-in-the-Loop oversight.
-- Protect customer information and sensitive mortgage data.
-- Improve transparency and decision traceability.
-- Standardize governance documentation and evidence.
-- Support governance assurance and audit readiness.
-- Strengthen confidence in AI-enabled business operations.
-
----
-
-# Governance Scope
-
-The Enterprise AI Governance Program applies to the implementation, operation, monitoring, and continuous improvement of Megastar Intelligent Processor (MIP).
+The reference implementation applies to MIP and the business processes, technologies, people, data flows, controls, and third-party dependencies required for its use in mortgage-document processing.
 
 The governance scope includes:
 
-- AI system registration
-- AI inventory management
-- AI impact assessment
-- AI risk management
-- Governance controls
-- Human oversight
-- Privacy and security
-- AI documentation
-- Operational monitoring
-- Incident management
-- Third-party AI governance
-- Governance assurance
-- Framework alignment
-- Governance maturity and reporting
+- AI governance entry and inventory;
+- system assessment and classification;
+- AI risk management;
+- control design and implementation;
+- independent assurance;
+- third-party AI governance;
+- continuous monitoring;
+- AI incident management;
+- AI change management;
+- governance oversight and continual improvement;
+- framework traceability.
 
-The governance methodology demonstrated throughout this repository can be adapted to future AI systems introduced by Megastar Mortgage.
+The reference implementation does not establish requirements for unrelated enterprise systems or replace existing legal, compliance, privacy, security, audit, or mortgage-lending obligations.
 
----
+## Intended Business Outcomes
 
-# Strategic Objectives
+The organization expects MIP to contribute to:
 
-The Enterprise AI Governance Program has been established to:
+- more efficient document processing;
+- improved consistency of extracted information;
+- better visibility into quality and exceptions;
+- stronger operational scalability;
+- reduced manual effort for repetitive activities;
+- timely escalation of material issues;
+- sustained human accountability.
 
-- Enable responsible enterprise AI adoption.
-- Improve governance maturity across AI initiatives.
-- Establish consistent governance practices.
-- Strengthen accountability for AI-assisted operations.
-- Reduce operational and governance risks.
-- Increase executive confidence in AI-enabled business processes.
-- Support sustainable AI adoption as business capabilities evolve.
+Achievement of these outcomes depends on both operational performance and effective governance.
 
----
+## Governance Boundary
 
-# Success Measures
+This document defines business context and initial governance scope.
 
-The effectiveness of the governance program will be evaluated through measurable governance outcomes, including:
+It does not:
 
-- Complete visibility of enterprise AI systems.
-- Clearly documented ownership and accountability.
-- Completion of AI impact and risk assessments.
-- Timely implementation of governance controls.
-- Effective Human-in-the-Loop oversight.
-- Continuous monitoring of operational AI performance.
-- Successful governance assurance activities.
-- Demonstrated alignment with enterprise governance requirements.
+- approve MIP for deployment;
+- classify MIP;
+- assess AI risk;
+- assign detailed responsibilities;
+- establish decision rights;
+- define controls;
+- provide assurance conclusions;
+- accept residual risk.
 
----
+Those decisions and records belong to later capabilities.
 
-# Why This Document Matters
+## Related Artifacts
 
-This document establishes the organizational context that explains why Megastar Mortgage adopted AI, how MIP supports mortgage operations, and why governance is necessary to ensure that operational efficiency is achieved without compromising accountability, transparency, customer trust, or regulatory obligations.
+- [Foundations](README.md)
+- [AI System Profile](02-AI-System-Profile.md)
+- [AI Governance Stakeholder Model](03-AI-Governance-Stakeholder-Model.md)
+- [Enterprise AI Architecture](04-Enterprise-AI-Architecture.md)
+- [Governance Operating Model](../02-Governance-Operating-Model/README.md)
+- [AI Inventory and Assessment](../03-AI-Inventory-and-Assessment/README.md)
 
-Every governance artifact developed throughout this playbook builds upon the foundation established here.
-
----
-
-# Related Artifacts
-
-The Business Context provides foundational input to:
-
-- AI System Profile
-- Stakeholder Map
-- AI System Architecture
-- Governance Operating Model
-- AI Inventory & Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-
----
-
-# Revision History
+## Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the Business Context artifact. |
+| 2.0 | July 2026 | Tightened business scope, removed downstream ownership, and aligned the artifact with the repository constitution. |
