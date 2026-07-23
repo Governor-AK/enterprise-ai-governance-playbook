@@ -1,210 +1,174 @@
 # AI Governance Stakeholder Model
 
-## Document Control
+> **Artifact Type:** Reference Implementation  
+> **Capability:** Foundations  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual  
 
-| Field | Value |
-|--------|-------|
-| Document Name | AI Governance Stakeholder Model |
-| Capability | Foundations |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+## Purpose
 
----
+This document identifies the stakeholder groups and governance perspectives required to govern MIP.
 
-# Executive Summary
+It establishes:
 
-Enterprise AI governance is inherently multidisciplinary.
+- who must participate in governance;
+- why each perspective is needed;
+- how stakeholder groups relate to one another;
+- where independence must be preserved;
+- how internal and external participants are distinguished.
 
-No single business function possesses the authority, expertise, or operational visibility required to govern an enterprise AI system independently. Effective governance requires coordinated participation across business operations, technology, risk management, privacy, security, legal, compliance, and assurance functions.
+Detailed responsibilities, decision rights, RACI assignments, forum membership, and escalation authority are defined in the [Governance Operating Model](../02-Governance-Operating-Model/README.md).
 
-This document identifies the stakeholders responsible for governing **Megastar Intelligent Processor (MIP)** and defines how governance responsibilities are distributed throughout the organization.
+## Governance Participation Model
 
-Rather than assigning governance to a single team, the AI Governance Stakeholder Model establishes a coordinated operating structure that enables accountability, informed decision-making, and effective oversight across the AI lifecycle.
+MIP governance requires coordinated participation across five stakeholder groups.
 
----
+| Stakeholder Group | Governance Perspective |
+|---|---|
+| Executive Oversight | Strategic direction, sponsorship, enterprise alignment, and executive accountability. |
+| Business Operations | Business-process ownership, operational outcomes, customer impact, and practical use of MIP. |
+| Technology and AI | System design, engineering, integration, reliability, maintenance, and technical evidence. |
+| Risk and Control Functions | Risk, privacy, security, legal, compliance, and third-party governance perspectives. |
+| Independent Assurance | Objective evaluation of governance design, implementation, evidence, and effectiveness. |
 
-# Governance Model
+No single stakeholder group can govern MIP independently.
 
-The governance of MIP is built upon four complementary stakeholder groups.
+## Canonical Stakeholder Directory
 
-| Governance Layer | Primary Responsibility |
-|------------------|------------------------|
-| Executive Oversight | Strategic direction, funding, governance accountability and organizational alignment. |
-| Business Operations | Business ownership, operational execution and process accountability. |
-| Technology & AI | Design, development, deployment and technical maintenance of MIP. |
-| Governance & Assurance | Risk management, compliance, privacy, security, audit and governance oversight. |
+| Stakeholder | Governance Perspective |
+|---|---|
+| Executive Sponsor | Enterprise sponsorship, strategic alignment, and executive oversight. |
+| Mortgage Operations | Ownership of the business process and outcomes supported by MIP. |
+| Mortgage Processing Team | Operational use of MIP within mortgage-document processing. |
+| AI Governance Lead | Coordination of the enterprise AI governance process and maintenance of governance consistency. |
+| AI Platform Team | Technical operation, reliability, integration, and platform support. |
+| Data & AI Engineering | Development, configuration, model support, data pipelines, and technical change. |
+| Human-in-the-Loop Specialists | Human review, correction, exception handling, and escalation of MIP outputs. |
+| Quality Assurance | Operational quality review, sampling, validation, and trend identification. |
+| Risk Management | Risk methodology, independent challenge, aggregation, and oversight. |
+| Privacy Office | Privacy, personal-data handling, lawful-use, and data-subject considerations. |
+| Information Security | Security architecture, access control, resilience, threat, and vulnerability perspectives. |
+| Legal & Compliance | Legal, regulatory, contractual, policy, and compliance interpretation. |
+| Procurement / Third-Party Management | Provider onboarding, commercial governance, due diligence, and ongoing supplier oversight. |
+| Internal Audit | Independent assurance over governance and control effectiveness. |
 
-Together, these stakeholder groups provide balanced governance across business, technology and risk.
+This directory establishes participation only. It does not assign detailed accountability or approval authority.
 
----
+## External Governance Participants
 
-# Stakeholder Directory
+External providers may support MIP through services such as:
 
-| Stakeholder | Primary Role |
-|-------------|--------------|
-| Executive Sponsor | Executive accountability for enterprise AI adoption. |
-| Mortgage Operations Director | Business owner responsible for operational outcomes supported by MIP. |
-| AI Governance Lead | Oversees the AI governance program and governance framework implementation. |
-| AI Platform Manager | Responsible for the technical operation and maintenance of MIP. |
-| Data & AI Engineering Team | Develops, configures and maintains AI capabilities. |
-| Mortgage Processing Team | Uses MIP to support mortgage document processing. |
-| Human-in-the-Loop Specialists | Validate AI outputs and resolve low-confidence predictions. |
-| Quality Assurance Team | Performs operational quality assurance and validation activities. |
-| Information Security | Protects enterprise systems, infrastructure and access controls. |
-| Privacy Office | Oversees personal information handling and privacy obligations. |
-| Risk Management | Evaluates and monitors enterprise AI risks. |
-| Legal & Compliance | Advises on legal, regulatory and policy requirements. |
-| Internal Audit | Provides independent assurance over governance effectiveness. |
-| Third-Party Vendors | Provide supporting technologies including OCR and AI services. |
+- Optical Character Recognition;
+- cloud infrastructure;
+- model or platform services;
+- data processing;
+- monitoring;
+- technical support.
 
----
+External providers are not internal governance authorities.
 
-# Stakeholder Responsibilities
+They may be required to:
 
-## Executive Oversight
+- provide evidence;
+- meet contractual requirements;
+- support due diligence;
+- participate in incident response;
+- remediate provider-related issues;
+- support exit and transition activities.
 
-Responsible for:
+Megastar Mortgage retains accountability for governing outsourced or externally supplied AI capabilities.
 
-- Establishing strategic direction for enterprise AI.
-- Approving governance priorities.
-- Providing executive sponsorship.
-- Reviewing governance performance.
+## Stakeholder Relationships
 
----
+### Executive Oversight and Business Operations
 
-## Business Operations
+Executive Oversight provides strategic sponsorship and enterprise direction.
 
-Responsible for:
+Mortgage Operations provides the business context, intended outcomes, operational constraints, and consequences required for governance decisions.
 
-- Defining business requirements.
-- Owning operational processes.
-- Validating business outcomes.
-- Supporting Human-in-the-Loop activities.
-- Escalating operational issues.
+### Business Operations and Technology
 
----
+Business teams define the operational need and acceptable use.
 
-## Technology & AI
+Technology and engineering teams translate those needs into supported system capabilities, integrations, and technical controls.
 
-Responsible for:
+### Technology and Risk Functions
 
-- Maintaining MIP.
-- Managing integrations.
-- Supporting AI model deployment.
-- Monitoring technical performance.
-- Managing platform reliability.
+Technology teams provide design, performance, architecture, and change evidence.
 
----
+Risk and control functions evaluate that evidence from risk, privacy, security, legal, compliance, and third-party perspectives.
 
-## Governance & Assurance
+### Operational Teams and Quality Assurance
 
-Responsible for:
+Operational users provide direct evidence of system behavior in practice.
 
-- AI governance.
-- Risk management.
-- Privacy oversight.
-- Security governance.
-- Compliance.
-- Governance documentation.
-- Independent assurance.
-- Continuous improvement.
+Quality Assurance provides an additional review layer through sampling, validation, defect analysis, and trend identification.
 
----
+### Management and Independent Assurance
 
-# Decision Authority
+Management owns the operation of MIP and implementation of governance requirements.
 
-| Governance Decision | Decision Owner |
-|---------------------|----------------|
-| New AI capability approval | Executive Sponsor |
-| Business process changes | Mortgage Operations Director |
-| AI platform changes | AI Platform Manager |
-| Governance policy approval | AI Governance Lead |
-| Risk acceptance | Enterprise Risk Management |
-| Security exceptions | Information Security |
-| Privacy exceptions | Privacy Office |
-| Audit findings | Internal Audit |
+Internal Audit remains independent from operational ownership and provides objective assurance.
 
----
+## Independence Model
 
-# Collaboration Model
+The stakeholder model preserves the following separations:
 
-Enterprise AI governance depends upon continuous collaboration between stakeholder groups.
+- system operation is separate from independent assurance;
+- control ownership is separate from independent control testing;
+- business risk ownership is separate from Risk Management challenge;
+- operational quality review is separate from Internal Audit;
+- provider performance evidence is separate from provider oversight;
+- governance coordination is separate from decision authority unless explicitly delegated.
 
-Business teams define operational objectives.
+These separations support credible challenge, traceability, and segregation of duties.
 
-Technology teams design and maintain AI capabilities.
+## Collaboration Principles
 
-Governance functions establish oversight.
+Stakeholder collaboration should follow these principles:
 
-Risk, privacy, security, and compliance functions provide independent challenge and guidance.
+- the right expertise must be involved before material decisions are made;
+- business, technical, and risk perspectives must be considered together;
+- consultation must not dilute accountability;
+- external providers must not determine internal governance decisions;
+- independence must be preserved where assurance or challenge is required;
+- decisions and handoffs must remain traceable;
+- stakeholder participation should be proportionate to system impact and risk.
 
-Internal Audit evaluates governance effectiveness.
+## Governance Boundary
 
-This collaborative model ensures that governance decisions incorporate business, technical, operational, and regulatory perspectives throughout the AI lifecycle.
+This document identifies participants and relationships.
 
----
+It does not:
 
-# Escalation Model
+- assign detailed responsibilities;
+- define decision rights;
+- establish RACI designations;
+- approve governance actions;
+- assign escalation authority;
+- accept residual risk;
+- approve exceptions;
+- define forum membership.
 
-Governance issues are escalated according to their significance.
+Those matters are owned by the Governance Operating Model and later decision artifacts.
 
-| Issue Category | Escalation |
-|----------------|------------|
-| Operational Issues | Business Operations |
-| Technical Issues | AI Platform Manager |
-| Governance Issues | AI Governance Lead |
-| Privacy Incidents | Privacy Office |
-| Security Incidents | Information Security |
-| High-Risk Decisions | Executive Sponsor |
+## Related Artifacts
 
----
+- [Foundations](README.md)
+- [Business Context](01-Business-Context.md)
+- [AI System Profile](02-AI-System-Profile.md)
+- [Enterprise AI Architecture](04-Enterprise-AI-Architecture.md)
+- [Governance Operating Model](../02-Governance-Operating-Model/README.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
 
-# Governance Principles
-
-The stakeholder model is designed around several governance principles.
-
-- Accountability is clearly assigned.
-- Human judgment remains central to business-critical decisions.
-- Governance responsibilities are shared across functions.
-- Independent oversight is maintained.
-- Decisions are transparent and traceable.
-- Governance scales alongside AI adoption.
-
----
-
-# Why This Document Matters
-
-Governance begins with people before it begins with processes.
-
-Policies, controls, and frameworks cannot operate without clearly defined ownership, accountability, and collaboration.
-
-This stakeholder model establishes the governance relationships required to support every subsequent capability within the Enterprise AI Governance Playbook. It defines who governs MIP, how governance decisions are distributed, and how enterprise stakeholders collaborate to ensure that AI is deployed responsibly.
-
----
-
-# Related Artifacts
-
-This document provides foundational input to:
-
-- AI System Architecture
-- Governance Operating Model
-- AI Inventory & Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-- Governance Assessment & Reporting
-
----
-
-# Revision History
+## Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the AI Governance Stakeholder Model. |
+| 2.0 | July 2026 | Removed responsibility, decision-right, and escalation ownership; standardized the stakeholder set and clarified independence. |
