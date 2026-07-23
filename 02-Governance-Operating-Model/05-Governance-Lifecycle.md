@@ -1,40 +1,38 @@
 # Governance Lifecycle
 
-## Document Control
-
-| Field | Value |
-|--------|-------|
-| Document Name | Governance Lifecycle |
-| Capability | Governance Operating Model |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+> **Artifact Type:** Governance Standard  
+> **Capability:** Governance Operating Model  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual
 
 ---
 
-# Executive Summary
+# Purpose
 
-Enterprise AI governance is an operational capability that accompanies an AI system throughout its entire lifecycle rather than a one-time approval or compliance exercise.
+This document establishes the governance lifecycle used by Megastar Mortgage to govern MIP from governance initiation through controlled retirement.
 
-As AI systems evolve, governance activities must continuously adapt to changing business objectives, operational conditions, regulatory expectations, and organizational risks.
+It provides a consistent governance operating sequence that integrates business ownership, governance oversight, risk management, controls, assurance, and continual improvement into a single repeatable lifecycle.
 
-This document establishes the governance lifecycle adopted by Megastar Mortgage for the Megastar Intelligent Processor (MIP). It provides the operational blueprint that connects governance activities from the initial AI use case request through ongoing oversight and the eventual retirement of the AI system.
-
-Each subsequent capability within this repository expands one stage of this lifecycle in greater operational detail.
+This lifecycle describes **how governance progresses**. It does not replace business delivery, software development, or operational processes.
 
 ---
 
-# Objective
+# Governance Lifecycle Principles
 
-The objective of this document is to establish a consistent governance lifecycle that integrates governance activities into every major stage of the enterprise AI lifecycle.
+The governance lifecycle is based on the following principles:
 
-The lifecycle provides a repeatable operating model that supports coordination between business, technology, governance, and assurance functions while ensuring governance remains active throughout the operational life of the AI system.
+- Governance begins before operational implementation.
+- Governance remains active throughout the operational life of the AI system.
+- Governance activities are proportionate to business impact and risk.
+- Significant changes require renewed governance review.
+- Decisions are evidence-based and traceable.
+- Independent assurance remains separate from operational ownership.
+- Governance concludes only after controlled retirement.
 
 ---
 
@@ -43,102 +41,136 @@ The lifecycle provides a repeatable operating model that supports coordination b
 ```mermaid
 flowchart LR
 
-A[AI Use Case Request]
---> B[Governance Intake]
---> C[AI Inventory and Assessment]
---> D[AI Risk Assessment]
---> E[Control Implementation]
---> F[Operational Deployment]
---> G[Continuous Monitoring]
---> H[Governance Assurance]
---> I[Continuous Governance Improvement]
---> J[AI System Retirement]
+A[Initiate]
+--> B[Identify]
+--> C[Assess]
+--> D[Govern]
+--> E[Operate]
+--> F[Assure]
+--> G[Improve]
+--> H[Retire]
 ```
+
+The lifecycle represents the governance journey of an AI system rather than its technical development lifecycle.
 
 ---
 
 # Lifecycle Stages
 
-| Lifecycle Stage | Governance Purpose |
-|-----------------|--------------------|
-| AI Use Case Request | Identify and document a business requirement for AI adoption. |
-| Governance Intake | Confirm governance applicability, identify stakeholders, establish ownership, and determine whether the proposed AI initiative proceeds into governance. |
-| AI Inventory and Assessment | Register, classify, and assess the AI system before operational implementation. |
-| AI Risk Assessment | Identify, evaluate, and prioritize AI-related risks. |
-| Control Implementation | Implement governance controls appropriate to the identified risks and business context. |
-| Operational Deployment | Deploy the AI system into production following completion of required governance activities. |
-| Continuous Monitoring | Monitor operational performance, governance effectiveness, emerging risks, and operational issues. |
-| Governance Assurance | Evaluate governance effectiveness through reviews, assurance activities, and independent oversight. |
-| Continuous Governance Improvement | Strengthen governance through lessons learned, monitoring outcomes, audit observations, and organizational experience. |
-| AI System Retirement | Govern the controlled retirement of the AI system while preserving appropriate governance records and organizational knowledge. |
+| Lifecycle Stage | Governance Purpose | Primary Governance Output |
+|---|---|---|
+| **Initiate** | Confirm that governance should begin and establish sponsorship, ownership, and governance applicability. | Governance initiation |
+| **Identify** | Register, inventory, and understand the AI system and its intended business use. | AI Intake and AI Inventory |
+| **Assess** | Evaluate impact, risk, proportionality, and governance requirements. | Impact Assessment and Risk Assessment |
+| **Govern** | Apply governance controls, approvals, and required governance decisions before operational use. | Approved governance controls |
+| **Operate** | Govern the AI system during production through oversight, monitoring, human review, and controlled change. | Governed operational use |
+| **Assure** | Independently evaluate governance effectiveness, controls, and compliance. | Assurance findings |
+| **Improve** | Strengthen governance through monitoring, lessons learned, audit observations, incidents, and continual improvement. | Improvement actions |
+| **Retire** | Govern the controlled withdrawal of the AI system while preserving required governance evidence. | Retirement record |
+
+---
+
+# Repository Capability Mapping
+
+The Enterprise AI Governance Playbook expands each lifecycle stage through dedicated governance capabilities.
+
+| Lifecycle Stage | Primary Repository Capability |
+|---|---|
+| Initiate | Foundations and Governance Operating Model |
+| Identify | AI Inventory and Assessment |
+| Assess | AI Risk Management |
+| Govern | AI Controls |
+| Operate | Human Oversight, Third-Party AI Governance, and Operational Governance |
+| Assure | AI Assurance |
+| Improve | Continuous Monitoring |
+| Retire | AI Retirement and Record Retention (where applicable) |
+
+This lifecycle provides the connective structure between the repository capabilities rather than creating separate governance processes.
 
 ---
 
 # Governance Throughout the Lifecycle
 
-The governance lifecycle is supported by continuous collaboration between business, technology, governance, and assurance functions.
+Throughout every lifecycle stage:
 
-Throughout every stage of the lifecycle:
+- business ownership remains accountable for business outcomes;
+- governance oversight remains active;
+- human judgment supports business-critical decisions;
+- governance evidence is created and maintained;
+- risks are continuously identified and managed;
+- changes are governed according to their significance;
+- assurance activities remain independent from operational ownership.
 
-- Business ownership remains accountable for business outcomes.
-- Governance oversight remains active.
-- Human judgment is preserved for business-critical decisions.
-- Risks are continuously identified, evaluated, and managed.
-- Governance evidence is maintained to support transparency and accountability.
-- Governance activities evolve alongside changes in business needs, technology, and regulatory expectations.
+Governance is therefore continuous rather than event-based.
 
 ---
 
-# Lifecycle Principles
+# Lifecycle Transitions
 
-The Governance Lifecycle operates according to the following principles:
+Movement between lifecycle stages should occur only when the governance objectives of the current stage have been completed or an authorized governance decision permits progression.
 
-- Governance begins before AI implementation.
-- Governance continues throughout operational use.
-- Significant changes require renewed governance review.
-- Governance decisions are supported by documented evidence.
-- Continuous monitoring enables continual governance improvement.
-- Governance concludes only when the AI system is formally retired.
+Material changes to the AI system, business use, operating environment, or regulatory obligations may require the governance lifecycle to revisit earlier stages rather than proceeding linearly.
+
+The lifecycle therefore supports iterative governance while maintaining governance traceability.
 
 ---
 
 # Governance Outcomes
 
-Implementation of the Governance Lifecycle enables Megastar Mortgage to:
+Applying the Governance Lifecycle enables Megastar Mortgage to:
 
-- Apply governance consistently across AI initiatives.
-- Coordinate governance activities across organizational functions.
-- Improve governance visibility and accountability.
-- Support informed governance decision-making.
-- Strengthen operational oversight.
-- Promote continual governance maturity throughout the AI lifecycle.
+- govern AI consistently throughout its operational life;
+- integrate governance into business operations rather than treating it as a standalone approval exercise;
+- coordinate governance activities across organizational functions;
+- support proportionate governance decisions;
+- maintain governance traceability;
+- strengthen organizational learning through continual improvement.
 
 ---
 
-# Why This Document Matters
+# Governance Boundary
 
-Enterprise AI governance is effective only when governance activities are integrated into the complete lifecycle of an AI system.
+This document owns:
 
-This Governance Lifecycle provides the operational structure that connects every governance capability within the Enterprise AI Governance Playbook into a single, repeatable implementation model.
+- the governance lifecycle;
+- lifecycle stages;
+- lifecycle objectives;
+- lifecycle transitions;
+- capability mapping.
 
-Rather than treating governance as isolated activities, the lifecycle demonstrates how governance becomes an integrated business capability supporting responsible AI adoption from initial request through retirement.
+This document does not own:
+
+- AI Intake procedures;
+- AI Inventory records;
+- impact assessments;
+- risk assessments;
+- control implementation;
+- governance approvals;
+- RACI assignments;
+- governance forums;
+- monitoring metrics;
+- assurance findings;
+- retirement procedures.
+
+Those responsibilities belong to their respective governance capabilities.
 
 ---
 
 # Related Artifacts
 
-This document provides the transition into:
-
-- AI Inventory & Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-- Continuous Monitoring
+- [AI Governance Operating Model](01-AI-Governance-Operating-Model.md)
+- [Roles, Responsibilities and Decision Rights](02-Roles-Responsibilities-and-Decision-Rights.md)
+- [AI Governance RACI Matrix](03-AI-Governance-RACI-Matrix.md)
+- [Governance Forums and Escalation](04-Governance-Forums-and-Escalation.md)
+- [Performance and Reporting](06-Performance-and-Reporting.md)
+- [AI Inventory and Assessment](../03-AI-Inventory-and-Assessment/README.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the Governance Lifecycle artifact. |
+| 2.0 | July 2026 | Refined governance lifecycle stages, aligned terminology with repository capabilities, added capability mapping, lifecycle transitions, and governance boundaries. |
