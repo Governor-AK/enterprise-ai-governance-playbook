@@ -1,125 +1,134 @@
-# AI System Classification
+# AI System Assessment
 
-## Executive Summary
-
-Not all AI systems are alike.
-
-Enterprise AI systems differ in their purpose, capabilities, deployment models, levels of autonomy, intended users, and operational characteristics. Before governance activities such as impact assessment and risk evaluation can be performed consistently, organizations must first establish a common method for describing and categorizing AI systems.
-
-The AI System Classification process provides Megastar Mortgage with a standardized approach for classifying AI systems using consistent classification dimensions. This enables governance activities to be performed using a shared understanding of the AI system while supporting consistency across the Enterprise AI Governance Program.
-
-This document establishes the AI System Classification approach for the Megastar Intelligent Processor (MIP).
-
----
-
-## Purpose
-
-The purpose of this document is to establish a standardized approach for classifying AI systems operating within Megastar Mortgage.
-
-Classification provides a consistent description of an AI system's characteristics without evaluating its business impact, risk, or governance requirements.
-
-A standardized classification approach improves communication, supports governance consistency, and provides the contextual information required for subsequent assessment activities.
+> **Artifact Type:** Governance Assessment Standard  
+> **Capability:** AI Inventory and Assessment  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual
 
 ---
 
-## Classification Process
+# Purpose
 
-Every AI system recorded within the Enterprise AI System Inventory is classified using a consistent methodology before progressing to impact assessment.
+The AI System Assessment establishes a structured governance assessment for AI systems that have entered the Enterprise AI Governance Program.
+
+Using information recorded within the Enterprise AI System Inventory, the assessment evaluates the AI system's characteristics, potential organizational impacts, governance significance, and readiness to progress into AI Risk Management.
+
+The assessment determines the level of governance attention required. It does not perform detailed AI Risk Management or determine residual risk.
+
+---
+
+# Assessment Workflow
+
+Every governed AI system follows the same assessment workflow.
 
 ```mermaid
 flowchart LR
 
-A[AI System Inventory]
---> B[AI System Classification]
---> C[AI Impact Assessment]
+A[Enterprise AI System Inventory]
+--> B[AI System Assessment]
+--> C[AI Risk Management]
 ```
 
-Classification establishes a common description of the AI system that supports subsequent governance activities.
+---
+
+# Assessment Components
+
+The AI System Assessment consists of four integrated governance activities.
+
+| Assessment Component | Purpose |
+|---|---|
+| AI System Classification | Describe the characteristics of the AI system using a consistent governance methodology. |
+| Organizational Impact Assessment | Evaluate the potential consequences of the AI system across key organizational impact dimensions. |
+| Governance Significance | Determine the appropriate level of governance attention based upon documented assessment information. |
+| Governance Recommendation | Confirm readiness to proceed into AI Risk Management together with any required conditions or escalations. |
+
+These activities are completed as one governance assessment rather than separate governance records.
 
 ---
 
-## Classification Principles
+# Assessment Principles
 
-Megastar Mortgage classifies AI systems according to the following principles:
+The AI System Assessment operates according to the following principles:
 
-- Every governed AI system shall be classified using a standardized methodology.
-- Classification describes the characteristics of an AI system without evaluating risk or impact.
-- Classification shall be applied consistently across all governed AI systems.
-- Classification shall be reviewed whenever significant changes occur to the AI system.
-- Classification information shall support subsequent governance activities without duplicating them.
-
----
-
-## Classification Dimensions
-
-Each AI system is classified using standardized dimensions that describe its characteristics.
-
-| Classification Dimension | Purpose |
-|---------------------------|---------|
-| AI Capability | Describes the primary AI capability provided by the system. |
-| Deployment Model | Describes how the AI system is deployed and delivered. |
-| Primary User Group | Identifies the primary organizational users of the AI system. |
-| Decision Role | Describes how AI outputs support business decisions. |
-| Human Oversight Model | Describes the expected level of human involvement. |
-| Operational Environment | Identifies the primary environment in which the AI system operates. |
-| Data Sensitivity Category | Describes the highest category of information processed by the AI system. |
-
-Detailed classification values are maintained within the **AI System Classification Template**.
+- every governed AI system shall undergo a structured assessment;
+- classification describes the AI system without assigning risk;
+- impact assessment evaluates potential consequences without determining likelihood;
+- governance significance is based upon documented assessment evidence;
+- assessment outcomes remain proportionate, consistent, and traceable;
+- detailed AI Risk Management begins only after completion of the assessment.
 
 ---
 
-## Classification Maintenance
+# Governance Outcomes
 
-Classification is reviewed whenever significant changes occur to the AI system, including:
+Completion of the AI System Assessment enables Megastar Mortgage to:
 
-- Changes to AI capabilities.
-- Changes to deployment approach.
-- Changes to intended users.
-- Changes to operational use.
-- Major enhancements to the AI system.
-
-Maintaining current classification information ensures that subsequent governance activities continue to reflect the current characteristics of the AI system.
+- establish a consistent understanding of the AI system;
+- evaluate potential organizational impacts;
+- determine governance significance;
+- identify assessment observations requiring further attention;
+- determine readiness to progress into AI Risk Management.
 
 ---
 
-## Why This Document Matters
+# Governance Recommendation
 
-Enterprise AI governance requires a consistent understanding of the AI systems operating within the organization.
+Following completion of the assessment, one of the following governance recommendations is recorded.
 
-Without a standardized classification approach, governance activities become inconsistent, making it difficult to compare AI systems or apply governance processes consistently across the enterprise.
+| Recommendation | Outcome |
+|---|---|
+| Proceed | The AI system is ready to enter AI Risk Management. |
+| Proceed with Conditions | Additional governance actions are required before or during AI Risk Management. |
+| Escalate | Governance review by the appropriate authority is required before progression. |
+| Reassess | Additional assessment information is required before governance can continue. |
 
-AI System Classification establishes a common language for describing AI systems before evaluating their potential impact or governance requirements.
-
----
-
-## Related Artifacts
-
-This document supports:
-
-- AI System Classification Template
-- AI Impact Assessment
-- AI Risk Triage
+The recommendation represents a governance routing decision. It is not a deployment approval or a risk acceptance decision.
 
 ---
 
-## Document Control
+# Governance Boundary
 
-| Field | Value |
-|------|------|
-| Document | AI System Classification |
-| Capability | AI Inventory & Assessment |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
+This document owns:
+
+- AI system classification;
+- organizational impact assessment;
+- governance significance;
+- governance recommendation;
+- readiness for AI Risk Management.
+
+This document does not own:
+
+- authoritative AI system records;
+- detailed risk identification;
+- risk ratings;
+- risk treatment;
+- control implementation;
+- deployment approval;
+- assurance activities.
+
+Those responsibilities belong to subsequent governance capabilities.
 
 ---
 
-## Revision History
+# Related Artifacts
+
+- [AI Inventory and Assessment](README.md)
+- [AI Use Case Intake](01-AI-Use-Case-Intake.md)
+- [Enterprise AI System Inventory](02-Enterprise-AI-System-Inventory.md)
+- [AI System Assessment Template](templates/AI-System-Assessment-Template.md)
+- [AI Risk Management](../04-AI-Risk-Management/README.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
+
+---
+
+# Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 1.0 | July 2026 | Initial release of the AI System Classification artifact. |
+|---|---|---|
+| 1.0 | July 2026 | Initial release using separate Classification, Impact Assessment, Risk Triage, and Assessment Summary artifacts. |
+| 2.0 | July 2026 | Consolidated assessment activities into a single AI System Assessment, strengthened governance boundaries, and aligned the assessment workflow with the repository architecture. |
