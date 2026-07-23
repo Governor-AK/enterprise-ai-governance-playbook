@@ -24,7 +24,7 @@ AI Risk Management determines which AI risks require governance attention and es
 
 AI Controls transform those approved response strategies into practical governance measures that reduce AI risk across people, processes, technology, and organizational oversight.
 
-Within Megastar Mortgage, AI Controls begin by defining what each control must achieve, followed by designing the control, registering the approved control within the Enterprise AI Control Register, planning implementation activities, and consolidating the organization's control posture before assurance begins.
+Within Megastar Mortgage, AI Controls begin by defining the governance outcome each control must achieve as part of the control design, followed by registering the approved control within the Enterprise AI Control Register, implementing the control, recording implementation evidence, and consolidating the organization's control posture before assurance begins.
 
 Together, these governance activities establish the operational control environment required to manage AI risks consistently throughout the AI system lifecycle.
 
@@ -36,10 +36,10 @@ The purpose of this capability is to establish a standardized approach for trans
 
 This capability defines:
 
-- what each AI control must achieve;
-- how AI controls should be designed;
+- how approved AI Risk Response Strategies are translated into AI governance controls;
+- how governance outcomes and control designs are documented together;
 - how approved AI controls are governed throughout their lifecycle;
-- how implementation activities are planned; and
+- how implementation activities and implementation evidence are recorded; and
 - how the organization's overall AI control posture is communicated before assurance begins.
 
 Completion of this capability establishes the governance controls that AI Assurance will later evaluate for design adequacy, implementation, and operating effectiveness.
@@ -50,10 +50,10 @@ Completion of this capability establishes the governance controls that AI Assura
 
 This capability establishes the governance processes for:
 
-- defining AI Control Objectives;
 - designing AI governance controls;
 - maintaining the Enterprise AI Control Register;
-- planning AI control implementation; and
+- recording AI control implementation;
+- documenting implementation evidence; and
 - summarizing enterprise AI control readiness.
 
 The capability focuses on establishing governance controls.
@@ -66,13 +66,12 @@ It does not evaluate control effectiveness, perform assurance activities, determ
 
 | Governance Artifact | Purpose |
 |----------------------|---------|
-| AI Control Objectives | Defines what each approved AI control must achieve in response to prioritized AI risks. |
-| AI Control Design | Establishes how governance controls should be designed before implementation. |
+| AI Control Design Standard | Defines the governance outcome and design of approved AI controls. |
 | Enterprise AI Control Register | Maintains the authoritative enterprise record of approved AI controls throughout their governance lifecycle. |
-| AI Control Implementation Plan | Documents how approved controls will be implemented, assigned, and operationalized. |
-| AI Control Summary | Consolidates the organization's overall AI control posture before AI Assurance begins. |
+| AI Control Implementation Record | Documents implementation activities, implementation evidence, and readiness for assurance. |
+| AI Control Posture Summary | Consolidates the organization's overall AI control posture before AI Assurance begins. |
 
-Together, these artifacts translate approved AI Risk Response Strategies into governed AI controls that are ready for implementation and subsequent assurance.
+Together, these artifacts translate approved AI Risk Response Strategies into governed AI controls that are implemented, evidenced, and ready for independent assurance.
 
 ---
 
@@ -84,12 +83,11 @@ Every approved AI Risk Response Strategy progresses through a consistent governa
 flowchart LR
 
 A[AI Risk Response Strategy]
---> B[AI Control Objectives]
---> C[AI Control Design]
---> D[Enterprise AI Control Register]
---> E[AI Control Implementation Plan]
---> F[AI Control Summary]
---> G[AI Assurance]
+--> B[AI Control Design Standard]
+--> C[Enterprise AI Control Register]
+--> D[AI Control Implementation Record]
+--> E[AI Control Posture Summary]
+--> F[AI Assurance]
 ```
 
 Each approved control is maintained within the Enterprise AI Control Register as a living governance record and is progressively enriched during later governance capabilities.
@@ -100,9 +98,9 @@ Each approved control is maintained within the Enterprise AI Control Register as
 
 The Enterprise AI Control Register serves as the authoritative governance record for approved AI controls.
 
-A control enters the register after its objective has been defined and its design has been approved.
+A control enters the register after its design has been approved.
 
-As governance activities continue, the same control record is progressively enriched with implementation status, assurance results, effectiveness evaluations, monitoring activities, review history, and improvement actions.
+As governance activities continue, the same control record is progressively enriched with implementation status, implementation evidence, assurance results, effectiveness evaluations, monitoring activities, review history, and improvement actions.
 
 Maintaining a single enterprise control record preserves governance traceability and avoids duplicate documentation throughout the AI governance lifecycle.
 
@@ -135,11 +133,11 @@ This classification supports enterprise reporting and governance without duplica
 
 Upon completion of this capability, Megastar Mortgage will have established:
 
-- clearly defined AI Control Objectives;
 - approved AI Control Designs;
 - a living Enterprise AI Control Register;
-- an AI Control Implementation Plan; and
-- an AI Control Summary confirming readiness for AI Assurance.
+- implemented AI governance controls;
+- documented implementation evidence supporting assurance readiness; and
+- an AI Control Posture Summary confirming readiness for AI Assurance.
 
 These deliverables establish the organization's AI control environment before assurance activities begin.
 
@@ -165,7 +163,7 @@ It provides the governance foundation for:
 - Continuous Monitoring
 - Continuous Improvement
 
-Each subsequent capability assumes that approved AI controls have been defined, designed, registered, and prepared for implementation.
+Each subsequent capability assumes that approved AI controls have been designed, implemented, registered, and supported by implementation evidence.
 
 ---
 
@@ -173,11 +171,11 @@ Each subsequent capability assumes that approved AI controls have been defined, 
 
 This capability is complete when:
 
-- AI Control Objectives have been approved.
-- AI Control Designs have been completed.
+- AI Control Designs have been approved.
 - The Enterprise AI Control Register has been established.
-- The AI Control Implementation Plan has been approved.
-- The AI Control Summary has been completed.
+- AI controls have been implemented.
+- Implementation evidence has been documented.
+- The AI Control Posture Summary has been completed.
 
 ---
 
@@ -185,11 +183,11 @@ This capability is complete when:
 
 | Status | Deliverable |
 |--------|-------------|
-| ☐ | AI Control Objectives completed |
-| ☐ | AI Control Design completed |
+| ☐ | AI Control Designs completed |
 | ☐ | Enterprise AI Control Register established |
-| ☐ | AI Control Implementation Plan approved |
-| ☐ | AI Control Summary completed |
+| ☐ | AI controls implemented |
+| ☐ | Implementation evidence documented |
+| ☐ | AI Control Posture Summary completed |
 
 ---
 
