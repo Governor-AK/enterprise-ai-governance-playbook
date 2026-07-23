@@ -128,7 +128,7 @@ Those responsibilities belong to their respective governance artifacts.
 - [AI Inventory and Assessment](README.md)
 - [AI Use Case Intake](01-AI-Use-Case-Intake.md)
 - [AI System Assessment](03-AI-System-Assessment.md)
-- [AI System Inventory Template](templates/AI-System-Inventory-Template.md)
+- [Enterprise AI System Inventory Template](templates/Enterprise-AI-System-Inventory-Template.md)
 - [Governance Glossary](../00-Governance-Glossary.md)
 
 ---
