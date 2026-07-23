@@ -1,44 +1,41 @@
 # Enterprise AI Architecture
 
-## Document Control
-
-| Field | Value |
-|--------|-------|
-| Document Name | Enterprise AI Architecture |
-| Capability | Foundations |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | Enterprise Architecture |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+> **Artifact Type:** Reference Implementation  
+> **Capability:** Foundations  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** Enterprise Architecture  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual
 
 ---
 
-# Executive Summary
+# Purpose
 
-Megastar Intelligent Processor (MIP) is the enterprise Intelligent Document Processing (IDP) platform supporting mortgage document processing across the loan origination lifecycle.
+This document provides the high-level architectural context for the Megastar Intelligent Processor (MIP).
 
-Rather than operating as a standalone AI application, MIP functions as part of a broader enterprise ecosystem comprising mortgage operations, AI services, enterprise applications, governance functions, and supporting technology platforms.
+It establishes:
 
-Understanding this operating environment is fundamental to effective AI governance.
+- the end-to-end business workflow supported by MIP;
+- the major architectural components;
+- enterprise and third-party integrations;
+- human oversight points;
+- trust boundaries;
+- architectural dependencies relevant to AI governance.
 
-This document provides a high-level architectural view of MIP, identifies its major components, describes enterprise integrations, establishes trust boundaries, and defines the architectural context that supports governance throughout the AI lifecycle.
-
-The purpose of this document is not to describe software implementation in detail, but to establish a common architectural understanding of the enterprise AI environment being governed.
+This document provides architectural context only. It does not define software implementation details, governance decisions, controls, risks, or operational procedures.
 
 ---
 
-# Enterprise Architecture Overview
+# Architecture Overview
 
-Borrower documents enter Megastar Mortgage through controlled business processes and are processed by MIP using AI-assisted document processing capabilities.
+Megastar Intelligent Processor (MIP) operates as one component of the broader mortgage-origination ecosystem.
 
-Documents are classified, relevant information is extracted, confidence is evaluated, and appropriate Human-in-the-Loop (HITL) validation is performed before validated information progresses into downstream mortgage systems.
+Borrower documents enter controlled enterprise workflows, pass through AI-supported document processing, undergo appropriate human review, and are transferred to downstream mortgage systems only after validation.
 
-Governance activities are embedded throughout this workflow to ensure accountability, transparency, operational oversight, and continuous monitoring.
+Supporting enterprise services provide identity management, monitoring, audit logging, reporting, document management, and security capabilities that enable trustworthy operation of the platform.
 
 ---
 
@@ -47,182 +44,194 @@ Governance activities are embedded throughout this workflow to ensure accountabi
 ```mermaid
 flowchart TD
 
-A[Borrower Documents] --> B[Document Intake]
+A[Borrower Documents]
+--> B[Controlled Document Intake]
 
-B --> C[OCR Engine]
+B --> C[OCR Processing]
 
-C --> D[Megastar Intelligent Processor]
+C --> D[MIP Document Classification]
 
-D --> E[Document Classification]
+D --> E[Field Extraction]
 
-E --> F[Field Extraction]
+E --> F{Confidence Evaluation}
 
-F --> G{Confidence Evaluation}
+F -->|High Confidence| G[Human-in-the-Loop Verification]
 
-G -->|High Confidence| H[Human Verification]
+F -->|Low Confidence / Exception| H[Manual Processing]
 
-G -->|Low Confidence| I[Manual Processing]
+G --> I[Quality Assurance]
 
-H --> J[Quality Assurance]
+H --> I
 
-I --> J
+I --> J[Validated Information]
 
 J --> K[Loan Origination System]
 
-K --> L[Business Reporting]
-
-L --> M[Operational Monitoring]
+K --> L[Operational Reporting & Monitoring]
 ```
+
+This workflow illustrates the business context in which governance activities later operate.
 
 ---
 
-# Enterprise Architecture Layers
-
-The enterprise architecture supporting MIP consists of six logical layers.
+# Architecture Layers
 
 | Layer | Purpose |
 |--------|---------|
-| Business Layer | Mortgage operations, business users, and operational workflows supported by AI. |
-| Document Processing Layer | Document intake, OCR, classification, and intelligent information extraction. |
-| AI Processing Layer | AI services responsible for document processing and confidence evaluation. |
-| Human Oversight Layer | Human verification, exception handling, and quality assurance activities. |
-| Enterprise Services Layer | Loan Origination System, Identity & Access Management, Document Management, Reporting, and Monitoring. |
-| Governance Layer | Audit logging, governance reporting, operational monitoring, lifecycle oversight, and governance evidence. |
+| Business Process Layer | Mortgage operations and business activities supported by MIP. |
+| Document Processing Layer | Intake, OCR, classification, extraction, and workflow routing. |
+| AI Processing Layer | AI capabilities responsible for document interpretation and confidence evaluation. |
+| Human Oversight Layer | Human verification, exception handling, manual processing, and quality assurance. |
+| Enterprise Services Layer | Identity & Access Management, Document Management, Monitoring, Reporting, Audit Logging, and Data Loss Prevention. |
+| Governance Evidence Layer | Evidence generated for governance, monitoring, assurance, incidents, and lifecycle management. |
 
-Each layer contributes to the overall governance posture of the enterprise AI platform.
+The Governance Evidence Layer represents records generated during operation. It is not a separate processing platform.
 
 ---
 
-# Enterprise Components
+# Major Components
 
-| Component | Purpose |
-|-----------|---------|
-| Borrower Documents | Source documents submitted during mortgage applications. |
-| Document Intake | Registers and manages incoming mortgage documentation. |
-| OCR Engine | Converts scanned documents into machine-readable content. |
-| Megastar Intelligent Processor | Coordinates AI-assisted document processing. |
-| Document Classification | Identifies mortgage document types. |
-| Field Extraction | Extracts structured information from documents. |
-| Confidence Evaluation | Determines whether human review is required. |
-| Human Verification | Reviews AI-generated outputs before operational use. |
-| Manual Processing | Handles low-confidence and exception scenarios. |
-| Quality Assurance | Validates processing quality and consistency. |
+| Component | Architectural Role |
+|-----------|--------------------|
+| Borrower Documents | Source mortgage documentation. |
+| Controlled Document Intake | Receives and manages inbound documents. |
+| Document Management Platform | Stores and manages source documentation. |
+| OCR Engine | Converts documents into machine-readable content. |
+| MIP Classification Service | Identifies mortgage-document types. |
+| MIP Extraction Service | Extracts configured business fields. |
+| Confidence Evaluation | Determines routing based on configured thresholds. |
+| Human-in-the-Loop Interface | Allows authorized users to review and correct AI outputs. |
+| Manual Processing Workflow | Handles unsupported or low-confidence scenarios. |
+| Quality Assurance | Performs quality validation and operational sampling. |
 | Loan Origination System | Receives validated business information. |
-| Business Reporting | Supports operational reporting and analytics. |
-| Operational Monitoring | Tracks platform health and governance metrics. |
+| Monitoring Platform | Produces operational and governance metrics. |
+| Audit Logging | Captures traceable system and user activity. |
+| Identity & Access Management | Controls authentication and authorization. |
+| Data Loss Prevention | Restricts unauthorized movement of sensitive information. |
+
+---
+
+# Data Flow
+
+The primary processing flow is:
+
+1. Borrower documents enter approved intake channels.
+2. Documents are stored or referenced within enterprise document management.
+3. OCR converts document content into machine-readable information.
+4. MIP classifies documents.
+5. MIP extracts configured fields.
+6. Confidence evaluation determines the review path.
+7. Human reviewers validate, correct, reject, or manually process outputs.
+8. Quality Assurance performs operational review.
+9. Validated information is transferred into the Loan Origination System.
+10. Monitoring and audit services retain operational evidence.
+
+Detailed data lineage, retention, privacy, and information-governance requirements are managed by later governance capabilities.
 
 ---
 
 # Enterprise Integrations
 
-MIP integrates with enterprise technologies supporting mortgage operations.
-
-These include:
+MIP integrates with:
 
 - Loan Origination System (LOS)
 - Document Management Platform
 - OCR Services
 - Identity & Access Management (IAM)
-- Operational Monitoring Platform
-- Audit Logging Services
+- Audit Logging
+- Operational Monitoring
 - Data Loss Prevention (DLP)
-- Business Reporting Platform
+- Business Reporting Services
 
-These integrations support secure, traceable, and efficient AI-assisted document processing.
+Where enterprise capabilities rely upon external providers, those relationships are governed through the Third-Party AI Governance capability.
 
 ---
 
 # Human Oversight Points
 
-Human oversight is intentionally embedded throughout the architecture.
+Human oversight exists at multiple stages:
 
-Key oversight activities include:
+- document classification review;
+- extracted field validation;
+- correction of AI-generated values;
+- exception handling;
+- manual processing;
+- Quality Assurance sampling;
+- escalation of operational issues.
 
-- Validation of document classification.
-- Verification of extracted information.
-- Review of low-confidence predictions.
-- Manual processing of unsupported scenarios.
-- Quality assurance before operational use.
+Human reviewers retain responsibility for business-critical decisions supported by MIP.
 
-These activities ensure that business-critical outcomes remain subject to human judgment.
+Detailed responsibilities are maintained within the Governance Operating Model.
 
 ---
 
 # Trust Boundaries
 
-The enterprise architecture establishes several trust boundaries that influence governance activities.
-
 | Trust Boundary | Governance Significance |
 |----------------|-------------------------|
-| Borrower → Enterprise | Customer information enters controlled business processes. |
-| Document Intake → OCR | Document integrity is maintained during digitization. |
-| OCR → MIP | AI-assisted processing begins. |
-| MIP → Human Verification | Human accountability is preserved before operational use. |
-| MIP → Loan Origination System | Only validated information progresses into business operations. |
-| MIP → Enterprise Services | Monitoring, reporting, and audit evidence are generated. |
+| Borrower → Megastar Mortgage | Sensitive customer information enters controlled enterprise processes. |
+| Document Intake → OCR | Document integrity and provider dependency begin. |
+| OCR → MIP | AI-supported processing begins. |
+| MIP → Human Review | Human accountability is preserved before downstream use. |
+| Human Review → Quality Assurance | Operational validation is independently reviewed. |
+| Validated Output → Loan Origination System | Only validated information progresses into business operations. |
+| MIP → Monitoring & Audit | Governance evidence is generated. |
+| Enterprise → External Provider | Third-party contractual, security, privacy, and resilience obligations apply. |
 
-These trust boundaries identify where governance oversight and operational controls become necessary.
-
----
-
-# Governance Touchpoints
-
-The architecture provides the operational context for governance capabilities developed throughout this playbook.
-
-| Architecture Component | Governance Capability |
-|------------------------|----------------------|
-| Megastar Intelligent Processor | AI System Profile |
-| Business Workflow | AI Inventory & Assessment |
-| Human Verification | Human Oversight |
-| Operational Monitoring | Continuous Monitoring |
-| Audit Logging | AI Assurance |
-| Enterprise Integrations | Third-Party AI Governance |
-| Enterprise Architecture | Governance Operating Model |
+These trust boundaries identify where governance activities become necessary.
 
 ---
 
-# Governance Boundaries
+# Architectural Dependencies
 
-The Enterprise AI Governance Program applies to the operation and oversight of MIP within the architectural boundaries defined in this document.
+The operation of MIP depends upon:
 
-Governance activities include:
+- supported mortgage-document formats;
+- OCR availability;
+- configured AI models;
+- confidence-threshold configuration;
+- authorized human review;
+- downstream enterprise systems;
+- Identity & Access Management;
+- audit logging;
+- operational monitoring;
+- third-party services;
+- approved change management.
 
-- AI system lifecycle oversight
-- Human oversight
-- AI inventory management
-- AI impact assessment
-- AI risk management
-- Governance controls
-- Governance assurance
-- Operational monitoring
-- Third-party AI governance
-- Governance reporting
-
-Business activities outside these architectural boundaries remain subject to existing enterprise governance processes.
+Material changes to these dependencies may trigger reassessment through later governance capabilities.
 
 ---
 
-# Why This Document Matters
+# Governance Boundary
 
-Enterprise AI governance depends upon understanding the environment in which AI operates.
+This document establishes the architectural context for MIP.
 
-This document establishes the architectural context required for governance by demonstrating how business processes, AI capabilities, enterprise systems, and governance activities interact throughout the lifecycle of MIP.
+It does not:
 
-Every governance capability within this playbook references this architecture when evaluating accountability, oversight, controls, assurance, and continuous monitoring.
+- register the AI system;
+- assign governance classifications;
+- perform impact assessments;
+- identify or assess risks;
+- define controls;
+- assign operational responsibilities;
+- approve changes;
+- provide assurance conclusions;
+- accept residual risk.
+
+Those responsibilities belong to later governance capabilities.
 
 ---
 
 # Related Artifacts
 
-This document provides foundational input to:
-
-- Governance Operating Model
-- AI Inventory & Assessment
-- AI Impact Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-- Third-Party AI Governance
+- [Foundations](README.md)
+- [Business Context](01-Business-Context.md)
+- [AI System Profile](02-AI-System-Profile.md)
+- [AI Governance Stakeholder Model](03-AI-Governance-Stakeholder-Model.md)
+- [Governance Operating Model](../02-Governance-Operating-Model/README.md)
+- [AI Inventory and Assessment](../03-AI-Inventory-and-Assessment/README.md)
+- [Third-Party AI Governance](../07-Third-Party-AI-Governance/README.md)
+- [Continuous Monitoring](../08-Continuous-Monitoring/README.md)
 
 ---
 
@@ -231,3 +240,4 @@ This document provides foundational input to:
 | Version | Date | Description |
 |----------|------|-------------|
 | 1.0 | July 2026 | Initial release of the Enterprise AI Architecture artifact. |
+| 2.0 | July 2026 | Clarified architecture scope, trust boundaries, integrations, dependencies, and capability ownership. |
