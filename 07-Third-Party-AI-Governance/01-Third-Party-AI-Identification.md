@@ -8,7 +8,7 @@ Before Megastar Mortgage can evaluate, contract for, oversee, or exit a third-pa
 
 Third-Party AI Identification provides a standardized approach for identifying externally provided AI products, services, models, platforms, vendors, and material dependencies supporting the Megastar Intelligent Processor (MIP).
 
-This activity creates the initial provider relationship record required for registration within the Enterprise Third-Party AI Register. It does not determine whether the provider is suitable, acceptable, compliant, or sufficiently governed. Those conclusions are established through subsequent due-diligence, risk, contractual, and oversight activities.
+This activity establishes the information required to create the initial provider relationship record within the Enterprise Third-Party AI Register through the organization's governed registration process. It does not determine whether the provider is suitable, acceptable, compliant, or sufficiently governed. Those conclusions are established through subsequent due-diligence, risk, contractual, and oversight activities.
 
 ---
 
@@ -25,7 +25,7 @@ Third-Party AI Identification captures the minimum information required to:
 - describe the intended use;
 - classify the nature of the external dependency;
 - determine the initial level of operational dependency; and
-- create the initial record within the Enterprise Third-Party AI Register.
+- support creation of the initial Enterprise Third-Party AI Register record through the organization's governed registration process.
 
 Completion of this activity confirms that a third-party AI relationship exists and must enter the formal third-party governance lifecycle.
 
@@ -44,7 +44,7 @@ A[External AI Dependency Identified]
 --> D[Third-Party AI Due Diligence]
 ```
 
-Identification establishes the relationship record before suitability, risk, contractual, or onboarding decisions are made.
+Identification establishes the relationship before provider suitability, risk, contractual, or onboarding decisions are made.
 
 ---
 
@@ -57,7 +57,7 @@ Megastar Mortgage identifies third-party AI relationships according to the follo
 - One third-party relationship may support multiple governed AI systems.
 - One governed AI system may depend on multiple third-party providers.
 - Identification shall capture only the information required to recognize and register the relationship.
-- Identification shall not determine provider suitability, risk, approval, or contractual acceptability.
+- Identification shall not determine provider suitability, risk, approval, contractual acceptability, or governance decisions reserved for later capabilities.
 - Provider relationships shall remain traceable to the relevant AI System Inventory record.
 - Material indirect dependencies, including subprocessors and fourth parties, shall be recorded when known.
 - Uncertain or incomplete information shall be documented and resolved through subsequent governance activities.
@@ -82,7 +82,7 @@ Third-Party AI Identification applies when Megastar Mortgage proposes to use or 
 - external human-review or annotation services supporting AI operations; or
 - other material external dependencies required for an AI system to operate.
 
-Traditional suppliers with no material connection to an AI system are governed through the organization’s broader third-party-risk process and do not enter this capability solely because they provide technology services.
+Traditional suppliers with no material connection to an AI system are governed through the organization's broader third-party-risk process and do not enter this capability solely because they provide technology services.
 
 ---
 
@@ -126,7 +126,7 @@ The initial record includes:
 | Dependency Type | Classifies the nature of the external AI dependency. |
 | Initial Dependency Criticality | Records the initial level of operational reliance on the provider. |
 
-These fields establish visibility only. They do not replace due diligence, risk assessment, or contract review.
+These fields establish governance visibility only. They do not replace due diligence, risk assessment, contract review, or ongoing oversight.
 
 ---
 
@@ -134,7 +134,7 @@ These fields establish visibility only. They do not replace due diligence, risk 
 
 Initial dependency criticality describes how strongly the governed AI system relies upon the third-party product or service.
 
-It is not a risk rating.
+It is an assessment of operational dependency. It is **not** a provider risk rating, procurement approval, or governance decision.
 
 | Initial Dependency Criticality | Meaning |
 |---|---|
@@ -143,7 +143,7 @@ It is not a risk rating.
 | High | The dependency supports significant operations, and disruption or replacement would materially affect the AI system or business process. |
 | Critical | The AI system or supported business process cannot operate acceptably without the provider, and replacement or transition would be difficult or time-sensitive. |
 
-Initial dependency criticality supports due-diligence depth, oversight planning, and exit preparation. It does not determine provider risk or approval.
+Initial dependency criticality supports due-diligence planning, oversight planning, and exit preparation. It does not determine provider risk, suitability, or approval.
 
 ---
 
@@ -173,24 +173,24 @@ Known material indirect dependencies shall be recorded during identification. Ad
 
 ## Relationship Ownership
 
-Each identified third-party AI relationship shall have a designated business relationship owner.
+Each identified third-party AI relationship shall have a designated Business Relationship Owner.
 
-The relationship owner is responsible for ensuring that:
+The Business Relationship Owner is responsible for ensuring that:
 
-- the relationship is registered;
-- the intended use is documented;
+- the relationship is identified;
+- the information required for register creation is complete and accurate;
 - the related AI system is identified;
 - required due diligence is initiated;
 - governance stakeholders receive accurate relationship information; and
 - material changes are reported through the appropriate governance process.
 
-Relationship ownership does not replace the responsibilities of Procurement, Legal & Compliance, Privacy, Security, Technology, Risk, or AI Governance.
-
----
+Relationship ownership established during Identification supports governance entry and does not replace the responsibilities of Procurement, Legal & Compliance, Privacy, Security, Technology, Risk, AI Governance, or other governance functions throughout the relationship lifecycle.
 
 ## Enterprise Third-Party AI Register Creation
 
-Completion of Third-Party AI Identification creates the initial record within the Enterprise Third-Party AI Register.
+Completion of Third-Party AI Identification provides the approved information required to establish the initial Enterprise Third-Party AI Register record.
+
+The Enterprise Third-Party AI Register remains the organization's authoritative record for every governed third-party AI relationship and is maintained through controlled governance updates as subsequent governance activities are completed.
 
 The initial register record contains:
 
@@ -209,15 +209,17 @@ The initial register record contains:
 - identification date; and
 - known material subprocessors or fourth-party dependencies.
 
-The register is progressively enriched through:
+As governance activities progress, approved information from subsequent capabilities is incorporated into the Enterprise Third-Party AI Register through established governance processes.
+
+The register is progressively enriched by:
 
 - Third-Party AI Due Diligence;
 - Third-Party AI Risk Assessment;
-- Contract and Onboarding Requirements;
+- Contract & Onboarding Requirements;
 - Third-Party AI Oversight; and
-- Exit and Transition Planning.
+- Exit & Transition Planning.
 
-Identification establishes that the relationship exists. It does not determine whether the relationship should proceed.
+Identification establishes that a material third-party AI relationship exists and should enter governance. It does not determine provider suitability, approve operational use, or authorize onboarding.
 
 ---
 
@@ -229,10 +231,10 @@ The AI Governance Team reviews the identification record to confirm that:
 - the provider and product or service are sufficiently identified;
 - the related AI system is known or appropriately referenced;
 - the intended use is documented;
-- a business relationship owner has been assigned;
+- a Business Relationship Owner has been assigned;
 - the dependency type has been identified;
 - initial dependency criticality has been recorded; and
-- sufficient information exists to create the Enterprise Third-Party AI Register record.
+- sufficient information exists to establish the Enterprise Third-Party AI Register record.
 
 Incomplete records are returned for clarification before due diligence begins.
 
@@ -244,12 +246,12 @@ Third-Party AI Identification may result in one of the following outcomes.
 
 | Outcome | Description |
 |---|---|
-| Register Relationship | The external AI dependency is material and proceeds into the Enterprise Third-Party AI Register. |
+| Register Relationship | The external AI dependency is material and proceeds to creation of an authoritative Enterprise Third-Party AI Register record. |
 | Clarification Required | Additional information is required before the relationship can be registered. |
-| Outside Scope | The supplier relationship does not involve a material external AI dependency and remains subject to the organization’s broader third-party-governance process. |
-| Duplicate Relationship | An authoritative relationship record already exists and shall be linked or updated rather than recreated. |
+| Outside Scope | The supplier relationship does not involve a material external AI dependency and remains subject to the organization's broader third-party governance process. |
+| Duplicate Relationship | An authoritative relationship record already exists and shall be referenced or updated rather than recreated. |
 
-No outcome in this artifact constitutes provider approval.
+No outcome within this activity constitutes provider approval, onboarding approval, procurement approval, or acceptance of provider risk.
 
 ---
 
@@ -262,12 +264,12 @@ The identification record shall be reviewed when:
 - a new model, API, platform, or material dependency is added;
 - the intended use changes materially;
 - the related AI system changes;
-- the business relationship owner changes;
+- the Business Relationship Owner changes;
 - a material subprocessor or fourth party is discovered;
 - dependency criticality changes; or
 - the relationship is renewed, replaced, or prepared for exit.
 
-Updates shall be reflected in the Enterprise Third-Party AI Register.
+Approved changes shall be reflected in the Enterprise Third-Party AI Register through established governance processes, preserving the register as the authoritative record for the provider relationship.
 
 ---
 
@@ -277,7 +279,7 @@ Organizations cannot govern external AI dependencies they have not identified.
 
 Third-party AI capabilities may be introduced through procurement, technology integration, business subscriptions, embedded software features, model APIs, managed services, or indirect provider dependencies. Without a formal identification process, these relationships may remain outside governance until a risk, incident, contractual issue, or service failure occurs.
 
-Third-Party AI Identification gives Megastar Mortgage the visibility required to bring every material external AI relationship into governance before suitability, risk, contractual, onboarding, oversight, or exit decisions are made.
+Third-Party AI Identification provides the governance visibility required to ensure every material external AI relationship enters the organization's governance process before provider suitability, provider risk, contractual approval, onboarding, operational oversight, or exit decisions are made.
 
 ---
 
@@ -302,7 +304,7 @@ This document supports:
 | Reference Organization | Megastar Mortgage |
 | Reference AI System | Megastar Intelligent Processor (MIP) |
 | Document Owner | AI Governance Lead |
-| Version | 1.0 |
+| Version | 2.0 |
 | Review Cycle | Annual |
 | Status | Published Reference |
 
@@ -312,4 +314,5 @@ This document supports:
 
 | Version | Date | Description |
 |---|---|---|
+| 2.0 | July 2026 | Updated to clarify authoritative register ownership, governance handoffs, and repository-aligned lifecycle terminology. |
 | 1.0 | July 2026 | Initial release of the Third-Party AI Identification artifact. |
