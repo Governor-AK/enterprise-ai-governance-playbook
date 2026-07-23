@@ -1,4 +1,4 @@
-# AI System Inventory Template
+# Enterprise AI System Inventory Template
 
 ## Inventory Record
 
@@ -6,101 +6,125 @@
 |---|---|
 | Inventory ID | |
 | AI System Name | |
-| System Identifier | |
-| Inventory Status | Active / Retired / Archived |
+| Inventory Status | Proposed / Active / Suspended / Retired / Archived |
 | Date Registered | |
 | Last Updated | |
 
 ---
 
-## 1. System Identification
+# 1. System Identification
 
 | Field | Value |
 |---|---|
 | AI System Name | |
 | Business Name (if different) | |
 | System Description | |
-| Business Function Supported | |
-| Lifecycle Status | Development / Testing / Production / Retired |
+| Business Domain | |
+| Business Process Supported | |
+| Primary AI Capability | |
+| AI System Type | |
+| Current Lifecycle Status | Development / Testing / Production / Retired |
 
 ---
 
-## 2. Ownership
+# 2. Ownership
 
 | Field | Value |
 |---|---|
 | Business Owner | |
+| System Owner | |
 | Technical Owner | |
 | Operational Owner | |
-| AI Governance Owner | |
 
 ---
 
-## 3. Technical Information
+# 3. Operational Profile
+
+| Field | Value |
+|---|---|
+| Intended Users | |
+| Approximate User Population | |
+| Geographic Scope | |
+| Decision Role | |
+| Human Oversight Model | |
+
+---
+
+# 4. Technical Profile
 
 | Field | Value |
 |---|---|
 | AI Platform / Solution | |
 | AI Provider / Vendor | |
-| Deployment Environment | |
+| Deployment Model | |
 | Hosting Model | |
-| Primary Enterprise System(s) Integrated | |
+| Integrated Enterprise Systems | |
 
 ---
 
-## 4. Lifecycle Information
+# 5. Data Profile
 
 | Field | Value |
 |---|---|
-| Date Registered | |
-| Go-Live Date | |
-| Current Operational Status | |
-| Planned Retirement Date (if known) | |
-| Inventory Review Date | |
+| Primary Data Categories | |
+| Highest Data Sensitivity | |
+| Personal Information Processed | Yes / No |
+| Confidential Information Processed | Yes / No |
+| Third-Party Data Used | Yes / No |
 
 ---
 
-## 5. Governance References
+# 6. Lifecycle Information
 
 | Field | Value |
 |---|---|
-| AI Use Case Intake Reference | |
-| Architecture Document Reference | |
-| Classification Reference | |
-| Impact Assessment Reference | |
-| Risk Assessment Reference | |
-
-> **Note:** These references link to related governance artifacts. This inventory record does not duplicate their contents.
+| Governance Entry Date | |
+| Production Go-Live Date | |
+| Last Inventory Review | |
+| Planned Retirement Date | |
 
 ---
 
-## 6. Inventory Administration
+# 7. Governance References
+
+| Reference | Record ID |
+|---|---|
+| AI Use Case Intake | |
+| AI System Assessment | |
+| AI Risk Register | |
+| AI Controls | |
+| AI Assurance | |
+
+> **Note:** These references link to authoritative governance records. Information should be referenced rather than duplicated.
+
+---
+
+# 8. Inventory Administration
 
 | Field | Value |
 |---|---|
-| Inventory Maintained By | |
-| Last Inventory Update | |
+| Record Maintained By | |
+| Last Record Update | |
 | Change Summary | |
 
 ---
 
-## Document Control
+# Document Control
 
 | Field | Value |
 |---|---|
-| Template | AI System Inventory Template |
-| Capability | AI Inventory & Assessment |
+| Template | Enterprise AI System Inventory Template |
+| Capability | AI Inventory and Assessment |
 | Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
 | Template Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
+| Version | 2.0 |
+| Status | Published Reference Implementation |
 
 ---
 
-## Revision History
+# Revision History
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the AI System Inventory Template. |
+| 1.0 | July 2026 | Initial release. |
+| 2.0 | July 2026 | Expanded the authoritative inventory record, strengthened governance references, and aligned with repository architecture. |

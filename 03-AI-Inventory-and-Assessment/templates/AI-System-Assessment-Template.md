@@ -1,79 +1,29 @@
-# AI System Classification Template
+# AI System Assessment Template
 
-## Classification Record
+## Assessment Record
 
 | Field | Value |
 |---|---|
-| Classification Reference ID | |
+| Assessment Reference ID | |
 | AI System Name | |
 | Inventory ID | |
-| Classification Date | |
-| Classified By | |
-| Classification Status | Draft / Approved / Updated |
+| Assessment Date | |
+| Assessment Status | Draft / Approved / Updated |
+| Assessed By | |
 
 ---
 
-## 1. AI Capability
+# 1. AI System Classification
 
-| Field | Value |
+| Classification Area | Value |
 |---|---|
 | Primary AI Capability | |
-| Secondary AI Capability (if applicable) | |
-
----
-
-## 2. Deployment Model
-
-| Field | Value |
-|---|---|
 | Deployment Model | |
-| Hosting Model | |
-
----
-
-## 3. Primary User Group
-
-| Field | Value |
-|---|---|
 | Primary User Group | |
-| Primary Business Function | |
-
----
-
-## 4. Decision Role
-
-| Field | Value |
-|---|---|
-| AI Decision Role | |
-| Human Decision Role | |
-
----
-
-## 5. Human Oversight Model
-
-| Field | Value |
-|---|---|
-| Human Oversight Approach | |
-
----
-
-## 6. Operational Environment
-
-| Field | Value |
-|---|---|
+| Decision Role | |
+| Human Oversight Model | |
 | Operational Environment | |
-
----
-
-## 7. Data Sensitivity Category
-
-| Field | Value |
-|---|---|
-| Highest Data Sensitivity Category Processed | |
-
----
-
-## Classification Summary
+| Highest Data Sensitivity | |
 
 ### Classification Notes
 
@@ -83,23 +33,92 @@
 
 ---
 
-## Document Control
+# 2. Organizational Impact Assessment
 
-| Field | Value |
+| Impact Area | Assessment Summary |
 |---|---|
-| Template | AI System Classification Template |
-| Capability | AI Inventory & Assessment |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Template Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
+| Business Impact | |
+| Customer Impact | |
+| Employee Impact | |
+| Financial Impact | |
+| Privacy Impact | |
+| Regulatory Impact | |
+| Reputational Impact | |
+| Third-Party Impact | |
+
+### Key Assessment Observations
+
+&nbsp;
+
+&nbsp;
 
 ---
 
-## Revision History
+# 3. Governance Significance
+
+| Field | Value |
+|---|---|
+| Governance Significance | Low / Moderate / High |
+| Specialist Review Required | Yes / No |
+| Escalation Required | Yes / No |
+
+### Supporting Rationale
+
+&nbsp;
+
+&nbsp;
+
+---
+
+# 4. Governance Recommendation
+
+| Recommendation | Selected |
+|---|---|
+| Proceed | ☐ |
+| Proceed with Conditions | ☐ |
+| Escalate | ☐ |
+| Reassess | ☐ |
+
+### Conditions or Required Actions
+
+&nbsp;
+
+&nbsp;
+
+---
+
+# 5. Readiness for AI Risk Management
+
+| Field | Value |
+|---|---|
+| Ready to Proceed | Yes / No |
+| Outstanding Information | |
+| Next Governance Activity | AI Risk Management |
+
+### Governance Handover Notes
+
+&nbsp;
+
+&nbsp;
+
+---
+
+# Document Control
+
+| Field | Value |
+|---|---|
+| Template | AI System Assessment Template |
+| Capability | AI Inventory and Assessment |
+| Repository | Enterprise AI Governance Playbook |
+| Template Owner | AI Governance Lead |
+| Version | 2.0 |
+| Status | Published Reference Implementation |
+
+---
+
+# Revision History
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the AI System Classification Template. |
+| 1.0 | July 2026 | Initial release using separate Classification, Impact Assessment, Risk Triage, and Assessment Summary templates. |
+| 2.0 | July 2026 | Consolidated assessment workflow into a single AI System Assessment template aligned with repository architecture. |
