@@ -1,158 +1,138 @@
 # AI Risk Management
 
+## Executive Summary
+
+Understanding an AI system establishes governance context. AI Risk Management establishes governance priorities.
+
+Building upon the AI Inventory and Assessment capability, Megastar Mortgage identifies, analyzes, evaluates, prioritizes, and determines treatment strategies for AI risks before governance controls are designed or implemented.
+
+Rather than treating AI risks as isolated technical concerns, this capability applies a structured enterprise risk management process that enables governance decisions to remain proportionate, evidence-based, and traceable throughout the AI lifecycle.
+
+The outputs produced within this capability establish the organization's understanding of AI risk and provide the foundation for AI Controls, AI Assurance, and Continuous Monitoring.
+
+---
+
+## Purpose
+
+The purpose of the AI Risk Management capability is to establish a standardized approach for managing AI risks throughout the Enterprise AI Governance Program.
+
+This capability identifies AI risks, evaluates their significance, determines appropriate treatment strategies, maintains authoritative enterprise risk records, and provides management visibility into the organization's AI risk landscape.
+
+Completion of this capability provides the governance foundation required before AI controls are designed and implemented.
+
+---
+
+## Governance Approach
+
+Every governed AI system follows a consistent enterprise risk management process.
+
+Risk identification, analysis, prioritization, escalation, and treatment strategy are performed as one integrated governance assessment. The resulting information is maintained within the Enterprise AI Risk Register, which serves as the organization's authoritative record of AI risks throughout the governance lifecycle.
+
+Management visibility is provided through a portfolio-level AI Risk Portfolio Report that summarizes the overall AI risk landscape without duplicating individual risk records.
+
+---
+
+## Core Deliverables
+
+| Governance Artifact | Purpose |
+|---|---|
+| AI Risk Assessment and Treatment | Identifies, analyzes, evaluates, prioritizes, escalates, and determines the treatment strategy for each identified AI risk. |
+| Enterprise AI Risk Register | Maintains the authoritative enterprise record for every governed AI risk throughout its lifecycle. |
+| AI Risk Portfolio Report | Provides management with a consolidated view of the organization's AI risk landscape and readiness for AI Controls. |
+
+---
+
+## Expected Outcomes
+
+Completion of this capability enables Megastar Mortgage to establish:
+
+- A consistent enterprise AI risk management process.
+- An authoritative register of AI risks.
+- Standardized inherent risk evaluation.
+- Consistent governance prioritization and escalation.
+- Documented treatment strategies for identified AI risks.
+- Executive visibility into the enterprise AI risk portfolio.
+
+These outcomes establish the governance direction required for AI Controls.
+
+---
+
+## Why This Capability Matters
+
+Organizations cannot design effective governance controls until they understand the risks those controls are intended to address.
+
+AI Risk Management provides a structured method for understanding AI risks before implementation activities begin. By applying a consistent enterprise risk management approach, governance decisions become transparent, proportionate, and evidence-based.
+
+This capability transforms risk management from isolated assessments into an integrated governance process.
+
+---
+
+## Framework Alignment
+
+The activities performed within this capability support internationally recognized enterprise governance and risk management practices, including:
+
+- NIST AI Risk Management Framework (Map, Measure, Manage)
+- ISO/IEC 42001 – Artificial Intelligence Management System
+- ISO 31000 – Risk Management
+- COSO Enterprise Risk Management
+
+Rather than reproducing framework requirements, this capability demonstrates how AI risks are managed within an operational governance program.
+
+---
+
+## Completion Criteria
+
+This capability is complete when:
+
+- AI risks have been assessed.
+- The Enterprise AI Risk Register has been established.
+- AI Risk Portfolio reporting has been completed.
+- AI risks are ready to progress into AI Controls.
+
+---
+
+## Validation Checklist
+
+| Status | Deliverable |
+|---|---|
+| ☐ | AI Risk Assessment and Treatment completed |
+| ☐ | Enterprise AI Risk Register established |
+| ☐ | AI Risk Portfolio Report completed |
+
+---
+
+## Next Capability
+
+With AI risks identified, evaluated, and assigned treatment strategies, the playbook progresses to **AI Controls**, where governance objectives are translated into implemented organizational controls.
+
+---
+
+## Related Capabilities
+
+- AI Inventory and Assessment
+- AI Controls
+- AI Assurance
+- Continuous Monitoring
+
+---
+
 ## Document Control
 
 | Field | Value |
-|--------|-------|
-| Document Name | AI Risk Management |
+|---|---|
 | Capability | AI Risk Management |
 | Repository | Enterprise AI Governance Playbook |
 | Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
+| Reference AI System | Megastar Intelligent Processor (MIP) |
+| Version | 2.0 |
 | Review Cycle | Annual |
-| Last Updated | July 2026 |
+| Status | Published Reference Implementation |
 
 ---
 
-# Executive Summary
-
-Understanding an AI system is only the beginning of effective governance.
-
-Following AI Inventory & Assessment, organizations must identify the uncertainties that could prevent AI systems from achieving their intended business objectives or create unintended consequences for the organization and its stakeholders.
-
-The AI Risk Management capability establishes a structured approach for identifying, documenting, analyzing, prioritizing, and determining appropriate response strategies for AI risks before governance controls are designed or implemented.
-
-Building upon the governance context established in previous capabilities, this section demonstrates how Megastar Mortgage manages AI risks associated with the Megastar Intelligent Processor (MIP) using a consistent and repeatable enterprise risk management process.
-
----
-
-# Purpose
-
-The purpose of this capability is to establish a standardized approach for managing AI risks throughout the Enterprise AI Governance Program.
-
-Rather than treating AI risks as isolated technical issues, this capability provides a structured process for identifying potential risks, documenting them consistently, analyzing their characteristics, prioritizing governance attention, and determining appropriate response strategies.
-
-Completion of this capability provides the risk management foundation required to design effective AI governance controls.
-
----
-
-# Capability Scope
-
-This capability establishes how AI risks are managed across the lifecycle of MIP, including:
-
-- AI risk identification
-- AI risk documentation
-- AI risk analysis
-- AI risk prioritization
-- AI risk response strategy
-- Consolidated risk reporting
-
-These governance activities establish the enterprise understanding of AI risks before governance controls are selected and implemented.
-
----
-
-# Governance Artifacts
-
-| Governance Artifact | Purpose |
-|----------------------|---------|
-| AI Risk Assessment | Identifies AI risks that could affect the organization, stakeholders, or AI system objectives. |
-| AI Risk Register | Maintains the authoritative record of identified AI risks. |
-| AI Risk Analysis | Analyzes the characteristics, causes, and potential consequences of identified AI risks. |
-| AI Risk Prioritization | Determines which AI risks require the greatest governance attention. |
-| AI Risk Response Strategy | Establishes the appropriate strategic response for each identified AI risk. |
-| AI Risk Summary | Consolidates AI risk management outcomes before governance controls are designed. |
-
-Together, these artifacts establish the enterprise AI risk management process supporting the remainder of the governance lifecycle.
-
----
-
-# Capability Outcomes
-
-Upon completion of this capability, Megastar Mortgage will have established:
-
-- A documented inventory of AI risks.
-- An authoritative AI Risk Register.
-- A consistent approach for analyzing AI risks.
-- A structured method for prioritizing governance attention.
-- Defined response strategies for identified AI risks.
-- A consolidated AI Risk Summary supporting governance control design.
-
-These deliverables provide the foundation for AI Controls, AI Assurance, and Continuous Monitoring.
-
----
-
-# Why This Capability Matters
-
-Every AI system introduces uncertainty.
-
-Without a structured approach to managing AI risks, organizations may overlook significant governance concerns, apply inconsistent governance decisions, or implement controls that do not address the organization's most important risks.
-
-The AI Risk Management capability enables Megastar Mortgage to understand AI risks systematically before governance controls are designed. By establishing a consistent enterprise risk management process, governance decisions become proportionate, transparent, and evidence-based.
-
----
-
-# Relationship to Other Capabilities
-
-This capability builds directly upon the AI Inventory & Assessment capability.
-
-The AI risk management process established here provides the foundation for:
-
-- AI Controls
-- AI Assurance
-- Continuous Monitoring
-- Continuous Improvement
-
-Each subsequent capability assumes that AI risks have been identified, documented, analyzed, prioritized, and assigned an appropriate response strategy.
-
----
-
-# Capability Completion Criteria
-
-This capability is considered complete when:
-
-- AI risks have been identified.
-- The AI Risk Register has been established.
-- AI risks have been analyzed.
-- AI risks have been prioritized.
-- AI risk response strategies have been documented.
-- The AI Risk Summary has been completed.
-
----
-
-# Capability Completion Checklist
-
-| Status | Deliverable |
-|--------|-------------|
-| ☐ | AI Risk Assessment completed |
-| ☐ | AI Risk Register completed |
-| ☐ | AI Risk Analysis completed |
-| ☐ | AI Risk Prioritization completed |
-| ☐ | AI Risk Response Strategy completed |
-| ☐ | AI Risk Summary completed |
-
----
-
-# Next Capability
-
-Following completion of AI Risk Management, Megastar Mortgage proceeds to **AI Controls**, where governance controls are selected, designed, implemented, and documented to address the response strategies established within this capability.
-
----
-
-# Related Capabilities
-
-- AI Inventory & Assessment
-- AI Controls
-- AI Assurance
-- Continuous Monitoring
-
----
-
-# Revision History
+## Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
-| 1.0 | July 2026 | Initial release of the AI Risk Management capability. |
+|---|---|---|
+| 1.0 | July 2026 | Initial release. |
+| 2.0 | July 2026 | Consolidated the risk management workflow, strengthened capability boundaries, and aligned the capability with the repository architecture. |
