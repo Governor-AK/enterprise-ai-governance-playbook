@@ -1,227 +1,244 @@
 # AI System Profile
 
-## Document Control
+> **Artifact Type:** Reference Implementation  
+> **Capability:** Foundations  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual  
 
-| Field | Value |
-|--------|-------|
-| Document Name | AI System Profile |
-| Capability | Foundations |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+## Purpose
 
----
+This document provides the foundational profile of the Megastar Intelligent Processor (MIP).
 
-# Executive Summary
+It establishes a shared understanding of:
 
-Megastar Intelligent Processor (MIP) is the enterprise Intelligent Document Processing (IDP) platform operated by Megastar Mortgage to support mortgage document processing throughout the loan origination lifecycle.
+- the system’s business purpose;
+- the process it supports;
+- its principal capabilities;
+- intended users;
+- data categories;
+- enterprise integrations;
+- operational boundaries;
+- key assumptions and constraints.
 
-The platform combines Optical Character Recognition (OCR), Artificial Intelligence, machine learning, confidence-based validation, and Human-in-the-Loop (HITL) verification to classify mortgage documents, extract structured information, and assist operational teams in processing borrower documentation efficiently and consistently.
+This profile provides contextual input to later governance activities. The [Enterprise AI System Inventory](../03-AI-Inventory-and-Assessment/02-AI-System-Inventory.md) remains the authoritative lifecycle record for MIP.
 
-Rather than replacing human decision-makers, MIP augments operational teams by automating repetitive document processing activities while preserving human accountability for business-critical decisions.
-
-This document establishes the official enterprise profile of MIP and serves as the authoritative reference for every governance artifact developed throughout the Enterprise AI Governance Playbook.
-
----
-
-# System Overview
+## System Overview
 
 | Attribute | Value |
-|-----------|-------|
-| AI System Name | Megastar Intelligent Processor (MIP) |
-| System Identifier | MIP-001 |
+|---|---|
+| AI System Name | Megastar Intelligent Processor |
+| Acronym | MIP |
+| Reference Identifier | MIP-001 |
 | Organization | Megastar Mortgage |
-| AI System Category | Enterprise Intelligent Document Processing Platform |
-| Primary Technologies | OCR, Machine Learning, Intelligent Document Processing, Confidence Scoring, Human-in-the-Loop |
-| Business Domain | Mortgage Origination |
-| Lifecycle Status | Production |
-| Deployment Model | Enterprise Internal Platform |
-| Human Oversight | Mandatory |
+| System Category | Intelligent Document Processing platform |
+| Business Domain | Mortgage origination |
+| Deployment Model | Internal enterprise platform |
+| Reference Lifecycle Status | Production |
+| Human Oversight | Required |
+| Primary Technologies | Optical Character Recognition, machine learning, document classification, field extraction, confidence scoring, Human-in-the-Loop routing |
 
----
+## Business Purpose
 
-# Business Purpose
+MIP supports mortgage-document processing by helping operational teams classify documents, extract structured information, route outputs for review, and transfer validated information to downstream mortgage systems.
 
-MIP has been implemented to improve the efficiency, consistency, and quality of mortgage document processing across Megastar Mortgage.
+Its intended business outcomes are to:
 
-The platform assists operational teams by reducing repetitive manual activities, accelerating document processing, improving extraction accuracy, and supporting consistent operational outcomes while ensuring that responsibility for business decisions remains with qualified employees.
+- reduce repetitive manual extraction;
+- improve processing consistency;
+- shorten document-processing time;
+- support operational quality;
+- improve scalability;
+- preserve human accountability.
 
-The objective of MIP is not to automate lending decisions but to improve the quality and efficiency of document-driven business processes.
+MIP does not automate mortgage approval, underwriting, or lending decisions.
 
----
+## Process Supported
 
-# Business Process Supported
+MIP supports the following document-processing stages:
 
-MIP supports document processing activities throughout the mortgage origination lifecycle.
+1. document receipt;
+2. document classification;
+3. field extraction;
+4. confidence scoring;
+5. workflow routing;
+6. human verification;
+7. quality review;
+8. transfer of validated information to downstream systems.
 
-Typical processing activities include:
+MIP operates as one component of the wider mortgage-origination process.
 
-- Document intake
-- Document classification
-- Information extraction
-- Confidence scoring
-- Human validation
-- Quality assurance support
-- Data transfer to downstream mortgage systems
+## Principal Capabilities
 
-MIP operates as one component of the broader mortgage origination process and supports employees responsible for document verification and quality review.
+MIP includes:
 
----
+- Optical Character Recognition;
+- document classification;
+- field extraction;
+- machine-learning-supported prediction;
+- confidence scoring;
+- Human-in-the-Loop workflow routing;
+- validation support;
+- operational reporting and traceability.
 
-# AI Capabilities
+These capabilities support processing activities but do not transfer business accountability from authorized personnel to the system.
 
-MIP combines multiple AI capabilities within a single enterprise platform.
+## Intended Users
 
-These capabilities include:
+Primary operational users include:
 
-- Optical Character Recognition (OCR)
-- Intelligent Document Classification
-- Intelligent Field Extraction
-- Machine Learning-Based Prediction
-- Confidence Scoring
-- Human-in-the-Loop Workflow Routing
-- Document Validation Support
-- Operational Decision Support
+- Mortgage Processing Team;
+- Human-in-the-Loop Specialists;
+- Quality Assurance;
+- authorized operations managers;
+- authorized technical support personnel.
 
-Together, these capabilities enable efficient processing of mortgage documents while maintaining appropriate governance and operational oversight.
+AI Governance, Risk Management, Privacy, Information Security, Legal & Compliance, and Internal Audit may review governance information or evidence relating to MIP, but they are not classified as routine operational users unless separately authorized.
 
----
+Access is subject to enterprise identity, role-based access, segregation-of-duties, privacy, and security requirements.
 
-# Intended Users
+## Data Profile
 
-MIP supports multiple operational teams involved in mortgage processing.
+MIP processes information contained in mortgage-related documents, including:
 
-Primary users include:
+- income-verification documents;
+- pay statements;
+- tax records;
+- bank statements;
+- employment-verification documents;
+- identity documents;
+- supporting borrower documentation.
 
-- Mortgage Processors
-- Human-in-the-Loop Specialists
-- Quality Assurance Analysts
-- Operations Managers
-- AI Governance Team
-- Data & AI Support Teams
-- Enterprise Technology Teams
+These records may contain personal, financial, employment, tax, identity, and other sensitive information.
 
-Access to the platform is controlled through enterprise identity and role-based access management processes.
+Detailed data handling, retention, lineage, access, and privacy requirements are governed through the relevant enterprise data, privacy, security, and control processes.
 
----
+## Enterprise Integrations
 
-# Data Profile
+MIP may integrate with:
 
-MIP processes information contained within mortgage-related documentation submitted during the loan origination process.
+- Loan Origination System;
+- document-management platform;
+- Identity and Access Management;
+- OCR services;
+- enterprise monitoring services;
+- audit-logging platform;
+- Data Loss Prevention controls;
+- operational reporting services.
 
-Examples include:
+The [Enterprise AI Architecture](04-Enterprise-AI-Architecture.md) provides the high-level interaction and trust-boundary view.
 
-- Income verification documents
-- Pay slips
-- Tax documents
-- Bank statements
-- Employment verification
-- Identity documents
-- Supporting borrower documentation
+## Operational Boundaries
 
-The platform processes business information required for mortgage operations and operates within Megastar Mortgage's privacy, security, and data governance requirements.
+MIP may:
 
----
+- classify supported mortgage documents;
+- extract configured data fields;
+- assign confidence scores;
+- route records for human review;
+- present extracted values for validation;
+- transfer validated information to approved downstream systems;
+- retain processing and review evidence where configured.
 
-# Enterprise Integrations
+MIP may not:
 
-MIP integrates with several enterprise services supporting mortgage operations.
+- approve or deny mortgage applications;
+- make underwriting or lending decisions;
+- override authorized human decisions;
+- initiate customer-facing commitments;
+- operate outside approved workflows;
+- bypass required human review;
+- use unapproved data sources or purposes.
 
-These include:
+Business-critical decisions remain with authorized personnel.
 
-- Mortgage Origination System (LOS)
-- Document Management Platform
-- Identity and Access Management (IAM)
-- OCR Engine
-- Enterprise Monitoring Services
-- Audit Logging Platform
-- Data Loss Prevention (DLP)
-- Operational Reporting Platform
+## Human Oversight
 
-These integrations enable secure document processing while supporting governance, monitoring, and operational traceability.
+Human oversight is required where:
 
----
+- confidence thresholds require review;
+- extracted information is incomplete or inconsistent;
+- exceptions or anomalies are identified;
+- configured controls require validation;
+- quality-assurance sampling applies;
+- downstream use could materially affect a borrower or business outcome.
 
-# Operational Boundaries
+Human reviewers may validate, correct, reject, or escalate MIP outputs in accordance with approved procedures.
 
-MIP is designed to assist mortgage operations by processing documents and presenting extracted information for human verification.
+Detailed Human-in-the-Loop responsibilities and decision rights are defined in the [Governance Operating Model](../02-Governance-Operating-Model/README.md).
 
-The platform does not:
+## Assumptions and Constraints
 
-- Approve mortgage applications.
-- Make lending decisions.
-- Override human judgment.
-- Authorize customer-facing actions.
-- Operate outside approved business workflows.
+The reference implementation assumes that:
 
-Business-critical decisions remain the responsibility of authorized personnel.
+- source documents have been lawfully obtained;
+- supported document types and fields are configured;
+- authorized users have appropriate access;
+- required human review is performed;
+- upstream document quality is sufficient for processing;
+- downstream systems are available;
+- audit logging and monitoring remain operational;
+- changes are introduced through approved change management.
 
----
+Known constraints include:
 
-# Assumptions & Constraints
+- variable document quality and layout;
+- OCR and extraction limitations;
+- dependency on configured confidence thresholds;
+- dependency on human review quality;
+- dependency on third-party and enterprise services;
+- potential performance variation across document types.
 
-The operation of MIP assumes:
+These assumptions and constraints inform later assessment, risk, control, assurance, and monitoring activities.
 
-- Mortgage documents have been lawfully obtained.
-- Users have appropriate access permissions.
-- Human reviewers validate AI outputs where required.
-- Upstream document quality supports accurate processing.
-- Downstream business systems remain available.
+## Intended Performance Indicators
 
-These assumptions define the operating conditions under which MIP is expected to perform effectively.
+Operational performance may be observed through:
 
----
+- document-processing time;
+- extraction accuracy;
+- exception rates;
+- human correction rates;
+- quality-assurance outcomes;
+- processing consistency;
+- platform availability;
+- review turnaround time.
 
-# Success Measures
+Authoritative metric definitions, thresholds, and reporting arrangements are maintained within [Continuous Monitoring](../08-Continuous-Monitoring/README.md).
 
-The effectiveness of MIP is evaluated through operational outcomes including:
+## Governance Boundary
 
-- Document processing efficiency
-- Extraction accuracy
-- Human validation effectiveness
-- Processing turnaround time
-- Operational consistency
-- Platform availability
-- User adoption
-- Quality assurance outcomes
+This profile describes the reference system.
 
-These measures support continuous operational improvement while informing future governance activities.
+It does not:
 
----
+- register MIP as the authoritative inventory record;
+- assign governance classification or tier;
+- perform an AI Impact Assessment;
+- identify or rate risks;
+- approve controls;
+- provide assurance conclusions;
+- approve deployment or continued operation;
+- accept residual risk.
 
-# Why This Document Matters
+Those activities belong to later capabilities.
 
-Enterprise AI governance begins with understanding the AI system itself.
+## Related Artifacts
 
-This profile establishes a shared understanding of MIP's purpose, capabilities, users, boundaries, and operational role before governance activities such as AI inventory, impact assessment, risk management, control design, and governance assurance begin.
+- [Foundations](README.md)
+- [Business Context](01-Business-Context.md)
+- [AI Governance Stakeholder Model](03-AI-Governance-Stakeholder-Model.md)
+- [Enterprise AI Architecture](04-Enterprise-AI-Architecture.md)
+- [Governance Operating Model](../02-Governance-Operating-Model/README.md)
+- [AI Inventory and Assessment](../03-AI-Inventory-and-Assessment/README.md)
 
-Every governance artifact developed throughout this playbook references this AI System Profile as the authoritative description of the enterprise AI system being governed.
-
----
-
-# Related Artifacts
-
-This document provides foundational input to:
-
-- Stakeholder Map
-- AI System Architecture
-- Governance Operating Model
-- AI Inventory & Assessment
-- AI Impact Assessment
-- AI Risk Management
-- AI Controls
-- AI Assurance
-
----
-
-# Revision History
+## Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the AI System Profile artifact. |
+| 2.0 | July 2026 | Clarified system boundaries, corrected user classification, and separated the foundational profile from the authoritative inventory record. |
