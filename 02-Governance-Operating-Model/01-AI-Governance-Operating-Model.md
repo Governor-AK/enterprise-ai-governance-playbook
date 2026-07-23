@@ -1,141 +1,203 @@
-# Governance Framework
+# AI Governance Operating Model
 
-## Document Control
-
-| Field | Value |
-|--------|-------|
-| Document Name | Governance Framework |
-| Capability | Governance Operating Model |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Classification | Public Reference Implementation |
-| Status | Published |
-| Review Cycle | Annual |
-| Last Updated | July 2026 |
+> **Artifact Type:** Governance Standard  
+> **Capability:** Governance Operating Model  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual  
 
 ---
 
-# Executive Summary
+# Purpose
 
-The Governance Framework establishes the organizational approach used by Megastar Mortgage to govern the Megastar Intelligent Processor (MIP) throughout its lifecycle.
+This document defines the operating model used by Megastar Mortgage to govern MIP.
 
-Rather than functioning as a standalone policy, the framework defines how governance is structured, how accountability is distributed, and how governance activities are integrated into business and technology operations.
+It establishes:
 
-It provides a common governance model that enables consistent decision-making, oversight, and accountability across all stakeholders involved in the development, operation, and monitoring of enterprise AI systems.
+- the governance structure;
+- the operating principles;
+- the governance layers;
+- the participating functions;
+- the relationship between business, technology, risk, control, and assurance functions;
+- the boundaries between coordination, ownership, decision-making, and independent challenge.
+
+This document does not assign detailed activity-level responsibilities, decision rights, RACI designations, forum authority, or reporting requirements. Those matters are defined in the related operating-model artifacts.
 
 ---
 
-# Framework Objective
+# Operating Model Objective
 
-The objective of the Governance Framework is to establish a consistent governance structure that enables responsible AI adoption while supporting business objectives, operational efficiency, regulatory obligations, and effective risk management.
+The objective of the AI Governance Operating Model is to ensure that MIP is governed through a coordinated enterprise structure rather than through a single department or isolated compliance process.
 
-The framework provides the organizational foundation upon which all subsequent governance activities are performed.
+The operating model is designed to:
+
+- embed governance within business and technology operations;
+- preserve clear accountability;
+- separate ownership from independent challenge;
+- support proportionate governance across the AI lifecycle;
+- ensure decisions remain documented and traceable;
+- support effective oversight, assurance, monitoring, and continual improvement.
 
 ---
 
 # Governance Principles
 
-The Governance Framework is built upon the following principles.
+The operating model follows these principles:
 
-- Business ownership remains accountable for AI-enabled outcomes.
-- Human judgment is retained for business-critical decisions.
-- Governance responsibilities are shared across business, technology, and oversight functions.
-- Governance activities are integrated throughout the AI lifecycle.
-- Decisions are transparent, documented, and traceable.
-- Governance evolves alongside business and technology change.
+- business ownership remains accountable for AI-enabled business outcomes;
+- human judgment remains central to business-critical decisions;
+- AI Governance coordinates the governance process but does not automatically own business, technical, risk, privacy, security, legal, or assurance decisions;
+- governance responsibilities are distributed across the functions best placed to perform them;
+- business risk ownership remains separate from Risk Management challenge;
+- control ownership remains separate from independent control testing;
+- Internal Audit remains independent from operational management;
+- governance decisions must be transparent, documented, and traceable;
+- governance must remain proportionate to system impact, risk, and change;
+- governance must evolve when business, technology, risk, or regulatory conditions change.
+
+---
+
+# Governance Structure
+
+MIP is governed through five governance layers.
+
+| Governance Layer | Purpose |
+|---|---|
+| Executive Oversight | Provides enterprise sponsorship, strategic direction, funding support, and executive accountability. |
+| Business Ownership | Owns the business process, operational outcomes, customer impact, and continued appropriateness of MIP use. |
+| Technology and AI | Designs, operates, maintains, integrates, and changes MIP and its supporting technical environment. |
+| Risk and Control Functions | Provide risk, privacy, security, legal, compliance, and third-party governance expertise and challenge. |
+| Independent Assurance | Provides objective evaluation of governance design, implementation, evidence, and effectiveness. |
+
+These layers work together but do not share identical authority.
+
+---
+
+# Governance Functions
+
+| Function | Operating-Model Role |
+|---|---|
+| Executive Sponsor | Provides executive sponsorship, strategic alignment, and escalation support. |
+| Mortgage Operations | Owns the business process and operational outcomes supported by MIP. |
+| Mortgage Processing Team | Uses MIP within approved operational workflows. |
+| AI Governance Lead | Coordinates governance activities, maintains process consistency, and supports traceability. |
+| AI Platform Team | Operates and maintains MIP and its technical integrations. |
+| Data & AI Engineering | Develops, configures, tests, and supports AI capabilities and technical changes. |
+| Human-in-the-Loop Specialists | Review, correct, reject, and escalate MIP outputs within approved workflows. |
+| Quality Assurance | Performs operational quality review, sampling, validation, and trend identification. |
+| Risk Management | Provides risk methodology, independent challenge, aggregation, and oversight. |
+| Privacy Office | Provides privacy governance and personal-data oversight. |
+| Information Security | Provides security governance, access-control oversight, resilience, and threat perspectives. |
+| Legal & Compliance | Provides legal, regulatory, contractual, policy, and compliance interpretation. |
+| Procurement / Third-Party Management | Supports provider onboarding, due diligence, commercial governance, and ongoing supplier oversight. |
+| Internal Audit | Provides independent assurance over governance and control effectiveness. |
+
+Detailed standing responsibilities are defined in [Roles, Responsibilities and Decision Rights](02-Roles-Responsibilities-and-Decision-Rights.md).
+
+---
+
+# Governance Relationships
+
+## Executive Oversight and Business Ownership
+
+Executive Oversight provides strategic direction and organizational support.
+
+Mortgage Operations remains accountable for the business process and outcomes supported by MIP.
+
+## Business Ownership and Technology
+
+Business functions define the intended use, process needs, operational boundaries, and acceptable outcomes.
+
+Technology and engineering functions translate those needs into supported system capabilities and controlled technical changes.
+
+## Technology and Risk Functions
+
+Technology functions provide design, architecture, performance, change, and control evidence.
+
+Risk, Privacy, Information Security, Legal & Compliance, and Third-Party Management provide challenge and specialist review.
+
+## Operations and Quality Assurance
+
+Operational teams use MIP and provide evidence of its behavior in practice.
+
+Quality Assurance reviews operational outcomes through defined sampling, validation, and defect-analysis activities.
+
+## Management and Independent Assurance
+
+Management owns system operation, risk treatment, control implementation, remediation, and improvement actions.
+
+Internal Audit and other independent assurance functions evaluate governance without assuming operational ownership.
 
 ---
 
 # Governance Domains
 
-The framework organizes governance activities into six operational domains.
+The operating model coordinates governance across the following domains:
 
-| Governance Domain | Purpose |
-|-------------------|---------|
-| Strategy & Oversight | Align AI governance with business objectives and executive direction. |
-| Organization & Accountability | Define governance ownership and stakeholder responsibilities. |
-| AI Lifecycle Governance | Govern AI from intake through retirement. |
-| Risk & Controls | Identify, assess, and manage AI-related risks. |
-| Assurance & Monitoring | Evaluate governance effectiveness and monitor operational performance. |
-| Continuous Improvement | Strengthen governance through ongoing learning and review. |
+| Governance Domain | Operating Purpose |
+|---|---|
+| Strategy and Oversight | Aligns AI governance with enterprise direction and executive priorities. |
+| Organization and Accountability | Defines ownership, responsibilities, decision rights, and RACI assignments. |
+| Lifecycle Governance | Governs AI from intake through operation, change, and retirement. |
+| Risk and Controls | Identifies, evaluates, treats, and controls AI-related risk. |
+| Assurance and Monitoring | Evaluates controls and observes ongoing performance and governance conditions. |
+| Incident and Change Governance | Governs adverse events and material system or process changes. |
+| Third-Party Governance | Governs external providers and service dependencies. |
+| Oversight and Continual Improvement | Reviews governance effectiveness and drives structured improvement. |
 
-Together, these domains establish the governance structure for MIP.
-
----
-
-# Governance Objectives
-
-The framework is designed to achieve the following objectives:
-
-- Establish clear governance accountability.
-- Support responsible AI adoption.
-- Enable consistent governance practices.
-- Improve transparency across AI activities.
-- Integrate governance into operational processes.
-- Support effective oversight and decision-making.
-- Promote continual governance maturity.
+These domains correspond to later capabilities in the repository. They do not create parallel processes or records.
 
 ---
 
-# Governance Model
+# Operating Model Boundaries
 
-The governance framework operates through coordinated collaboration between:
+This document owns:
 
-- Executive Leadership
-- Business Operations
-- Technology & AI
-- AI Governance
-- Risk Management
-- Privacy
-- Information Security
-- Legal & Compliance
-- Internal Audit
+- governance structure;
+- operating principles;
+- governance layers;
+- participating functions;
+- relationships among governance functions;
+- separation between ownership, coordination, challenge, and assurance.
 
-Each stakeholder group contributes distinct governance responsibilities while working together to achieve consistent governance outcomes.
+This document does not own:
 
----
+- standing role responsibilities;
+- decision authority;
+- RACI assignments;
+- forum membership or cadence;
+- escalation procedures;
+- lifecycle gates;
+- governance metrics;
+- operational registers;
+- risk acceptance;
+- governance exceptions;
+- assurance conclusions.
 
-# Governance Outcomes
-
-Implementation of this framework enables Megastar Mortgage to:
-
-- Govern AI consistently across business functions.
-- Establish accountable decision-making.
-- Improve visibility of AI activities.
-- Support operational oversight.
-- Enable governance assurance.
-- Build a foundation for continuous governance improvement.
-
----
-
-# Why This Document Matters
-
-Enterprise AI governance requires more than individual policies or isolated controls.
-
-A governance framework provides the common structure that aligns people, processes, and governance activities across the organization.
-
-This framework establishes the operating principles that guide every subsequent governance capability within the Enterprise AI Governance Playbook.
+Those matters are governed by the related artifacts and later capabilities.
 
 ---
 
 # Related Artifacts
 
-This document provides foundational input to:
-
-- Governance Organization
-- Roles & Responsibilities
-- Decision Rights
-- Governance Forums
-- Governance Lifecycle
-- Performance & Reporting
+- [Governance Operating Model](README.md)
+- [Roles, Responsibilities and Decision Rights](02-Roles-Responsibilities-and-Decision-Rights.md)
+- [AI Governance RACI Matrix](03-AI-Governance-RACI-Matrix.md)
+- [Governance Forums and Escalation](04-Governance-Forums-and-Escalation.md)
+- [Governance Lifecycle](05-Governance-Lifecycle.md)
+- [Performance and Reporting](06-Performance-and-Reporting.md)
+- [AI Governance Stakeholder Model](../01-Foundations/03-AI-Governance-Stakeholder-Model.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|----------|------|-------------|
-| 1.0 | July 2026 | Initial release of the Governance Framework artifact. |
+|---|---|---|
+| 1.0 | July 2026 | Initial release of the Governance Framework and Governance Organization artifacts. |
+| 2.0 | July 2026 | Consolidated governance framework and organizational structure into one AI Governance Operating Model. |
