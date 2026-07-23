@@ -1,225 +1,103 @@
-# AI Risk Summary
+# AI Risk Portfolio Report
 
-## Executive Summary
-
-AI Risk Management produces multiple governance outputs across risk identification, registration, analysis, prioritization, and response-strategy selection. Before governance controls are designed, these outcomes must be consolidated into a clear view of the AI risk landscape.
-
-The AI Risk Summary provides Megastar Mortgage with an executive-level overview of the risks identified for the Megastar Intelligent Processor (MIP). It summarizes the distribution of risks by category, governance priority, escalation status, and selected response strategy without duplicating the detailed records maintained within the Enterprise AI Risk Register.
-
-This document serves as the formal handoff from AI Risk Management to AI Controls by confirming which risks require control design, which risks require additional governance attention, and whether the completed risk-management information is sufficient for the next capability to begin.
-
----
-
-## Purpose
-
-The purpose of this document is to establish a standardized approach for consolidating the outcomes of AI Risk Management.
-
-The AI Risk Summary enables governance stakeholders to understand the overall risk profile of an AI system without reviewing every individual risk record. It presents portfolio-level information derived from the Enterprise AI Risk Register and highlights the governance matters requiring attention before control activities begin.
-
-The summary does not replace the Enterprise AI Risk Register, individual risk assessments, analysis records, prioritization decisions, or response strategies. Those artifacts remain the authoritative sources for detailed risk information.
+> **Artifact Type:** Governance Portfolio Report  
+> **Capability:** AI Risk Management  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Authoritative Record:** No  
+> **Document Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Periodic
 
 ---
 
-## Summary Process
+# Purpose
 
-The AI Risk Summary is prepared after risk response strategies have been established for all identified risks.
+The AI Risk Portfolio Report provides management with a consolidated view of the AI risks associated with a governed AI system.
 
-```mermaid
-flowchart LR
+Using information maintained within the Enterprise AI Risk Register, the report summarizes the organization's AI risk landscape, highlights significant governance matters, and confirms readiness to proceed into AI Controls.
 
-A[AI Risk Assessment]
---> B[Enterprise AI Risk Register]
---> C[AI Risk Analysis]
---> D[AI Risk Prioritization]
---> E[AI Risk Response Strategy]
---> F[AI Risk Summary]
---> G[AI Controls]
-```
-
-The summary consolidates completed risk-management outcomes and confirms readiness to proceed into AI Controls.
+The report supports governance oversight without duplicating individual AI risk records.
 
 ---
 
-## Summary Principles
+# Report Scope
 
-Megastar Mortgage prepares AI Risk Summaries according to the following principles:
+The AI Risk Portfolio Report summarizes:
 
-- Every governed AI system shall have an AI Risk Summary before progressing into AI Controls.
-- The summary shall aggregate approved information from the Enterprise AI Risk Register.
-- Individual risk records shall not be duplicated within the summary.
-- Summary information shall remain traceable to the authoritative risk records from which it was derived.
-- Governance observations shall distinguish factual register information from professional judgment.
-- Outstanding risk-management activities shall be identified before the system proceeds into AI Controls.
-- The summary shall not prescribe controls, calculate residual risk, or constitute formal risk acceptance.
+- overall AI risk profile;
+- distribution of risks by category;
+- inherent risk distribution;
+- governance priorities;
+- escalation status;
+- treatment strategy distribution;
+- significant governance observations;
+- readiness for AI Controls.
 
----
-
-## Summary Scope
-
-The AI Risk Summary consolidates the following information:
-
-| Summary Area | Purpose |
-|---|---|
-| Risk Portfolio Overview | Presents the total number and current status of identified AI risks. |
-| Risk Category Distribution | Summarizes identified risks across the approved enterprise AI risk taxonomy. |
-| Governance Priority Distribution | Summarizes risks classified as Low, Medium, High, or Critical. |
-| Escalation Overview | Identifies risks requiring additional governance or executive attention. |
-| Response Strategy Distribution | Summarizes the approved strategic responses selected for identified risks. |
-| Key Governance Observations | Highlights material themes, concentrations, dependencies, or unresolved matters. |
-| Readiness for AI Controls | Confirms whether the risk-management outputs are sufficiently complete for control design to begin. |
+All detailed risk information remains within the Enterprise AI Risk Register.
 
 ---
 
-## Risk Portfolio Overview
+# Reporting Principles
 
-The portfolio overview provides a consolidated view of the risks associated with the governed AI system.
+The AI Risk Portfolio Report operates according to the following principles.
 
-Typical information includes:
-
-- Total risks identified.
-- Number of open risk records.
-- Number of risks by enterprise risk category.
-- Number of Critical, High, Medium, and Low risks.
-- Number of risks requiring escalation.
-- Number of risks assigned to each response strategy.
-- Number of risks requiring control design.
-- Number of risk-management activities that remain incomplete.
-
-The underlying Enterprise AI Risk Register remains the authoritative source for all individual risk records.
+- Information is derived from approved Enterprise AI Risk Register records.
+- Portfolio reporting summarizes rather than duplicates individual risks.
+- Reported information remains evidence-based and traceable.
+- Material governance observations are clearly distinguished from factual register information.
+- The report supports governance oversight rather than operational execution.
 
 ---
 
-## Governance Priority Overview
+# Governance Outcomes
 
-Governance priority information is summarized using the approved prioritization levels.
+The AI Risk Portfolio Report enables Megastar Mortgage to:
 
-| Governance Priority | Summary Purpose |
-|---|---|
-| Critical | Identifies risks requiring immediate governance attention and escalation. |
-| High | Identifies risks requiring significant and timely governance action. |
-| Medium | Identifies risks requiring active management through standard governance processes. |
-| Low | Identifies risks suitable for proportionate and routine governance oversight. |
-
-The summary presents the distribution of risks across these levels without recalculating or changing the approved priority of any individual risk.
+- understand the overall AI risk landscape;
+- identify concentrations of enterprise AI risk;
+- understand governance priorities requiring management attention;
+- review escalation status across the AI portfolio;
+- confirm readiness to begin AI Controls.
 
 ---
 
-## Response Strategy Overview
+# Governance Boundary
 
-The summary consolidates the response strategies approved during AI Risk Response Strategy.
+This artifact owns:
 
-| Response Strategy | Summary Purpose |
-|---|---|
-| Avoid | Identifies risks addressed by discontinuing, prohibiting, or materially changing the associated activity. |
-| Mitigate | Identifies risks requiring governance, operational, technical, or human measures. |
-| Transfer | Identifies risks involving contractual, commercial, insurance, or other allocation mechanisms. |
-| Proposed Acceptance | Identifies risks proposed for retention, subject to later control, assurance, residual-risk, and formal-approval requirements. |
+- portfolio-level reporting;
+- governance observations;
+- readiness reporting;
+- management visibility.
 
-A Proposed Acceptance strategy does not constitute formal risk acceptance.
+This artifact does not own:
 
----
+- individual AI risk records;
+- inherent risk calculations;
+- treatment decisions;
+- control implementation;
+- assurance conclusions;
+- residual-risk acceptance.
 
-## Key Governance Observations
-
-The AI Risk Summary may highlight material observations such as:
-
-- Concentration of risks within a particular AI risk category.
-- Multiple risks arising from a common data, vendor, model, or operational dependency.
-- Critical or High risks requiring accelerated governance action.
-- Risks requiring cross-functional coordination.
-- Risks subject to unresolved escalation.
-- Response strategies dependent upon future control design.
-- Gaps in supporting evidence or incomplete risk-management activities.
-
-Governance observations provide context for decision-makers but do not replace the underlying approved risk records.
+Those remain within their respective authoritative governance records.
 
 ---
 
-## Readiness for AI Controls
+# Related Artifacts
 
-An AI system is ready to proceed into AI Controls when:
-
-- All identified risks have been recorded within the Enterprise AI Risk Register.
-- AI Risk Analysis has been completed for each identified risk.
-- Governance priorities have been approved.
-- Required escalations have been completed or formally tracked.
-- A response strategy has been documented for each prioritized risk.
-- Outstanding information does not prevent control design from beginning.
-- Risks requiring mitigation have been clearly identified for AI Control Objectives and subsequent control design.
-
-Where these conditions are not met, the AI Risk Summary records the outstanding requirements and the responsible governance function before progression.
+- [AI Risk Management](README.md)
+- [AI Risk Assessment and Treatment](01-AI-Risk-Assessment-and-Treatment.md)
+- [Enterprise AI Risk Register](02-Enterprise-AI-Risk-Register.md)
+- [AI Controls](../05-AI-Controls/README.md)
+- [Governance Glossary](../00-Governance-Glossary.md)
 
 ---
 
-## Handoff to AI Controls
-
-AI Risk Management determines:
-
-- which risks exist;
-- how those risks are understood;
-- which risks require the greatest governance attention; and
-- what strategic response the organization intends to pursue.
-
-AI Controls translates approved AI Risk Response Strategies into clearly defined AI Control Objectives, detailed control designs, governed control records, and implementation plans that reduce prioritized AI risks. These governance controls subsequently become subject to assurance activities that evaluate their effectiveness throughout the AI governance lifecycle.
-
-The AI Risk Summary provides the formal transition between these two capabilities.
-
----
-
-## Summary Maintenance
-
-The AI Risk Summary shall be reviewed when:
-
-- new risks are identified;
-- approved priorities change;
-- escalation decisions change materially;
-- response strategies are revised;
-- risk-management activities are repeated following a significant system change; or
-- the existing summary no longer reflects the current Enterprise AI Risk Register.
-
-Updates shall remain traceable to the approved source records.
-
----
-
-## Why This Document Matters
-
-Detailed risk records are necessary for governance execution, but decision-makers also require a concise understanding of the overall risk landscape.
-
-Without a consolidated summary, significant themes, concentrations, escalations, and readiness gaps may remain hidden across multiple individual risk records.
-
-The AI Risk Summary enables Megastar Mortgage to communicate the outcome of AI Risk Management clearly, preserve traceability to authoritative records, and begin AI Controls with a complete and evidence-based understanding of the risks requiring action.
-
----
-
-## Related Artifacts
-
-This document supports:
-
-- AI Risk Summary Template
-- Enterprise AI Risk Register
-- AI Risk Response Strategy
-- AI Controls
-
----
-
-## Document Control
-
-| Field | Value |
-|---|---|
-| Document | AI Risk Summary |
-| Capability | AI Risk Management |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
-
----
-
-## Revision History
+# Revision History
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the AI Risk Summary artifact. |
+| 1.0 | July 2026 | Initial release as AI Risk Summary. |
+| 2.0 | July 2026 | Renamed to AI Risk Portfolio Report, clarified management reporting purpose, removed duplication, and aligned with repository architecture. |
