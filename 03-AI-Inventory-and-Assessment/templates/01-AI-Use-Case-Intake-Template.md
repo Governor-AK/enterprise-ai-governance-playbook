@@ -1,10 +1,10 @@
 # AI Use Case Intake Template
 
-## 1. Request Information
+## Governance Entry Record
 
 | Field | Value |
 |---|---|
-| Intake Reference Number | |
+| Intake Reference ID | |
 | Submission Date | |
 | Requested By | |
 | Business Unit | |
@@ -13,14 +13,13 @@
 
 ---
 
-## 2. Proposed AI Use Case
+# 1. Business Need
 
 | Field | Value |
 |---|---|
-| Proposed AI Use Case Name | |
-| Business Problem to be Solved | |
+| Proposed AI Initiative | |
+| Business Problem | |
 | Business Objective | |
-| Why is AI being considered? | |
 | Expected Business Benefits | |
 | Business Process Supported | |
 
@@ -32,16 +31,16 @@
 
 ---
 
-## 3. Proposed AI Solution
+# 2. Proposed AI Solution
 
 | Field | Value |
 |---|---|
 | Proposed AI Capability | |
-| High-Level Description of the Proposed Solution | |
-| Proposed Users | |
+| High-Level Solution Description | |
+| Intended Users | |
 | Expected AI Outputs | |
 
-### Additional Solution Details
+### Additional Solution Notes
 
 &nbsp;
 
@@ -49,15 +48,15 @@
 
 ---
 
-## 4. High-Level Data Overview
+# 3. High-Level Data Context
 
 | Field | Value |
 |---|---|
-| Primary Information Used | |
+| Primary Data Categories | |
 | Personal Information Expected | Yes / No |
-| Financial Information Expected | Yes / No |
-| Customer Documents Expected | Yes / No |
-| Third-Party Data Expected | Yes / No |
+| Confidential Information Expected | Yes / No |
+| Customer Information Expected | Yes / No |
+| Third-Party Information Expected | Yes / No |
 
 ### Additional Data Notes
 
@@ -67,15 +66,15 @@
 
 ---
 
-## 5. Human Involvement
+# 4. Expected Human Involvement
 
 | Field | Value |
 |---|---|
-| Will people review AI outputs? | Yes / No |
-| Will AI support business decisions? | Yes / No |
-| Will humans remain responsible for final decisions? | Yes / No |
+| Human Review Expected | Yes / No |
+| AI Supports Business Decisions | Yes / No |
+| Human Responsible for Final Decision | Yes / No |
 
-### Human Oversight Description
+### Human Oversight Notes
 
 &nbsp;
 
@@ -83,18 +82,17 @@
 
 ---
 
-## 6. Initial Governance Review *(Completed by AI Governance Team)*
+# 5. Governance Entry Review *(Completed by AI Governance)*
 
 | Field | Value |
 |---|---|
 | Review Date | |
 | Reviewed By | |
 | Information Complete | Yes / No |
-| Business Owner Confirmed | Yes / No |
-| Within Governance Scope | Yes / No |
-| Governance Decision | Accepted / Clarification Required / Rejected |
+| Governance Scope Confirmed | Yes / No |
+| Business Ownership Confirmed | Yes / No |
 
-### Governance Review Comments
+### Review Comments
 
 &nbsp;
 
@@ -102,15 +100,16 @@
 
 ---
 
-## Governance Decision
+# 6. Governance Entry Decision
 
 | Field | Value |
 |---|---|
+| Governance Decision | Accepted / Clarification Required / Closed |
 | Decision Date | |
-| Governance Lead | |
-| Next Activity | AI System Inventory / Closed |
+| Decision Authority | |
+| Next Governance Activity | Enterprise AI System Inventory / Closed |
 
-### Decision Notes
+### Decision Rationale
 
 &nbsp;
 
@@ -118,23 +117,22 @@
 
 ---
 
-## Document Control
+# Document Control
 
 | Field | Value |
 |---|---|
 | Template | AI Use Case Intake Template |
-| Capability | AI Inventory & Assessment |
+| Capability | AI Inventory and Assessment |
 | Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
 | Template Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
+| Version | 2.0 |
+| Status | Published Reference Implementation |
 
 ---
 
-## Revision History
+# Revision History
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the AI Use Case Intake Template. |
+| 1.0 | July 2026 | Initial release. |
+| 2.0 | July 2026 | Simplified governance entry workflow, consolidated governance decision, and aligned with authoritative record principles. |
