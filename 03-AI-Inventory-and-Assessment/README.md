@@ -1,129 +1,186 @@
-# AI Inventory & Assessment
+# AI Inventory and Assessment
 
-## Executive Summary
-
-Effective enterprise AI governance begins with visibility.
-
-Before risks can be assessed, controls implemented, or assurance activities performed, an organization must first establish a consistent understanding of the AI systems operating within its environment.
-
-The AI Inventory & Assessment capability provides that visibility.
-
-Using a structured governance process, **Megastar Mortgage** identifies, documents, classifies, and evaluates AI systems before they progress into formal risk management. Rather than treating every AI initiative identically, this capability establishes a proportionate governance approach that ensures governance activities are aligned with the nature, purpose, and potential impact of each AI system.
-
-The governance artifacts produced within this capability become the operational entry point into the Enterprise AI Governance Playbook and provide the information required for all subsequent governance decisions.
+> **Capability:** AI Inventory and Assessment  
+> **Repository:** Enterprise AI Governance Playbook  
+> **Reference Organization:** Megastar Mortgage  
+> **Reference AI System:** Megastar Intelligent Processor (MIP)  
+> **Capability Owner:** AI Governance Lead  
+> **Version:** 2.0  
+> **Status:** Published Reference Implementation  
+> **Review Cycle:** Annual
 
 ---
 
-## Purpose
+# Executive Summary
 
-The purpose of the AI Inventory & Assessment capability is to establish a standardized governance process for identifying, documenting, classifying, and assessing AI systems before detailed governance activities begin.
+Effective AI governance begins with visibility.
 
-Rather than initiating governance through risk assessments or compliance reviews, this capability focuses on building a complete understanding of the AI system and its intended use. It enables Megastar Mortgage to determine which AI systems require governance, how they should be governed, and the level of governance appropriate to their potential business impact.
+Before an organization can assess risk, implement controls, perform assurance, or monitor AI systems, it must first know which AI systems exist, why they exist, who owns them, and how significant they may be to the organization.
 
-Completing this capability ensures that every AI system enters the governance lifecycle through a consistent, transparent, and auditable process.
+The AI Inventory and Assessment capability establishes this foundation.
 
----
+Using a structured governance process, Megastar Mortgage captures proposed AI initiatives, determines whether they should formally enter governance, establishes an authoritative enterprise inventory record, and performs a structured assessment that determines the appropriate governance pathway before detailed AI Risk Management begins.
 
-## Governance Approach
-
-Megastar Mortgage applies a structured governance approach to every proposed AI initiative before it enters operational use.
-
-Each AI system progresses through a defined sequence of governance activities beginning with the submission of an AI use case, followed by enterprise registration, system classification, impact assessment, and governance triage. These activities establish a common understanding of the AI system before formal risk management begins.
-
-By standardizing how AI systems enter governance, the organization improves visibility across its AI portfolio, supports proportionate governance, and ensures that governance decisions are based upon complete and consistent information rather than assumptions or individual judgment.
+This capability establishes enterprise visibility without prematurely performing risk management activities.
 
 ---
 
-## Core Deliverables
+# Purpose
 
-The AI Inventory & Assessment capability produces the following governance artifacts.
+The purpose of this capability is to provide a consistent governance process for bringing AI systems into enterprise governance.
 
-| Governance Artifact | Purpose |
-|----------------------|---------|
-| AI Use Case Intake | Captures the business, operational, and technical information required to initiate AI governance. |
-| AI System Inventory | Establishes the enterprise inventory of governed AI systems and their key attributes. |
-| AI System Classification | Categorizes AI systems according to their characteristics, operational purpose, and governance relevance. |
-| AI Impact Assessment | Evaluates the potential business, customer, operational, regulatory, financial, and reputational impacts associated with the AI system. |
-| AI Risk Triage | Determines the appropriate level of governance and whether the AI system proceeds to detailed risk assessment. |
-| Assessment Summary | Consolidates assessment outcomes and recommends the appropriate governance pathway for the AI system. |
+The capability enables the organization to:
 
-Collectively, these artifacts establish the governance baseline required before formal AI risk management begins.
+- establish governance visibility;
+- create authoritative AI system records;
+- understand the characteristics and potential organizational impact of AI systems;
+- determine the appropriate governance pathway; and
+- prepare AI systems for detailed AI Risk Management.
 
----
-
-## Expected Outcomes
-
-Completion of the AI Inventory & Assessment capability enables Megastar Mortgage to establish:
-
-- A standardized process for onboarding AI systems into enterprise governance.
-- A centralized inventory of governed AI systems.
-- Consistent classification of AI systems.
-- Documented assessments of potential organizational impact.
-- A proportionate governance pathway based on assessment outcomes.
-- Foundational governance evidence supporting subsequent risk management activities.
-
-These deliverables provide the information required to perform consistent AI risk assessments, implement proportionate governance controls, and maintain enterprise-wide visibility of AI systems.
+Rather than treating every AI initiative identically, this capability supports proportionate governance based upon documented assessment outcomes.
 
 ---
 
-## Why This Capability Matters
+# Governance Workflow
 
-Organizations cannot govern AI systems they do not know exist.
+Every proposed AI initiative progresses through the following governance workflow.
 
-Likewise, they cannot apply appropriate governance without first understanding an AI system's purpose, characteristics, intended use, and potential organizational impact.
+```mermaid
+flowchart LR
 
-The AI Inventory & Assessment capability provides the visibility required to govern AI consistently across the enterprise. By collecting standardized governance information before detailed governance activities begin, Megastar Mortgage ensures that every subsequent governance decision is based upon accurate, complete, and auditable information.
+A[AI Use Case Intake]
+--> B[Governance Entry Decision]
+--> C[Enterprise AI System Inventory]
+--> D[AI System Assessment]
+--> E[AI Risk Management]
+```
 
-This capability transforms AI governance from a reactive activity into a structured operational process.
+Each stage builds upon the previous stage while avoiding duplication of governance information.
 
 ---
 
-## Framework Alignment
+# Core Artifacts
 
-The activities performed within the AI Inventory & Assessment capability support governance practices described by internationally recognized AI governance frameworks, including:
+| Governance Artifact | Primary Purpose |
+|---|---|
+| AI Use Case Intake | Captures the proposed AI initiative and determines whether it should formally enter enterprise AI governance. |
+| Enterprise AI System Inventory | Establishes the authoritative enterprise record for each governed AI system. |
+| AI System Assessment | Evaluates system characteristics, organizational impact, governance significance, and readiness to progress into AI Risk Management. |
+
+Together these artifacts establish the governance baseline required before formal AI Risk Management begins.
+
+---
+
+# Authoritative Governance Records
+
+Not every artifact within this capability owns enterprise information.
+
+| Artifact | Record Type |
+|---|---|
+| AI Use Case Intake | Governance entry record |
+| Enterprise AI System Inventory | **Authoritative enterprise record** |
+| AI System Assessment | Governance assessment record |
+
+Once an AI initiative has been accepted into governance, the Enterprise AI System Inventory becomes the authoritative source for AI system information throughout its lifecycle.
+
+Subsequent governance capabilities should reference the inventory rather than recreate system information.
+
+---
+
+# Governance Principles
+
+This capability operates according to the following principles:
+
+- every AI initiative enters governance through a standardized intake process;
+- every governed AI system has one authoritative inventory record;
+- governance information is collected once and referenced thereafter whenever practical;
+- assessment determines governance significance without performing detailed risk assessment;
+- governance effort remains proportionate to documented assessment outcomes;
+- governance decisions remain evidence-based and traceable.
+
+---
+
+# Expected Outcomes
+
+Completion of this capability enables Megastar Mortgage to establish:
+
+- consistent governance entry for AI initiatives;
+- enterprise-wide visibility of governed AI systems;
+- authoritative AI system records;
+- documented governance assessments;
+- appropriate governance routing into AI Risk Management;
+- governance evidence supporting downstream governance activities.
+
+---
+
+# Capability Boundary
+
+This capability owns:
+
+- AI governance entry;
+- AI system registration;
+- enterprise AI inventory;
+- AI system assessment;
+- governance significance;
+- readiness for AI Risk Management.
+
+This capability does **not** own:
+
+- detailed AI risk assessment;
+- risk treatment;
+- control implementation;
+- deployment approval;
+- continuous monitoring;
+- assurance conclusions.
+
+Those responsibilities belong to subsequent governance capabilities.
+
+---
+
+# Framework Alignment
+
+This capability operationalizes governance practices described by internationally recognized AI governance frameworks, including:
 
 - NIST AI Risk Management Framework (Govern, Map)
-- ISO/IEC 42001 – Artificial Intelligence Management System (AIMS)
+- ISO/IEC 42001 – Artificial Intelligence Management System
 - EU AI Act
 - ISO 31000 – Risk Management
 
-Rather than reproducing framework requirements, this capability demonstrates how AI systems are systematically identified and assessed before progressing into formal governance activities.
+Rather than reproducing framework requirements, this capability demonstrates how AI systems are consistently identified, documented, and assessed before progressing into enterprise AI Risk Management.
 
 ---
 
-## Completion Criteria
+# Completion Criteria
 
-The AI Inventory & Assessment capability is complete when:
+This capability is complete when:
 
-- AI use case information has been documented.
-- The AI system has been registered within the enterprise inventory.
-- AI system classification has been completed.
-- AI impact assessment has been performed.
-- AI risk triage has determined the appropriate governance pathway.
-- The assessment summary has been completed and approved.
+- the AI Use Case Intake has been completed;
+- a governance entry decision has been recorded;
+- an Enterprise AI System Inventory record has been created;
+- the AI System Assessment has been completed;
+- the AI system has been determined ready to proceed into AI Risk Management.
 
 ---
 
-## Validation Checklist
+# Validation Checklist
 
 | Status | Deliverable |
-|--------|-------------|
+|---|---|
 | ☐ | AI Use Case Intake completed |
-| ☐ | AI System Inventory updated |
-| ☐ | AI System Classification completed |
-| ☐ | AI Impact Assessment completed |
-| ☐ | AI Risk Triage completed |
-| ☐ | Assessment Summary approved |
+| ☐ | Governance Entry Decision recorded |
+| ☐ | Enterprise AI System Inventory created |
+| ☐ | AI System Assessment completed |
+| ☐ | Ready for AI Risk Management |
 
 ---
 
-## Next Capability
+# Next Capability
 
-With the AI system identified, documented, and assessed, the playbook progresses to **AI Risk Management**, where Megastar Mortgage performs detailed risk identification, evaluation, treatment planning, and governance decision-making based upon the information established during this capability.
+Following completion of this capability, the AI system progresses to **AI Risk Management**, where detailed risk identification, evaluation, treatment, and governance decisions are performed.
 
 ---
 
-## Related Capabilities
+# Related Capabilities
 
 - Governance Operating Model
 - AI Risk Management
@@ -133,22 +190,9 @@ With the AI system identified, documented, and assessed, the playbook progresses
 
 ---
 
-## Document Control
-
-| Field | Value |
-|------|------|
-| Capability | AI Inventory & Assessment |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
-
----
-
-## Revision History
+# Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
+|---|---|---|
 | 1.0 | July 2026 | Initial release of the AI Inventory & Assessment capability. |
+| 2.0 | July 2026 | Consolidated capability architecture, established authoritative record principles, simplified governance workflow, and aligned capability boundaries with the repository constitution. |
