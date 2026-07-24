@@ -1,555 +1,372 @@
-# Third-Party AI Due Diligence Template
+# Third-Party AI Due Diligence and Risk Assessment — Template
 
-## Due-Diligence Record
+## Document Control
 
 | Field | Value |
 |---|---|
-| Due-Diligence Reference ID | |
+| Template | Third-Party AI Due Diligence and Risk Assessment Template |
+| Capability | Third-Party AI Governance |
+| Repository | Enterprise AI Governance Playbook |
+| Reference Organization | |
+| Reference AI System | |
+| Document Owner | |
+| Version | |
+| Review Cycle | |
+| Status | |
+
+---
+
+# Part I — Due Diligence
+
+## Relationship Reference
+
+| Field | Value |
+|---|---|
 | Third-Party Relationship ID | |
 | Provider Name | |
-| Product or Service Name | |
-| Related AI System Name | |
-| AI System Inventory ID | |
-| Intended Use | |
-| Initial Dependency Criticality | Low / Moderate / High / Critical |
-| Review Type | Initial / Periodic / Targeted / Renewal / Triggered Reassessment |
-| Review Date | |
-| Review Period | |
-| Prepared By | |
-| Reviewed By | |
-| Due-Diligence Status | Not Started / In Progress / Completed / Expired / Reassessment Required |
+| Product / Service / Model / Platform | |
+| AI System Inventory ID(s) | |
 
 ---
 
-## 1. Due-Diligence Scope
+## Due-Diligence Scope
 
-| Scope Element | Description |
+| Field | Value |
 |---|---|
+| Intended Use | |
 | Relationship Type | |
-| Intended Use in Scope | |
-| Product or Service in Scope | |
-| Provider Entities in Scope | |
-| Geographic or Jurisdictional Scope | |
-| Data Categories in Scope | |
-| Hosting or Delivery Model | |
-| Material Subprocessors in Scope | |
-| Existing Enterprise Reviews Reused | |
-| Scope Exclusions | |
-
-### Scope Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+| Initial Dependency Criticality | |
+| Data Categories Expected to Be Processed | |
+| Customer / Employee / Operational / Regulatory Impact | |
+| Hosting and Delivery Model | |
+| Geographic and Jurisdictional Exposure | |
+| Reliance on Subprocessors or Fourth Parties | |
+| Provider Access to Megastar Mortgage Systems or Information | |
+| Availability of Alternative Providers or Internal Capabilities | |
+| Maturity of the Provider Relationship | |
+| Existing Enterprise Vendor Assessments Reused | |
+| Prior Incidents, Findings, Regulatory Matters, or Assurance Limitations | |
 
 ---
 
-## 2. Evidence Request and Tracking
+## Evidence Collection
 
-| Evidence Request | Requested | Received | Review Status | Evidence Reference |
-|---|:---:|:---:|---|---|
-| Corporate and organizational information | ☐ | ☐ | | |
-| AI governance policies and accountability | ☐ | ☐ | | |
-| Product, model, and service documentation | ☐ | ☐ | | |
-| Intended-use and prohibited-use documentation | ☐ | ☐ | | |
-| Privacy and data-governance documentation | ☐ | ☐ | | |
-| Security documentation | ☐ | ☐ | | |
-| Resilience and continuity documentation | ☐ | ☐ | | |
-| Model-performance or validation information | ☐ | ☐ | | |
-| Incident-management procedures | ☐ | ☐ | | |
-| Change-management procedures | ☐ | ☐ | | |
-| Subprocessor and fourth-party information | ☐ | ☐ | | |
-| Independent assurance reports | ☐ | ☐ | | |
-| Certifications or attestations | ☐ | ☐ | | |
-| Regulatory and legal disclosures | ☐ | ☐ | | |
-| Exit and transition documentation | ☐ | ☐ | | |
-| Other | ☐ | ☐ | | |
-
-### Outstanding Evidence
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 3. Evidence Quality Review
-
-| Evidence Reference | Relevance | Reliability | Sufficiency | Timeliness | Coverage | Independence | Integrity | Overall Assessment |
-|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | |
-
-### Evidence Limitations
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 4. Provider Organization and Stability
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Legal identity and ownership | | | |
-| Relevant experience | | | |
-| Financial and organizational stability | | | |
-| Leadership and accountability | | | |
-| Geographic presence | | | |
-| Regulatory history | | | |
-| Litigation or enforcement matters | | | |
-| Insurance, where relevant | | | |
-| Business continuity | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 5. AI Governance and Accountability
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| AI governance policy | | | |
-| Accountable roles and decision rights | | | |
-| Model or service governance | | | |
-| Acceptable and prohibited use | | | |
-| Human oversight | | | |
-| AI risk management | | | |
-| Documentation standards | | | |
-| Governance review and escalation | | | |
-| Internal audit or assurance | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 6. Product, Model, and Service Transparency
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Purpose and intended use | | | |
-| Prohibited-use restrictions | | | |
-| Capabilities | | | |
-| Known limitations | | | |
-| Model or service dependencies | | | |
-| Development or training information | | | |
-| Evaluation and validation approach | | | |
-| Performance measures | | | |
-| Explainability support | | | |
-| Versioning and release information | | | |
-| Material-change disclosure | | | |
-| Customer responsibilities | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 7. Privacy and Data Governance
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Authorized data use | | | |
-| Data ownership | | | |
-| Data minimization | | | |
-| Data retention | | | |
-| Data deletion | | | |
-| Data residency | | | |
-| Cross-border transfer | | | |
-| Secondary use | | | |
-| Training on customer data | | | |
-| De-identification or anonymization | | | |
-| Data-subject rights support | | | |
-| Data lineage and provenance | | | |
-| Data-quality practices | | | |
-| Privacy incident management | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 8. Security and Access Control
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Security governance | | | |
-| Identity and access management | | | |
-| Privileged access | | | |
-| Authentication | | | |
-| Encryption | | | |
-| Vulnerability management | | | |
-| Secure development | | | |
-| Logging and monitoring | | | |
-| Tenant isolation | | | |
-| Infrastructure security | | | |
-| Penetration testing | | | |
-| Security incident response | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 9. Reliability, Resilience, and Continuity
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Service availability | | | |
-| Reliability commitments | | | |
-| Failure handling | | | |
-| Backup and recovery | | | |
-| Disaster recovery | | | |
-| Business continuity | | | |
-| Capacity and scalability | | | |
-| Dependency resilience | | | |
-| Recovery objectives | | | |
-| Outage communication | | | |
-| Historical disruptions | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 10. Model Performance and Validation
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Performance criteria | | | |
-| Evaluation methodology | | | |
-| Validation evidence | | | |
-| Robustness testing | | | |
-| Drift management | | | |
-| Known performance limitations | | | |
-| Benchmark relevance | | | |
-| Data representativeness | | | |
-| Fairness evaluation | | | |
-| Error-rate considerations | | | |
-| Monitoring support | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 11. Incident Management
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Incident identification | | | |
-| Incident classification | | | |
-| Response and containment | | | |
-| Customer notification | | | |
-| Regulatory support | | | |
-| Notification timelines | | | |
-| Investigation practices | | | |
-| Evidence preservation | | | |
-| Corrective action | | | |
-| Post-incident review | | | |
-| Historical incidents | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 12. Change Management
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Change approval | | | |
-| Change testing | | | |
-| Version management | | | |
-| Customer notification | | | |
-| Release notes | | | |
-| Material-change criteria | | | |
-| Emergency changes | | | |
-| Compatibility management | | | |
-| Subprocessor changes | | | |
-| Data-processing changes | | | |
-| Ownership changes | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 13. Subprocessors and Fourth Parties
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Material subprocessors identified | | | |
-| Services performed | | | |
-| Data and system access | | | |
-| Geographic location | | | |
-| Notification or approval rights | | | |
-| Provider oversight | | | |
-| Contractual flow-down | | | |
-| Concentration exposure | | | |
-| Fourth-party dependencies | | | |
-| Replacement or restriction capability | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Material Subprocessor Summary
-
-| Subprocessor or Fourth Party | Service | Location | Data or System Access | Material Concern |
+| Evidence Item | Source | Date | Coverage Period | Restrictions |
 |---|---|---|---|---|
+| | | | | |
 | | | | | |
 
 ---
 
-## 14. Independent Assurance
+## Evidence Quality
 
-| Evidence Type | Available | Current | Relevant to Service | Limitations | Reference |
-|---|:---:|:---:|:---:|---|---|
-| SOC report | ☐ | ☐ | ☐ | | |
-| ISO certification | ☐ | ☐ | ☐ | | |
-| Penetration-test summary | ☐ | ☐ | ☐ | | |
-| Independent AI assurance | ☐ | ☐ | ☐ | | |
-| Regulatory examination | ☐ | ☐ | ☐ | | |
-| Internal audit report | ☐ | ☐ | ☐ | | |
-| Other attestation | ☐ | ☐ | ☐ | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Assurance Review Notes
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 15. Legal, Regulatory, and Contractual Readiness
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Applicable legal obligations | | | |
-| Regulatory cooperation | | | |
-| Intellectual-property position | | | |
-| Licensing restrictions | | | |
-| Customer-use restrictions | | | |
-| Data-processing readiness | | | |
-| Audit-right willingness | | | |
-| Record-retention support | | | |
-| Contractual willingness | | | |
-| Material regulatory history | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 16. Exit and Transition Capability
-
-| Review Area | Evidence Reference | Review Outcome | Notes |
-|---|---|---|---|
-| Data portability | | | |
-| Model or configuration portability | | | |
-| Prompt and documentation portability | | | |
-| Data return | | | |
-| Data deletion | | | |
-| Deletion certification | | | |
-| Transition support | | | |
-| Access revocation | | | |
-| Migration assistance | | | |
-| Replacement-provider support | | | |
-| Operational continuity | | | |
-| Licensing constraints | | | |
-| Exit charges | | | |
-| Governance-evidence retention | | | |
-
-**Domain Outcome:** Satisfactory / Satisfactory with Conditions / Unsatisfactory / Unable to Conclude / Not Applicable
-
-### Domain Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 17. Material Due-Diligence Concerns
-
-| Concern Reference | Domain | Concern Description | Evidence Reference | Requires Risk Assessment | Requires Condition |
-|---|---|---|---|:---:|:---:|
-| | | | | Yes / No | Yes / No |
-
-### Concern Summary
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 18. Due-Diligence Conditions
-
-| Condition Reference | Related Concern | Required Condition | Owner | Target Date | Required Before Onboarding |
-|---|---|---|---|---|:---:|
-| | | | | | Yes / No |
-
-### Restrictions on Proposed Use
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## 19. Information Sufficiency Review
-
-| Review Criterion | Status |
+| Evidence Attribute | Assessment |
 |---|---|
-| Due-diligence scope is complete | ☐ Yes ☐ No |
-| Applicable review domains completed | ☐ Yes ☐ No |
-| Evidence quality assessed | ☐ Yes ☐ No |
-| Material evidence gaps documented | ☐ Yes ☐ No |
-| Domain outcomes supported | ☐ Yes ☐ No |
-| Material concerns documented | ☐ Yes ☐ No |
-| Risk-assessment handoff items identified | ☐ Yes ☐ No |
-| Conditions are specific and traceable | ☐ Yes ☐ No |
-| Sufficient evidence exists for an overall outcome | ☐ Yes ☐ No |
-
-### Sufficiency Notes
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+| Relevance | |
+| Reliability | |
+| Sufficiency | |
+| Timeliness | |
+| Coverage | |
+| Traceability | |
+| Independence | |
+| Integrity | |
 
 ---
 
-## 20. Overall Due-Diligence Outcome
+## Due-Diligence Review Domains
 
-| Due-Diligence Outcome | Select |
-|---|:---:|
-| Suitable | ☐ |
-| Conditionally Suitable | ☐ |
-| Not Suitable | ☐ |
-| Unable to Conclude | ☐ |
-
-### Outcome Rationale
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-### Material Conditions or Restrictions
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+### 1. Provider Organization and Stability
 
 | Field | Value |
 |---|---|
-| Third-Party AI Risk Assessment Required | Yes / No |
-| Enhanced Oversight Required | Yes / No |
-| Additional Evidence Required | Yes / No |
-| Reassessment Required Before Onboarding | Yes / No |
-| Next Due-Diligence Review Date | |
-| Next Governance Activity | Third-Party AI Risk Assessment |
+| Findings | |
+| Domain Outcome | |
+
+### 2. AI Governance and Accountability
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 3. Product, Model, and Service Transparency
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 4. Privacy and Data Governance
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 5. Security and Access Control
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 6. Reliability, Resilience, and Continuity
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 7. Model Performance and Validation
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 8. Incident Management
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 9. Change Management
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 10. Subprocessors and Fourth Parties
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 11. Independent Assurance
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 12. Legal, Regulatory, and Contractual Readiness
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
+
+### 13. Exit and Transition Capability
+
+| Field | Value |
+|---|---|
+| Findings | |
+| Domain Outcome | |
 
 ---
 
-## 21. Enterprise Third-Party AI Register Update
+## Domain Review Outcomes Summary
 
-Transfer the approved information below to the authoritative relationship record.
+| Domain | Domain Outcome |
+|---|---|
+| 1. Provider Organization and Stability | |
+| 2. AI Governance and Accountability | |
+| 3. Product, Model, and Service Transparency | |
+| 4. Privacy and Data Governance | |
+| 5. Security and Access Control | |
+| 6. Reliability, Resilience, and Continuity | |
+| 7. Model Performance and Validation | |
+| 8. Incident Management | |
+| 9. Change Management | |
+| 10. Subprocessors and Fourth Parties | |
+| 11. Independent Assurance | |
+| 12. Legal, Regulatory, and Contractual Readiness | |
+| 13. Exit and Transition Capability | |
 
-| Register Field | Value to Transfer |
+---
+
+## Due-Diligence Concerns
+
+| Concern | Related Domain | Transferred to Part II |
+|---|---|---|
+| | | |
+| | | |
+
+---
+
+## Due-Diligence Outcome
+
+| Field | Value |
+|---|---|
+| Due-Diligence Outcome | |
+| Rationale | |
+
+---
+
+## Due-Diligence Conditions
+
+| Condition | Owner | Linked Concern | Time-Bound By | Verification Method | Status |
+|---|---|---|---|---|---|
+| | | | | | |
+| | | | | | |
+
+---
+
+## Information Sufficiency Review
+
+| Field | Value |
+|---|---|
+| All Applicable Domains Reviewed | |
+| Material Evidence Obtained or Absence Documented | |
+| Evidence Quality Evaluated | |
+| Unresolved Questions Recorded | |
+| Domain Outcomes Supported | |
+| Material Concerns Identified | |
+| Conditions Clearly Defined | |
+| Risk-Assessment Handoff Items Documented | |
+| Overall Conclusion Proportionate | |
+
+---
+
+## Due-Diligence Review and Approval
+
+| Field | Value |
+|---|---|
+| Scope Appropriate | |
+| Evidence Sufficient and Relevant | |
+| Domain Conclusions Supported | |
+| Material Gaps and Limitations Disclosed | |
+| Concerns Transferred for Risk Assessment | |
+| Conditions Specific and Traceable | |
+| Overall Outcome Proportionate | |
+| Enterprise Third-Party AI Register Update Complete | |
+| Approved By | |
+| Approval Date | |
+
+---
+
+## Due-Diligence Reassessment
+
+| Field | Value |
+|---|---|
+| Reassessment Trigger | |
+| Reassessment Type (Full / Targeted) | |
+| Reassessment Date | |
+| Reassessment Outcome | |
+
+---
+
+# Part II — Provider-Originated Risk Assessment
+
+## Assessment Inputs
+
+| Input Source | Reference |
+|---|---|
+| Third-Party AI Identification Records | |
+| Enterprise Third-Party AI Register Information | |
+| Part I Due-Diligence Outcomes | |
+| Material Due-Diligence Concerns | |
+| Provider Documentation and Disclosures | |
+| Independent Assurance Limitations | |
+| Known Subprocessors and Fourth-Party Dependencies | |
+| Enterprise AI System Inventory Information | |
+| AI Classification and AI Impact Assessment Outcomes | |
+| Historical Provider Incidents or Service Failures | |
+| Existing Enterprise Vendor-Risk Information | |
+| Contractual Limitations | |
+| Known Regulatory or Jurisdictional Concerns | |
+| Concentration and Dependency Information | |
+| Exit and Transition Constraints | |
+| Governance Conditions Attached to Conditionally Suitable Outcome | |
+
+---
+
+## Concern-to-Risk Conversion
+
+| Due-Diligence Concern | Provider-Originated Risk Statement |
+|---|---|
+| | |
+| | |
+
+---
+
+## Provider-Originated Risk Statement
+
+| Risk Element | Value |
+|---|---|
+| Provider-Related Cause or Condition | |
+| Risk Event | |
+| Potential Consequence | |
+
+---
+
+## Enterprise AI Risk Categories
+
+| Risk Reference | Primary Enterprise Risk Category |
+|---|---|
+| | |
+| | |
+
+---
+
+## Provider Risk Themes
+
+| Risk Reference | Provider Risk Theme(s) |
+|---|---|
+| | |
+| | |
+
+---
+
+## Risk Identification Record
+
+| Information Element | Value |
+|---|---|
+| Risk Title | |
+| Risk Description | |
+| Enterprise Risk Category | |
+| Provider Risk Theme | |
+| Risk Source | |
+| Risk Event | |
+| Initial Potential Consequence | |
+| Third-Party Relationship ID | |
+| AI System Inventory ID | |
+| Due-Diligence Concern Reference | |
+| Supporting Evidence Reference | |
+| Affected Stakeholders or Processes | |
+| Register Decision | |
+
+---
+
+## Risk Registration Decision
+
+| Concern / Risk Reference | Decision | Rationale |
+|---|---|---|
+| | | |
+| | | |
+
+---
+
+## Enterprise AI Risk Register Handoff
+
+| Field | Value |
+|---|---|
+| Register Decision Confirmed | |
+| Date of Transfer | |
+| Receiving Enterprise AI Risk Register Record ID | |
+| Accountable AI Risk Management Owner | |
+| Provider-Specific Context | |
+
+---
+
+# Enterprise Third-Party AI Register Enrichment
+
+## Due-Diligence Fields (Part I)
+
+| Register Field | Value |
 |---|---|
 | Due-Diligence Reference ID | |
 | Due-Diligence Status | |
@@ -569,51 +386,14 @@ Transfer the approved information below to the authoritative relationship record
 | Due-Diligence Conditions | |
 | Next Due-Diligence Review Date | |
 
----
+## Risk Assessment Fields (Part II)
 
-## 22. Review and Approval
-
-| Review Criterion | Status |
+| Register Field | Value |
 |---|---|
-| Scope was appropriate | ☐ Yes ☐ No |
-| Evidence was sufficient and relevant | ☐ Yes ☐ No |
-| Domain conclusions were supported | ☐ Yes ☐ No |
-| Limitations were disclosed | ☐ Yes ☐ No |
-| Material concerns were transferred appropriately | ☐ Yes ☐ No |
-| Conditions were clear and proportionate | ☐ Yes ☐ No |
-| Overall outcome was supported | ☐ Yes ☐ No |
-| Register update was completed | ☐ Yes ☐ No |
-
-| Field | Value |
-|---|---|
-| Reviewed By | |
-| Approved By | |
-| Approval Date | |
-| Approval Status | Approved / Conditional / Rejected / Returned for Clarification |
-| Approval Conditions | |
-
-### Approval Comments
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-## Document Control
-
-| Field | Value |
-|---|---|
-| Template | Third-Party AI Due Diligence Template |
-| Capability | Third-Party AI Governance |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Template Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
+| Provider-Originated Risk Reference | |
+| Enterprise AI Risk Register Link | |
+| Risk Registration Decision | |
+| Risk Assessment Date | |
 
 ---
 
@@ -621,4 +401,4 @@ Transfer the approved information below to the authoritative relationship record
 
 | Version | Date | Description |
 |---|---|---|
-| 1.0 | July 2026 | Initial release of the Third-Party AI Due Diligence Template. |
+| | | |
