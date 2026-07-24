@@ -1,36 +1,60 @@
-# Third-Party AI Due Diligence
+# Third-Party AI Due Diligence and Risk Assessment
 
-## Executive Summary
+## Document Control
 
-Third-Party AI Identification establishes that an external AI relationship exists, and the Enterprise Third-Party AI Register creates the authoritative record for governing that relationship.
+| Field | Value |
+|---|---|
+| Document | Third-Party AI Due Diligence and Risk Assessment |
+| Capability | Third-Party AI Governance |
+| Repository | Enterprise AI Governance Playbook |
+| Reference Organization | Megastar Mortgage |
+| Reference AI System | Megastar Intelligent Processor (MIP) |
+| Document Owner | AI Governance Lead |
+| Version | 2.0 |
+| Review Cycle | Annual |
+| Status | Published Reference |
 
-Before Megastar Mortgage can rely upon an external AI provider, it must obtain sufficient, relevant, reliable, and current information to determine whether the provider is suitable to support the intended use of the Megastar Intelligent Processor (MIP).
+---
 
-Third-Party AI Due Diligence evaluates the provider’s organizational capability, AI governance practices, transparency, privacy, security, data management, resilience, incident management, change management, subprocessor dependencies, independent assurance, regulatory history, and exit capability.
+# Executive Summary
 
-The purpose of due diligence is not to assign a risk rating, negotiate contractual terms, or approve onboarding. It establishes an evidence-based suitability conclusion and identifies conditions, information gaps, and provider-related concerns requiring further evaluation through Third-Party AI Risk Assessment and Contract & Onboarding Requirements.
+Selecting an external AI provider is not, by itself, a governance decision. Before a third-party AI product, service, platform, model, or managed capability supports the Megastar Intelligent Processor (MIP), Megastar Mortgage must determine whether the provider is suitable for the intended use and whether any identified concerns create enterprise AI risks requiring formal governance.
+
+Third-Party AI Due Diligence and Risk Assessment establishes this two-stage evaluation process.
+
+The first stage, **Due Diligence**, evaluates the provider's suitability by reviewing governance maturity, operational capability, privacy, security, resilience, transparency, assurance, legal and regulatory considerations, and other evidence relevant to the proposed relationship. The objective is to determine whether sufficient evidence exists to support an informed provider suitability decision and to identify any conditions, limitations, or unresolved concerns.
+
+The second stage, **Provider-Originated Risk Assessment**, evaluates the concerns identified during due diligence to determine whether they represent enterprise AI risks that require formal registration within the Enterprise AI Risk Register. This assessment determines whether provider-related issues should become governed enterprise risks requiring ongoing management through the organization's AI Risk Management capability.
+
+Together, these activities provide the governance bridge between identifying a suitable provider and governing the enterprise risks associated with that provider. They ensure that provider suitability and enterprise risk remain related but distinct governance decisions, preserving clear ownership, traceability, and accountability throughout the governance lifecycle.
+
+This artifact does not perform enterprise risk analysis, likelihood assessment, risk prioritization, risk response selection, control design, residual-risk acceptance, procurement approval, contract negotiation, or onboarding authorization. Those activities remain within their respective governance capabilities.
 
 ---
 
-## Purpose
+# Purpose
 
-The purpose of this document is to establish a standardized approach for conducting due diligence on third-party AI providers.
+The purpose of this document is to establish a standardized approach for evaluating third-party AI providers before operational use and determining whether provider-originated concerns require formal enterprise AI risk governance.
 
-Third-Party AI Due Diligence enables Megastar Mortgage to:
+This artifact enables Megastar Mortgage to:
 
-- define the scope and depth of provider review;
-- request and evaluate relevant provider information;
-- assess the sufficiency and reliability of provider evidence;
-- evaluate the provider across standardized governance domains;
-- identify material concerns, dependencies, and information gaps;
-- determine whether the provider is suitable for the intended use;
-- establish conditions that must be addressed before onboarding;
-- define when reassessment is required; and
-- update the Enterprise Third-Party AI Register with approved due-diligence outcomes.
+- evaluate provider suitability for the proposed AI relationship;
+- assess the completeness, reliability, and sufficiency of provider evidence;
+- review governance maturity across relevant operational, technical, legal, privacy, security, resilience, and compliance domains;
+- identify material provider concerns, limitations, dependencies, and conditions that may affect the intended use;
+- distinguish provider suitability from enterprise AI risk;
+- determine whether identified provider concerns should become enterprise AI risks;
+- create consistent provider-originated risk statements using a standardized assessment approach;
+- determine whether identified risks require registration within the Enterprise AI Risk Register;
+- transfer approved provider-originated risks into the Enterprise AI Risk Management lifecycle;
+- update the Enterprise Third-Party AI Register with approved due diligence and risk assessment outcomes; and
+- provide an evidence-based governance recommendation supporting subsequent contractual, onboarding, oversight, or reassessment activities.
 
-Due diligence supports informed governance decision-making without replacing provider-risk assessment, contract review, procurement approval, technical testing, or formal onboarding authorization.
+Completion of this activity establishes whether the provider is suitable for the proposed relationship and whether identified provider concerns require formal enterprise AI risk governance.
 
 ---
+
+# Part I — Due Diligence
 
 ## Due-Diligence Process
 
@@ -46,7 +70,7 @@ A[Enterprise Third-Party AI Register]
 --> E[Domain Evaluation]
 --> F[Information Sufficiency Review]
 --> G[Due-Diligence Outcome]
---> H[Third-Party AI Risk Assessment]
+--> H[Provider-Originated Risk Assessment]
 ```
 
 The due-diligence outcome and supporting references progressively enrich the Enterprise Third-Party AI Register.
@@ -375,7 +399,7 @@ Each due-diligence domain receives an evidence-based review outcome.
 
 | Domain Outcome | Meaning |
 |---|---|
-| Satisfactory | Available evidence supports the provider’s suitability in the reviewed domain. |
+| Satisfactory | Available evidence supports the provider's suitability in the reviewed domain. |
 | Satisfactory with Conditions | Evidence is generally acceptable, but documented conditions or follow-up actions are required. |
 | Unsatisfactory | Material weaknesses or limitations prevent a satisfactory conclusion in the reviewed domain. |
 | Unable to Conclude | Available evidence is insufficient, unavailable, unreliable, or not applicable to the intended use. |
@@ -406,7 +430,7 @@ Examples include:
 - insufficient exit support; or
 - evidence that does not cover the relevant service or review period.
 
-Each material concern shall be documented and transferred to Third-Party AI Risk Assessment where risk evaluation is required.
+Each material concern shall be documented and transferred to Part II — Provider-Originated Risk Assessment where risk evaluation is required.
 
 ---
 
@@ -470,34 +494,6 @@ Where evidence gaps prevent a defensible conclusion, the outcome shall be Unable
 
 ---
 
-## Enterprise Third-Party AI Register Enrichment
-
-Approved Third-Party AI Due Diligence outcomes update the following fields within the Enterprise Third-Party AI Register:
-
-| Register Field | Information Added |
-|---|---|
-| Due-Diligence Reference ID | Reference to the authoritative due-diligence record. |
-| Due-Diligence Status | Current status of the review. |
-| Due-Diligence Completion Date | Date the review was completed. |
-| Provider Governance Maturity Outcome | Consolidated governance-capability conclusion. |
-| Privacy Review Outcome | Approved privacy-domain outcome. |
-| Security Review Outcome | Approved security-domain outcome. |
-| Data Governance Review Outcome | Approved data-governance outcome. |
-| Resilience and Continuity Outcome | Approved resilience-domain outcome. |
-| Model or Service Transparency Outcome | Approved transparency-domain outcome. |
-| Incident Management Capability Outcome | Approved incident-management outcome. |
-| Change-Notification Capability Outcome | Approved change-management outcome. |
-| Subprocessor Review Outcome | Approved dependency-review outcome. |
-| Independent Assurance Reviewed | Whether relevant independent evidence was reviewed. |
-| Assurance Documentation Reference | Traceable reference to reviewed assurance material. |
-| Due-Diligence Outcome | Suitable, Conditionally Suitable, Not Suitable, or Unable to Conclude. |
-| Due-Diligence Conditions | Approved conditions or restrictions. |
-| Next Due-Diligence Review Date | Date by which review or reassessment is required. |
-
-Detailed evidence, analysis, and domain conclusions remain within the Due-Diligence record.
-
----
-
 ## Due-Diligence Review and Approval
 
 The due-diligence record shall be reviewed before the outcome is approved.
@@ -513,7 +509,7 @@ The review confirms that:
 - the overall outcome was proportionate; and
 - the Enterprise Third-Party AI Register update was complete.
 
-The due-diligence outcome shall be approved by the appropriate governance authority according to the relationship’s criticality and organizational decision rights.
+The due-diligence outcome shall be approved by the appropriate governance authority according to the relationship's criticality and organizational decision rights.
 
 ---
 
@@ -538,47 +534,381 @@ Reassessment may be full or targeted depending on the nature of the change.
 
 ---
 
-## Why This Document Matters
+# Part II — Provider-Originated Risk Assessment
 
-Third-party AI providers may influence model behavior, data processing, service availability, system security, regulatory compliance, customer outcomes, and operational continuity.
+## Risk Assessment Process
 
-Organizations cannot govern these dependencies through contractual terms or provider reputation alone. They require evidence that the provider’s capabilities, practices, and limitations are sufficiently understood before reliance begins.
+Every material due-diligence concern is evaluated through a consistent provider-risk identification process.
 
-Third-Party AI Due Diligence enables Megastar Mortgage to make an informed suitability determination, identify provider-related concerns early, establish proportionate conditions, and create a defensible foundation for provider-risk assessment, contracting, onboarding, and ongoing oversight.
+```mermaid
+flowchart LR
+
+A[Part I — Due Diligence]
+--> B[Material Concern Review]
+--> C[Provider-Originated Risk Identification]
+--> D[Risk Statement Development]
+--> E[Risk Assessment Review]
+--> F[Enterprise AI Risk Register]
+--> G[AI Risk Analysis]
+```
+
+This stage determines whether a provider-related concern should become an authoritative enterprise risk record.
 
 ---
 
-## Related Artifacts
+## Risk Assessment Principles
+
+Megastar Mortgage performs Provider-Originated Risk Assessments according to the following principles:
+
+- Provider-originated risks shall be supported by documented concerns, evidence, dependencies, or known limitations.
+- Due-diligence observations shall not automatically become formal risks.
+- Risks shall describe a plausible future event and potential consequence rather than restating an existing condition.
+- Provider-originated risks shall use the established enterprise AI risk taxonomy.
+- Provider-specific themes may be recorded as supporting classifications without creating a separate risk taxonomy.
+- Each risk shall remain traceable to the relevant Third-Party Relationship ID, AI System Inventory ID, due-diligence concern, and supporting evidence.
+- One provider concern may create multiple distinct risks where different events or consequences could arise.
+- Multiple related concerns may be consolidated into one risk where they contribute to the same risk event.
+- Risks shall be registered before likelihood analysis, prioritization, or response-strategy selection occurs.
+- This assessment shall not create a separate third-party AI risk register.
+- Approved provider-originated risks shall enter the existing Enterprise AI Risk Register.
+
+---
+
+## Assessment Inputs
+
+Provider-Originated Risk Assessment uses approved information from relevant governance sources.
+
+Inputs may include:
+
+- Third-Party AI Identification records;
+- Enterprise Third-Party AI Register information;
+- Part I due-diligence outcomes;
+- material due-diligence concerns;
+- provider documentation and disclosures;
+- independent assurance limitations;
+- known subprocessors and fourth-party dependencies;
+- existing Enterprise AI System Inventory information;
+- AI Classification and AI Impact Assessment outcomes;
+- historical provider incidents or service failures;
+- existing enterprise vendor-risk information;
+- contractual limitations;
+- known regulatory or jurisdictional concerns;
+- concentration and dependency information;
+- exit and transition constraints; and
+- governance conditions attached to a Conditionally Suitable outcome.
+
+The assessment uses these inputs to identify risks. It does not repeat the underlying due-diligence review.
+
+---
+
+## Concern-to-Risk Conversion
+
+A due-diligence concern describes an observed condition, evidence gap, limitation, or dependency.
+
+A risk describes what may happen because of that condition and the consequences that may follow.
+
+### Due-Diligence Concern
+
+> The provider does not provide advance notification of material model changes.
+
+### Provider-Originated Risk
+
+> Because the provider may introduce material model changes without advance notification, Megastar Mortgage may continue using a changed AI service before completing required impact, risk, control, and assurance reviews, resulting in unmanaged operational, compliance, model-performance, or customer-outcome consequences.
+
+A concern becomes a formal provider-originated risk when:
+
+- a plausible risk event can be identified;
+- the event may affect an enterprise objective, stakeholder, obligation, process, AI system, or governance outcome;
+- the concern is relevant to the intended use;
+- the potential consequence is sufficiently meaningful to require governance; and
+- the risk requires ongoing enterprise visibility or management.
+
+A concern may remain an information gap, onboarding condition, contractual requirement, or oversight item where no distinct enterprise risk event exists.
+
+---
+
+## Provider-Originated Risk Statement Method
+
+Each provider-originated risk should be expressed using the following structure:
+
+> **Because of** a provider-related cause, condition, limitation, or dependency,
+> **there is a possibility that** a defined risk event may occur,
+> **which may result in** an organizational or stakeholder consequence.
+
+A complete risk statement therefore contains:
+
+| Risk Element | Purpose |
+|---|---|
+| Provider-Related Cause or Condition | Identifies the external factor creating exposure. |
+| Risk Event | Describes the uncertain event that may occur. |
+| Potential Consequence | Describes what may result if the event occurs. |
+
+The statement should be specific enough to support later analysis but should not include likelihood, consequence ratings, priority, treatment, or controls.
+
+---
+
+## Enterprise AI Risk Categories
+
+Provider-originated risks are classified using the enterprise AI risk taxonomy already established within AI Risk Management.
+
+| Enterprise Risk Category | Provider-Related Application |
+|---|---|
+| Fairness & Bias | Risks arising from insufficient provider evaluation, biased model behavior, unrepresentative data, or limited fairness evidence. |
+| Transparency & Explainability | Risks arising from provider opacity, inadequate documentation, limited disclosure, or insufficient explainability support. |
+| Privacy | Risks involving unauthorized data use, secondary use, retention, deletion, residency, cross-border transfer, or privacy-rights limitations. |
+| Security | Risks involving provider access controls, vulnerabilities, credential exposure, tenant isolation, cyber incidents, or insecure integrations. |
+| Safety | Risks where provider-controlled AI behavior or service failure may contribute to physical or operational harm. |
+| Human Oversight | Risks arising from provider limitations that prevent effective human review, intervention, override, or accountability. |
+| Reliability & Robustness | Risks involving service instability, inadequate resilience, failure handling, adversarial weakness, or inconsistent provider operation. |
+| Model Performance | Risks involving accuracy, error rates, validation limitations, drift, calibration, or provider-controlled model performance. |
+| Regulatory & Compliance | Risks arising from jurisdictional obligations, regulatory non-conformance, licensing restrictions, or insufficient cooperation. |
+| Operational | Risks involving service disruption, process failure, dependency, continuity, support, or operational degradation. |
+| Third-Party & Vendor | Risks arising directly from provider governance, contractual limitations, ownership, financial stability, oversight, or external dependency. |
+| Data | Risks involving data quality, lineage, provenance, integrity, availability, representativeness, or governance. |
+
+The primary enterprise risk category shall be selected according to the principal nature of the risk.
+
+---
+
+## Provider Risk Themes
+
+Provider risk themes provide additional relationship-specific context without replacing the enterprise risk category.
+
+Applicable themes may include:
+
+- Provider Transparency
+- Subprocessor or Fourth-Party Dependency
+- Data Use and Retention
+- Data Residency
+- Provider Security
+- Service Continuity
+- Provider Financial Stability
+- Concentration Risk
+- Vendor Lock-In
+- Material Change Notification
+- Incident Notification
+- Independent Assurance
+- Contractual Governability
+- Regulatory or Jurisdictional Exposure
+- Model or Service Performance
+- Exit and Portability
+- Intellectual Property or Licensing
+- Provider Oversight
+- Other Provider Dependency
+
+A risk may have one primary enterprise category and one or more provider risk themes.
+
+---
+
+## Common Provider-Originated Risk Areas
+
+The assessment may consider risks arising from:
+
+### Provider Transparency
+
+- inadequate model or service documentation;
+- unknown model dependencies;
+- limited access to performance information;
+- insufficient explainability support;
+- inability to verify provider representations; or
+- unclear customer responsibilities.
+
+### Data and Privacy
+
+- unauthorized secondary use of data;
+- retention beyond approved periods;
+- inability to confirm deletion;
+- unclear data residency;
+- cross-border processing;
+- training on customer information;
+- insufficient data lineage; or
+- weak subprocessor-data governance.
+
+### Security
+
+- inadequate provider access controls;
+- insecure API or integration practices;
+- weak tenant isolation;
+- insufficient encryption;
+- poor vulnerability management;
+- inadequate security evidence; or
+- delayed security-incident notification.
+
+### Model and Service Performance
+
+- provider-controlled model drift;
+- insufficient validation;
+- unreliable outputs;
+- performance degradation;
+- inappropriate benchmarks;
+- undisclosed model substitutions;
+- inadequate robustness; or
+- inability to independently assess model limitations.
+
+### Operational Resilience
+
+- service interruption;
+- inadequate disaster recovery;
+- provider capacity constraints;
+- dependency on critical subprocessors;
+- insufficient recovery commitments;
+- provider financial instability; or
+- inadequate business-continuity support.
+
+### Governance and Contractual Limitations
+
+- inadequate audit rights;
+- limited regulatory cooperation;
+- insufficient incident-notification obligations;
+- unannounced service changes;
+- restricted access to governance evidence;
+- unfavorable liability allocation;
+- prohibited assurance activity; or
+- contractual restrictions preventing appropriate governance.
+
+### Dependency and Concentration
+
+- sole-provider dependency;
+- reliance on a dominant foundation-model provider;
+- multiple AI systems depending on one provider;
+- inability to replace the service quickly;
+- material fourth-party concentration; or
+- dependence on proprietary formats or interfaces.
+
+### Exit and Portability
+
+- inadequate data portability;
+- inability to migrate prompts, configurations, or records;
+- unresolved licensing restrictions;
+- limited transition assistance;
+- excessive exit cost;
+- inability to verify data deletion; or
+- operational disruption during replacement.
+
+---
+
+## Risk Identification Record
+
+Each provider-originated risk contains:
+
+| Information Element | Purpose |
+|---|---|
+| Risk Title | Provides a concise name for the risk. |
+| Risk Description | Records the complete provider-originated risk statement. |
+| Enterprise Risk Category | Classifies the risk using the approved enterprise taxonomy. |
+| Provider Risk Theme | Provides additional third-party context. |
+| Risk Source | Identifies the provider, dependency, condition, or evidence gap creating the risk. |
+| Risk Event | Describes the uncertain event that may occur. |
+| Initial Potential Consequence | Describes the potential effect if the event occurs. |
+| Third-Party Relationship ID | Links the risk to the provider relationship. |
+| AI System Inventory ID | Links the risk to the affected AI system. |
+| Due-Diligence Concern Reference | Links the risk to the source concern. |
+| Supporting Evidence Reference | Preserves evidence traceability. |
+| Affected Stakeholders or Processes | Identifies relevant organizational or stakeholder exposure. |
+| Register Decision | Determines whether the risk enters the Enterprise AI Risk Register. |
+
+The detailed record is maintained within the Third-Party AI Risk Assessment Template.
+
+---
+
+## Risk Registration Decision
+
+Each evaluated provider concern results in one of the following decisions.
+
+| Decision | Meaning |
+|---|---|
+| Register as Enterprise AI Risk | The concern represents a distinct provider-originated risk requiring formal enterprise management. |
+| Consolidate with Existing Risk | The concern is already represented by an authoritative Enterprise AI Risk Register record and should be linked rather than duplicated. |
+| Retain as Due-Diligence Condition | The concern requires evidence, restriction, remediation, or contractual action but does not currently represent a separate enterprise risk. |
+| Retain as Oversight Item | The concern requires ongoing provider review but does not currently require formal risk registration. |
+| No Further Action | Available evidence does not support a material governance concern or risk. |
+| Clarification Required | Additional information is required before a defensible decision can be made. |
+
+The rationale for each decision shall be documented.
+
+---
+
+## Enterprise AI Risk Register Handoff
+
+Risks assigned a Register decision of "Register as Enterprise AI Risk" are transferred into the Enterprise AI Risk Register as authoritative records, where they enter the AI Risk Management lifecycle for likelihood analysis, prioritization, response-strategy selection, control design, and residual-risk acceptance.
+
+This handoff marks the architectural boundary between Third-Party AI Governance and Enterprise AI Risk Management. Once transferred, a risk record is owned and maintained by AI Risk Management; this document retains only the traceability reference back to the originating due-diligence concern and provider relationship.
+
+The handoff record shall include:
+
+- confirmation of the Register Decision;
+- the date of transfer;
+- the receiving Enterprise AI Risk Register record ID;
+- the accountable AI Risk Management owner; and
+- any provider-specific context needed for ongoing risk management.
+
+---
+
+# Enterprise Third-Party AI Register Enrichment
+
+Approved outcomes from this document update the following fields within the Enterprise Third-Party AI Register:
+
+## Due-Diligence Fields (Part I)
+
+| Register Field | Information Added |
+|---|---|
+| Due-Diligence Reference ID | Reference to the authoritative due-diligence record. |
+| Due-Diligence Status | Current status of the review. |
+| Due-Diligence Completion Date | Date the review was completed. |
+| Provider Governance Maturity Outcome | Consolidated governance-capability conclusion. |
+| Privacy Review Outcome | Approved privacy-domain outcome. |
+| Security Review Outcome | Approved security-domain outcome. |
+| Data Governance Review Outcome | Approved data-governance outcome. |
+| Resilience and Continuity Outcome | Approved resilience-domain outcome. |
+| Model or Service Transparency Outcome | Approved transparency-domain outcome. |
+| Incident Management Capability Outcome | Approved incident-management outcome. |
+| Change-Notification Capability Outcome | Approved change-management outcome. |
+| Subprocessor Review Outcome | Approved dependency-review outcome. |
+| Independent Assurance Reviewed | Whether relevant independent evidence was reviewed. |
+| Assurance Documentation Reference | Traceable reference to reviewed assurance material. |
+| Due-Diligence Outcome | Suitable, Conditionally Suitable, Not Suitable, or Unable to Conclude. |
+| Due-Diligence Conditions | Approved conditions or restrictions. |
+| Next Due-Diligence Review Date | Date by which review or reassessment is required. |
+
+## Risk Assessment Fields (Part II)
+
+| Register Field | Information Added |
+|---|---|
+| Provider-Originated Risk Reference | Reference to the authoritative risk identification record(s) for this provider. |
+| Enterprise AI Risk Register Link | Link to the corresponding record(s) in the Enterprise AI Risk Register following handoff. |
+| Risk Registration Decision | Approved decision for each evaluated concern (Register, Consolidate, Retain as Condition, Retain as Oversight Item, No Further Action, Clarification Required). |
+| Risk Assessment Date | Date the provider-originated risk assessment was completed. |
+
+Detailed evidence, analysis, and domain or risk conclusions remain within the underlying due-diligence and risk-assessment records.
+
+---
+
+# Why This Document Matters
+
+Third-party AI providers may influence model behavior, data processing, service availability, system security, regulatory compliance, customer outcomes, and operational continuity.
+
+Organizations cannot govern these dependencies through contractual terms or provider reputation alone. They require evidence that the provider's capabilities, practices, and limitations are sufficiently understood before reliance begins.
+
+Third-Party AI Due Diligence and Risk Assessment enables Megastar Mortgage to make an informed suitability determination, identify provider-related concerns early, establish proportionate conditions, and create a defensible foundation for provider-risk assessment, contracting, onboarding, and ongoing oversight.
+
+---
+
+# Related Artifacts
 
 This document supports:
 
 - Third-Party AI Due Diligence Template
+- Third-Party AI Risk Assessment Template
 - Enterprise Third-Party AI Register
 - Third-Party AI Identification
-- Third-Party AI Risk Assessment
 - Third-Party AI Contract & Onboarding Requirements
 - Enterprise AI Risk Register
 
 ---
 
-## Document Control
-
-| Field | Value |
-|---|---|
-| Document | Third-Party AI Due Diligence |
-| Capability | Third-Party AI Governance |
-| Repository | Enterprise AI Governance Playbook |
-| Reference Organization | Megastar Mortgage |
-| Reference AI System | Megastar Intelligent Processor (MIP) |
-| Document Owner | AI Governance Lead |
-| Version | 1.0 |
-| Review Cycle | Annual |
-| Status | Published Reference |
-
----
-
-## Revision History
+# Revision History
 
 | Version | Date | Description |
 |---|---|---|
 | 1.0 | July 2026 | Initial release of the Third-Party AI Due Diligence artifact. |
+| 2.0 | July 2026 | Merged Third-Party AI Due Diligence and Third-Party AI Risk Assessment into a single lifecycle artifact aligned with the standard Part I / Part II governance structure, corrected section ordering, and added Enterprise AI Risk Register handoff and register-enrichment fields. |
